@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
-import HeroSection from './(sections)/hero-section'
-import ServicesSection from './(sections)/services-section'
+import HeroSection from './sections/hero-section'
+import ServicesSection from './sections/services-section'
 
 export default function Home() {
   return (
