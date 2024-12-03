@@ -47,6 +47,7 @@ export default {
       },
       fontFamily: {
         merriweather: ["var(--font-merriweather)"],
+        openSans: ["var(--font-open-sans)"],
       },
     },
   },
