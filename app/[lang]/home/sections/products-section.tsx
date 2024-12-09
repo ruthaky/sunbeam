@@ -41,14 +41,14 @@ export default function ProductsSection() {
       </div>
       <div className="flex w-full h-[350px] justify-around gap-10">
         {products.map((product, index) => (
-          <div key={index} className="relative w-1/4 h-full group">
+          <div key={index} className="relative cursor-pointer w-1/4 h-full group">
             <Image
               src={product.image}
               alt={product.title}
               className="w-full h-full object-cover"
             />
             {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-white/70 flex flex-col items-start py-10 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0 bg-white/90 flex flex-col items-start py-10 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="text-[25px] font-bold">{product.title}</div>
               <div className="text-[20px] mt-2 text-left">
                 {product.description}

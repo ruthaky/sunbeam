@@ -7,18 +7,19 @@ import AboutSection from './sections/about-section'
 import ProductsSection from './sections/products-section'
 import ContactSection from './sections/contact-section'
 
-export default function Home() {
+export default function Home({ heroTexts }: { heroTexts: any }) {
+
   return (
     <div className="relatve ">
       {/* <h1 className="text-4xl font-bold text-white ">Surge</h1>
       <Button>Click me</Button> */}
 
-      <HeroSection />
+      <HeroSection heroTexts={heroTexts} />
       <MapSection />
       <AboutSection />
       <ProductsSection />
       <ServicesSection />
-    <ContactSection />
+      <ContactSection />
     </div>
   )
 }
