@@ -9,9 +9,10 @@ export default function ServicesSection() {
       {/* This is the ServicesSection
       <ServiceCard /> */}
       <div className="flex flex-col gap-6 w-2/5 h-full justify-start py-20">
-        <div className="text-[60px] font-semibold tracking-tight  leading-none">
-          Our Services
-        </div>
+      <div className="flex flex-col gap-2 text-[60px] text-black font-semibold tracking-tight leading-none ">
+        Our Services
+        <div className="h-[5px] w-[300px] bg-primary "></div>
+      </div>
         <p className="text-[25px] tracking-tight">
           We offer tailored services to our partners around the globe. From
           sourcing the finest beans to fast deliveries.

@@ -8,7 +8,7 @@ export const MobileNavbar = () => {
 
 export const Navbar = () => {
   return (
-    <div className="flex flex-row bg-white fixed left-0 top-0 w-full border justify-between py-1 px-12">
+    <div className="flex flex-row bg-white fixed left-0 top-0 w-full border justify-between py-1 px-12 z-10">
       <Link href="/" className="h-full w-[90px]">
         <Image src={logo} alt="logo" className="" />
       </Link>
