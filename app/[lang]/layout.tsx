@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 // import { Merriweather } from 'next/font/google'
-import "./globals.css";
+import "../globals.css";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
-import { Open_Sans } from 'next/font/google'
-
+import { Open_Sans } from "next/font/google";
 
 // const merriweather = Merriweather({
 //   weight: ["400", "700"],
