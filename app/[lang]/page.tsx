@@ -3,12 +3,8 @@ import Home from "./home";
 import { getDictionary } from "./dictionaries";
 
 
-export default async function Page({
-  params: { lang },
-}: {
-  params: { lang: string };
-}) {
-  console.log(lang);
+export default async function Page({ params: { lang } }: any) {
+
   const dictionary = await getDictionary(lang);
   return (
     <>
