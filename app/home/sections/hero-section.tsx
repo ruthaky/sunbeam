@@ -7,11 +7,12 @@ export default function HeroSection() {
     <div className="flex h-screen w-full px-12 items-center">
       <div className="flex flex-col gap-6 w-1/2">
         <div className="text-[60px] font-semibold tracking-tight  leading-none">
-          Global Trade Powered by Africa's Finest Beans
+          Global Trade Powered by Africa's Finest Crops
         </div>
         <p className="text-[25px] tracking-tight">
-          We bridges the gap between Africa's farms and global markets,
-          delivering top-quality beans that fuel industries worldwide.
+          We connect Africa’s premium-quality crop producers with global
+          markets, empowering local farmers and fueling industries worldwide
+          with the finest harvests.
         </p>
         <div>
           <Button>Connect with our Team</Button>
