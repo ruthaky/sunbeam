@@ -11,20 +11,20 @@ import { Button } from "@/components/ui/button";
 
 export default function Products() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {" "}
       <div className="w-full flex relative text-white h-screen text-9xl py-100 bg-cover bg-[url('/asset/coffee.jpg')]">
-        <div className="absolute flex flex-col px-12 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div className="text-[50px] font-bold text-primary text-left w-[700px]">
+        <div className="absolute flex flex-col px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
+          <div className="text-[60px] font-bold text-primary text-left w-[700px]">
             Connecting Africa's finest crops to the world
           </div>
-          <div className="text-[30px] w-[700px] text-[#eeeeeed6]">
+          <div className="text-[20px] w-[700px] text-[#eeeeeed6]">
             Whether it's working with rice farmers in Africa, growing cotton in
             Australia, or developing innovative ingredients in{" "}
           </div>
         </div>
       </div>
-      <div className="w-full h-auto p-12 flex flex-col gap-10">
+      <div className="w-full h-auto p-12 px-28 flex flex-col gap-10">
         <div className="w-full h-[400px] flex flex-row gap-10">
           <div className="h-full w-2/6 ">
             <Image
@@ -38,7 +38,7 @@ export default function Products() {
               Coffee
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[25px] text-[#696969]">
+            <div className="text-[20px] text-[#696969]">
               Whether it's working with rice farmers in Africa, growing cotton
               in Australia, or developing innovative ingredients in Asia, we
               help our customers meet increasing. Whether it's working with rice
@@ -55,7 +55,7 @@ export default function Products() {
               Sesame Seeds
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[25px] text-[#696969]">
+            <div className="text-[20px] text-[#696969]">
               Whether it's working with rice farmers in Africa, growing cotton
               in Australia, or developing innovative ingredients in Asia, we
               help our customers meet increasing. Whether it's working with rice
@@ -88,7 +88,7 @@ export default function Products() {
               Soybeans
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[25px] text-[#696969]">
+            <div className="text-[20px] text-[#696969]">
               Whether it's working with rice farmers in Africa, growing cotton
               in Australia, or developing innovative ingredients in Asia, we
               help our customers meet increasing. Whether it's working with rice
@@ -105,7 +105,7 @@ export default function Products() {
               Kidney beans
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[25px] text-[#696969]">
+            <div className="text-[20px] text-[#696969]">
               Whether it's working with rice farmers in Africa, growing cotton
               in Australia, or developing innovative ingredients in Asia, we
               help our customers meet increasing. Whether it's working with rice
@@ -138,7 +138,7 @@ export default function Products() {
               Castor
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[25px] text-[#696969]">
+            <div className="text-[20px] text-[#696969]">
               Whether it's working with rice farmers in Africa, growing cotton
               in Australia, or developing innovative ingredients in Asia, we
               help our customers meet increasing. Whether it's working with rice
