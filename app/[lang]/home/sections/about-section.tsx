@@ -13,9 +13,9 @@ const merriweather = Merriweather({
 export default function AboutSection() {
   return (
     <div className="flex flex-col lg:flex-row h-screen w-full px-4 lg:px-28 items-center justify-center">
-      {/* <div className="flex items-center justify-start w-1/2 h-full ">
+      <div className="hidden lg:flex items-center justify-start w-1/2 h-full ">
         <Image src={heroImage} alt="logo" className="" />
-      </div> */}
+      </div>
       <div className="flex flex-col gap-6 w-full lg:w-1/2">
         <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
           Our Mission

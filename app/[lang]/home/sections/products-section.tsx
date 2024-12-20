@@ -56,10 +56,10 @@ export default function ProductsSection() {
             <Image
               src={product.image}
               alt={product.title}
-              className="w-full  h-[350px] lg:h-full object-cover"
+              className="w-full  h-[350px] lg:h-[380px] object-cover"
             />
             {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-white/90 flex flex-col items-start py-10 px-4 opacity-75 lg:group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0 bg-white/90 flex flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
               <div className="text-[25px] font-bold">{product.title}</div>
               <div className="text-[20px] mt-2 text-left">
                 {product.description}

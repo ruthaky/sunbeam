@@ -26,17 +26,17 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("Submitting...");
-  
+
     try {
       const response = await fetch("/api/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData }),
       });
-  
+
       // Parse the JSON response
       const result = await response.json();
-  
+
       if (response.ok) {
         setStatus("Form submitted successfully!");
         setFormData({ name: "", email: "", phonenumber: "", message: "" });
@@ -49,10 +49,9 @@ export default function ContactSection() {
       setStatus("An error occurred. Please try again later.");
     }
   };
-  
 
   return (
-    <div className="flex-col lg-flex-row h-auto lg:h-screen w-full bg-secondary">
+    <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full bg-secondary">
       <div className="flex flex-col gap-6 w-full lg:w-1/3 h-full bg-primary px-5 lg:pl-28 lg:pr-12 py-10 lg:py-20">
         <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-normal tracking-tight leading-none ">
           Contact Details
