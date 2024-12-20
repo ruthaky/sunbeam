@@ -26,29 +26,30 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("Submitting...");
-
+  
     try {
       const response = await fetch("/api/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData }),
       });
-
-      const result = await ();
+  
+      // Parse the JSON response
+      const result = await response.json();
+  
       if (response.ok) {
         setStatus("Form submitted successfully!");
         setFormData({ name: "", email: "", phonenumber: "", message: "" });
-        console.log();
-        console.log("formye", formData);
+        console.log("Form data:", formData);
       } else {
         setStatus(`Error: ${result.error || "Failed to submit the form."}`);
       }
     } catch (error) {
-      console.error(error);
-      console.log("formye", formData);
+      console.error("Error submitting form:", error);
       setStatus("An error occurred. Please try again later.");
     }
   };
+  
 
   return (
     <div className="flex-col lg-flex-row h-auto lg:h-screen w-full bg-secondary">
