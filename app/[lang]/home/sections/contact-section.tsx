@@ -1,96 +1,140 @@
-// import { IconHome } from '@tabler/icons-react';
+"use client";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function ContactSection() {
+  const initialFormData = {
+    name: "",
+    email: "",
+    phonenumber: "",
+    message: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [status, setStatus] = useState("");
+
+  // const handleChange = (event: any) => {
+  //   setFormData({ ...formData, [event.target.name]: event.target.value });
+  // };
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("Submitting...");
+  
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData }),
+      });
+  
+      // Parse the JSON response
+      const result = await response.json();
+  
+      if (response.ok) {
+        setStatus("Form submitted successfully!");
+        setFormData({ name: "", email: "", phonenumber: "", message: "" });
+        console.log("Form data:", formData);
+      } else {
+        setStatus(`Error: ${result.error || "Failed to submit the form."}`);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("An error occurred. Please try again later.");
+    }
+  };
+  
+
   return (
-    <div className="flex h-screen w-full bg-secondary">
-      <div className="flex flex-col gap-6 w-1/3 h-full bg-primary px-12 py-20">
-        <div className="flex flex-col gap-2 text-[50px] text-white font-normal tracking-tight leading-none ">
-          Contact   Details
-          {/* <div className="h-[4px] w-[200px] bg-secondary "></div> */}
+    <div className="flex-col lg-flex-row h-auto lg:h-screen w-full bg-secondary">
+      <div className="flex flex-col gap-6 w-full lg:w-1/3 h-full bg-primary px-5 lg:pl-28 lg:pr-12 py-10 lg:py-20">
+        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-normal tracking-tight leading-none ">
+          Contact Details
         </div>
         <div className="text-[25px] text-white tracking-tight leading-none">
           Whether it's working with rice farmers in
-        </div>
-        <div className="flex flex-col gap-10">
-          <div>
-            <div></div>
-            <div className="text-white font-light text-[20px]">
-              523 Sylvan Ave, 5th floor Mountain View, CA 9404USA
-            </div>
-          </div>
-          <div>
-            <div></div>
-            <div className="text-white font-light text-[20px]">
-              523 Sylvan Ave, 5th floor Mountain View, CA 9404USA
-            </div>
-          </div>
-          <div>
-            <div></div>
-            <div className="text-white font-light text-[20px]">
-              523 Sylvan Ave, 5th floor Mountain View, CA 9404USA
-            </div>
-          </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 w-2/3 h-full px-12 py-20">
-        <div className="flex flex-col gap-2 text-[50px] text-white font-normal tracking-tight leading-none ">
+      <div className="flex flex-col gap-6 w-full lg:w-2/3 h-full px-5 lg:px-12 lg:pr-28 py-10 lg:py-20">
+        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-normal tracking-tight leading-none ">
           Get in touch
-          {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
         </div>
-        <div className="text-[25px] text-white tracking-tight leading-none">
-          Whether it's working with rice farmers in
-        </div>
-        <div className="flex flex-col gap-4">
+
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
-            {" "}
             <label
-              htmlFor="applicantAdress"
+              htmlFor="name"
               className="text-[20px] font-light block text-white mb-2"
             >
               Name
             </label>
             <input
               type="text"
-              id="applicantAdress1"
+              id="name"
+              value={formData.name}
+              onChange={handleInputChange}
               className="w-full border-b border-white bg-transparent text-white py-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
               required
             />
           </div>
           <div>
-            {" "}
             <label
-              htmlFor="applicantAdress"
+              htmlFor="email"
               className="text-[20px] font-light block text-white mb-2"
             >
               Email
             </label>
             <input
-              type="text"
-              id="applicantAdress1"
-              className="w-full border-b border-white bg-transparent text-white  py-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
+              type="email"
+              id="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              className="w-full border-b border-white bg-transparent text-white py-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
               required
             />
           </div>
           <div>
-            {" "}
             <label
-              htmlFor="applicantAdress"
+              htmlFor="phonenumber"
+              className="text-[20px] font-light block text-white mb-2"
+            >
+              Phone Number
+            </label>
+            <input
+              type="text"
+              id="phonenumber"
+              value={formData.phonenumber}
+              onChange={handleInputChange}
+              className="w-full border-b border-white bg-transparent text-white py-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
+              required
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="message"
               className="text-[20px] font-light block text-white mb-2"
             >
               Message
             </label>
             <textarea
-              // type="text"
-              id="applicantAdress1"
-              className="w-full border-b border-white bg-transparent text-white py-2 h-[30px] lg:h-[100px] focus:outline-none focus:border-b-2 focus:border-white"
+              id="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              className="w-full border-b border-white bg-transparent text-white py-2 lg:h-[100px] focus:outline-none focus:border-b-2 focus:border-white"
               required
-            ></textarea>
+            />
           </div>
           <div className="w-full flex h-auto justify-end">
-            <Button variant="contact">Send</Button>
+            <Button type="submit">Send</Button>
           </div>
-        </div>
+        </form>
+        {status && <p className="text-white mt-4">{status}</p>}
       </div>
     </div>
   );

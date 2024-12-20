@@ -1,19 +1,27 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import heroImage from "@/public/asset/heroimage.png";
+import { Merriweather } from "next/font/google";
+
+const merriweather = Merriweather({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
 
 export default function AboutSection() {
   return (
-    <div className="flex h-screen w-full px-12 items-center bg-white">
-      <div className="flex items-center justify-center w-1/2 h-full p-20">
+    <div className="flex flex-col lg:flex-row h-screen w-full px-4 lg:px-28 items-center justify-center">
+      {/* <div className="flex items-center justify-start w-1/2 h-full ">
         <Image src={heroImage} alt="logo" className="" />
-      </div>
-      <div className="flex flex-col gap-6 w-1/2">
-        <div className=" flex flex-col gap-2 text-[60px] font-semibold tracking-tight leading-none">
+      </div> */}
+      <div className="flex flex-col gap-6 w-full lg:w-1/2">
+        <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
           Our Mission
-          <div className="h-[5px] w-[300px] bg-primary"></div>
+          <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary"></div>
         </div>
-        <p className="text-[25px] tracking-tight">
+        <p className="text-[20px] tracking-tight">
           Our mission is to deliver the highest-quality beans to the global
           market while building lasting relationships with our partners.
           <br />
@@ -22,9 +30,10 @@ export default function AboutSection() {
           Australia, or developing innovative ingredients in Asia, we help our
           customers meet increasing
         </p>
-        <div>
+        <Link href="/about">
+          {" "}
           <Button>Read More</Button>
-        </div>
+        </Link>
       </div>
     </div>
   );

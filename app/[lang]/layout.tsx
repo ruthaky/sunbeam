@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-// import { Merriweather } from 'next/font/google'
+import { Merriweather } from "next/font/google";
 import "../globals.css";
-import { Navbar } from "@/components/ui/navbar";
+import { Navbar, MobileNavbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { Open_Sans } from "next/font/google";
+import { MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
+// import "@mantine/carousel/styles.css";
 
-// const merriweather = Merriweather({
-//   weight: ["400", "700"],
-//   subsets: ["latin"],
-//   variable: "--font-merriweather",
-// });
+const merriweather = Merriweather({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -29,11 +32,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} font-openSans antialiased  min-h-screen flex flex-col`}
+        className={`${openSans.variable} font-openSans antialiased  min-h-screen flex flex-col overflow-x-hidden`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        {" "}
+        <MantineProvider>
+          <div className="block lg:hidden">
+            <MobileNavbar />
+          </div>
+
+          <div className="hidden lg:block">
+            <Navbar />
+          </div>
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );

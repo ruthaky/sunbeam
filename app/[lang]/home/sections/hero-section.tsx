@@ -1,23 +1,30 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import heroImage from "@/public/asset/heroimage.png";
+import { Merriweather } from "next/font/google";
 
+const merriweather = Merriweather({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
 export default function HeroSection({ heroTexts }: { heroTexts: any }) {
   return (
-    <div className="flex h-screen w-full px-12 items-center">
-      <div className="flex flex-col gap-6 w-1/2">
-        <div className="text-[60px] font-semibold tracking-tight  leading-none">
+    <div className="flex flex-col lg:flex-row h-screen w-full px-4 lg:px-28 items-center justify-center">
+      <div className="flex flex-col gap-4 lg:gap-6 w-full lg:w-1/2">
+        <div
+          className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold tracking-tight  leading-none`}
+        >
           {heroTexts.hero}
         </div>
-        <p className="text-[25px] tracking-tight">
-          We bridges the gap between Africa's farms and global markets,
-          delivering top-quality beans that fuel industries worldwide.
-        </p>
-        <div>
-          <Button>Connect with our Team</Button>
-        </div>
+        <p className="text-[20px] tracking-tight ">{heroTexts.subheading}</p>
+        <Link href="/contact">
+          {" "}
+          <Button>{heroTexts.button}</Button>
+        </Link>
       </div>
-      <div className="flex items-center justify-center w-1/2 h-full p-20">
+      <div className="hidden lg:flex items-center justify-end w-full lg:w-1/2 h-full ">
         <Image src={heroImage} alt="logo" className="" />
       </div>
     </div>
