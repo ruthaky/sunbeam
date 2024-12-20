@@ -34,7 +34,7 @@ export default function ContactSection() {
         body: JSON.stringify({ ...formData }),
       });
 
-      const result = await response.json();
+      const result = await ();
       if (response.ok) {
         setStatus("Form submitted successfully!");
         setFormData({ name: "", email: "", phonenumber: "", message: "" });
