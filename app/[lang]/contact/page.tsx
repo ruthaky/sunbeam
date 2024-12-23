@@ -1,6 +1,6 @@
 export const dynamic = "force-static";
 import React from "react";
-import ContactSection from "./sections/page";
+import ContactSection from "./sections";
 import { getDictionary } from "../dictionaries";
 
 export default async function Contact({ params: { lang } }: any) {
