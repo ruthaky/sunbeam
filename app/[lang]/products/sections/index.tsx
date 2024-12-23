@@ -5,7 +5,7 @@ import sesame from "@/public/asset/sesame.jpg";
 import soybean from "@/public/asset/soybean.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
 import castor from "@/public/asset/castor.jpg";
-import Contact from "../../contact/page";
+import Contact from "../../contact/sections/page";
 import ContactSection from "../../home/sections/contact-section";
 import { Button } from "@/components/ui/button";
 
