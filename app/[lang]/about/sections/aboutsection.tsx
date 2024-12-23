@@ -1,9 +1,13 @@
 import Image from "next/image";
-import heroImage from "@/public/asset/heroimage.png";
+import heroImage from "@/public/asset/Group 23.png";
 import coffee from "@/public/asset/coffee.jpg";
 import sesame from "@/public/asset/sesame.jpg";
 import soybean from "@/public/asset/soybean.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
+import coffee1 from "@/public/asset/coffee1.jpg";
+import coffee2 from "@/public/asset/coffee2.jpg";
+import coffee3 from "@/public/asset/coffee3.jpg";
+import coffee4 from "@/public/asset/coffee4.jpg";
 import castor from "@/public/asset/castor.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import { getDictionary } from "../../dictionaries";
@@ -15,13 +19,16 @@ export default function AboutSection({
 }) {
   return (
     <div className="overflow-x-hidden">
-      <div className="w-full flex relative text-white h-screen text-9xl py-100 bg-cover bg-[url('/asset/coffee.jpg')]">
+      <div
+        className="w-full flex relative text-white h-screen text-9xl py-100 bg-cover"
+        style={{ backgroundImage: `url(${coffee.src})` }}
+      >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div className=" flex flex-col gap-2 text-[35px] width lg:text-[60px] font-semibold tracking-tight leading-none">
+          <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
             {aboutpageTexts.introheading}
             <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
           </div>
-          <div className="text-[20px] lg:w-[700px] text-[#eeeeeed6] leading-6">
+          <div className="text-[20px] lg:w-[900px] text-[#eeeeeed6] leading-6">
             {aboutpageTexts.introsubheading}
           </div>
         </div>
@@ -91,7 +98,7 @@ export default function AboutSection({
           <div className="w-1/2 h-full bg-pink-500">
             {" "}
             <Image
-              src={coffee}
+              src={coffee1}
               alt="Gallery Image"
               className="w-full h-full object-cover"
             />
@@ -100,14 +107,14 @@ export default function AboutSection({
             <div className="w-full h-1/2 bg-red-600">
               {" "}
               <Image
-                src={castor}
+                src={coffee4}
                 alt="Gallery Image"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-full h-1/2 bg-violet-600">
               <Image
-                src={coffee}
+                src={coffee2}
                 alt="Gallery Image"
                 className="w-full h-full object-cover"
               />
@@ -116,16 +123,65 @@ export default function AboutSection({
         </div>
         <div className="h-screen w-full flex  pt-5 pb-10 px-10 gap-10">
           <div className="w-1/2 h-full flex flex-col gap-10">
-            <div className="w-full h-1/2 bg-red-600"></div>
-            <div className="w-full h-1/2 bg-violet-600"></div>
+            <div className="w-full h-1/2 bg-red-600">
+              {" "}
+              <Image
+                src={coffee4}
+                alt="Gallery Image"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="w-full h-1/2 bg-violet-600">
+              {" "}
+              <Image
+                src={coffee3}
+                alt="Gallery Image"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <div className="w-1/2 h-full bg-pink-500"></div>
+          <div className="w-1/2 h-full bg-pink-500">
+            {" "}
+            <Image
+              src={coffee4}
+              alt="Gallery Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
         <div className="flex-col lg:flex-row  lg:h-[400px] w-full gap-4 lg:gap-10 px-10 flex ">
-          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400"></div>
-          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400"></div>
-          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400"></div>
-          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400"></div>
+          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
+            {" "}
+            <Image
+              src={coffee4}
+              alt="Gallery Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
+            {" "}
+            <Image
+              src={coffee3}
+              alt="Gallery Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
+            {" "}
+            <Image
+              src={coffee1}
+              alt="Gallery Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
+            {" "}
+            <Image
+              src={castor}
+              alt="Gallery Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>

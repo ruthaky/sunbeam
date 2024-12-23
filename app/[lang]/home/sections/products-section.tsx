@@ -42,7 +42,7 @@ export default function ProductsSection({
   ];
 
   return (
-    <div className="flex flex-col gap-6 lg:gap-10 w-full p-5 lg:px-28 h-auto lg:h-screen bg-secondary justify-center ">
+    <div className="flex flex-col gap-6 lg:gap-10 w-full p-5 py-[50px] lg:py-0 lg:px-28 h-auto lg:h-screen bg-secondary justify-center ">
       <div className="flex flex-col lg:gap-2 text-[35px] lg:text-[60px] text-white font-semibold tracking-tight leading-none ">
         {productTexts.heading}
         <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary "></div>

@@ -76,5 +76,17 @@
     "product5title": "Castor Seeds",
     "product5desc": "Our castor seeds, cultivated in Ethiopia and Kenya, are renowned for their superior oil yield and purity. The castor oil extracted from these seeds is a vital ingredient in industries ranging from pharmaceuticals and cosmetics to biofuels. We offer industrial-grade castor seeds, ideal for high-yield oil extraction in industrial applications, as well as organic castor seeds, grown without chemical inputs and perfect for premium markets. Rich in ricinoleic acid, our seeds are harvested under stringent quality control to ensure optimal oil production and are available in raw or processed forms.",
     "contactbutton": "Contact Now"
+  },
+  "contactPage": {
+    "heading": "Connect with Surge Crops Trading",
+    "subheading": "Whether you’re looking to source premium agricultural products or have inquiries about our services, we’re here to help. Reach out to us today and let’s grow together.s",
+    "contactdetail": "Contact Detail",
+    "location": "523 Sylvan Ave, 5th floor Dubai, UAE",
+    "getintouch": "Get In Touch",
+    "name": "Name",
+    "email": "Email",
+    "phonenumber": "Phone Number",
+    "message": "Message",
+    "button": "submit"
   }
 }

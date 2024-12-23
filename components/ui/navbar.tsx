@@ -18,106 +18,112 @@ import { useDisclosure } from "@mantine/hooks";
 export const MobileNavbar = () => {
   const router = useRouter();
   const pathname = usePathname();
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle, close }] = useDisclosure(false);
 
   const handleLanguageChange = (locale: string) => {
-    // Get the current path segments
     const segments = pathname.split("/");
-    // Replace the language code (first segment after empty string)
     segments[1] = locale;
-    // Reconstruct the path
     const newPath = segments.join("/");
-    // Navigate to the new path
     router.push(newPath);
   };
 
+  const handleLinkClick = (path: string) => {
+    close(); // Close the menu
+    router.push(path); // Navigate to the specified path
+  };
+
   return (
-    <div className="flex md:hidden h-[50px] w-full bg-white fixed left-0 top-0 z-10">
-      <Link href="/" className="h-full w-[70px]">
-        <Image src={logo} alt="logo" className="" />
+    <div className="flex justify-between items-center md:hidden h-[50px] w-full bg-white fixed left-0 top-0 z-10 px-4">
+      <Link href="/" className="h-full w-[80px]">
+        <Image src={logo} alt="logo" />
       </Link>
 
-      <Flex className="h-full justify-between items-center">
-        <Flex
-          className="items-center cursor-pointer"
-          onClick={() => {
-            router.push("/");
-          }}
-        ></Flex>
-
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          // hiddenFrom="md"
-          size="45px"
-          color="#bea632"
-          className="invisible xl:visible  3xl:h-[60px] 3xl:w-[60px] fixed top-4 right-[10px]  xl:right-[115px] 3xl:right-[155px]"
-        //style={}
-        />
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          // hiddenFrom="md"
-          size="35px"
-          color="#bea632"
-          className="fixed xl:hidden top-2 right-[10px] lg:right-[20px] "
-        //style={}
-        />
-      </Flex>
-      <Collapse in={opened} className="relative">
-        <div className="flex w-full  h-1 justify-end">
-          {" "}
-          <Flex
-            onClick={toggle}
-            className="fixed ml-0 -z-10 top-0 right-0 flex flex-col items-center justify-center bg-white gap-4 3xl:gap-6 pt-4 border h-screen w-full lg:w-[300px] 3xl:w-[400px]"
-          >
-            <Link href={`/${pathname.split('/')[1]}`}>Home</Link>
-            <Link href={`/${pathname.split('/')[1]}/about`}>About</Link>
-            <Link href={`/${pathname.split('/')[1]}/products`}>Products</Link>
-            <Link href={`/${pathname.split('/')[1]}/contact`}>Contact</Link>
-          </Flex>
+      <div className="flex flex-row gap-1">
+        <div className="flex items-center gap-4 ">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1">
+              <Globe className="h-4 w-4" />
+              <span className="font-semibold">Lang</span>
+              <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-white">
+              <DropdownMenuItem
+                onClick={() => handleLanguageChange("en")}
+                className="flex cursor-pointer items-center gap-1"
+              >
+                <span>🇺🇸</span>
+                English
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handleLanguageChange("zh")}
+                className="flex cursor-pointer items-center gap-1"
+              >
+                <span>🇨🇳</span>
+                中文
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handleLanguageChange("fr")}
+                className="flex cursor-pointer items-center gap-1"
+              >
+                <span>🇫🇷</span>
+                Français
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => handleLanguageChange("ar")}
+                className="flex cursor-pointer items-center gap-1"
+              >
+                <span>🇦🇪</span>
+                العربية
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
-      </Collapse>
-
-      <div className="flex items-center">
-        <DropdownMenu>
-          <DropdownMenuTrigger className="flex items-center gap-1">
-            <Globe className="h-4 w-4" />
-            <span className="font-semibold">Lang</span>
-            <ChevronDown className="h-4 w-4" />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem
-              onClick={() => handleLanguageChange("en")}
-              className="flex cursor-pointer items-center gap-1"
-            >
-              <span>🇺🇸</span>
-              English
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => handleLanguageChange("zh")}
-              className="flex cursor-pointer items-center gap-1"
-            >
-              <span>🇨🇳</span>
-              中文
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => handleLanguageChange("fr")}
-              className="flex cursor-pointer items-center gap-1"
-            >
-              <span>🇫🇷</span>
-              Français
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => handleLanguageChange("ar")}
-              className="flex cursor-pointer items-center gap-1"
-            >
-              <span>🇦🇪</span>
-              العربية
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <Flex className="h-full items-center w-full">
+          <Burger
+            opened={opened}
+            onClick={toggle}
+            size="30px"
+            color="#000"
+            className=""
+          />
+        </Flex>
       </div>
+      <Collapse
+        in={opened}
+        className="absolute top-[50px] left-0 w-full bg-white z-20"
+      >
+        <Flex
+          direction="column"
+          align="center"
+          className="gap-4 py-4 border-t"
+          onClick={toggle} // Ensure clicking links closes the menu
+        >
+          <Link
+            href={`/${pathname.split("/")[1]}`}
+            onClick={() => handleLinkClick("/")}
+          >
+            Home
+          </Link>
+          <Link
+            href={`/${pathname.split("/")[1]}/about`}
+            onClick={() => handleLinkClick("/about")}
+          >
+            About
+          </Link>
+          <Link
+            href={`/${pathname.split("/")[1]}/products`}
+            onClick={() => handleLinkClick("/products")}
+          >
+            Products
+          </Link>
+          <Link
+            href={`/${pathname.split("/")[1]}/contact`}
+            onClick={() => handleLinkClick("/contact")}
+          >
+            Contact
+          </Link>
+        </Flex>
+      </Collapse>
     </div>
   );
 };
@@ -127,67 +133,61 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   const handleLanguageChange = (locale: string) => {
-    // Get the current path segments
     const segments = pathname.split("/");
-    // Replace the language code (first segment after empty string)
     segments[1] = locale;
-    // Reconstruct the path
     const newPath = segments.join("/");
-    // Navigate to the new path
     router.push(newPath);
   };
 
   return (
-    <div className=" hidden md:flex flex-row bg-white fixed left-0 top-0 w-full border justify-between py-1 px-28 z-10">
+    <div className="hidden md:flex flex-row bg-white fixed left-0 top-0 w-full border justify-between py-1 px-28 z-10">
       <Link href="/" className="h-full w-[110px]">
-        <Image src={logo} alt="logo" className="" />
+        <Image src={logo} alt="logo" />
       </Link>
-      <div className="flex flex-row gap-14">
-        <div className="flex flex-row items-center gap-10 font-semibold ">
-          <Link href={`/${pathname.split('/')[1]}`}>Home</Link>
-          <Link href={`/${pathname.split('/')[1]}/about`}>About</Link>
-          <Link href={`/${pathname.split('/')[1]}/products`}>Products</Link>
-          <Link href={`/${pathname.split('/')[1]}/contact`}>Contact</Link>
+      <div className="flex flex-row gap-14 items-center">
+        <div className="flex flex-row gap-10 font-semibold">
+          <Link href={`/${pathname.split("/")[1]}`}>Home</Link>
+          <Link href={`/${pathname.split("/")[1]}/about`}>About</Link>
+          <Link href={`/${pathname.split("/")[1]}/products`}>Products</Link>
+          <Link href={`/${pathname.split("/")[1]}/contact`}>Contact</Link>
         </div>
-        <div className="flex items-center">
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-2">
-              <Globe className="h-4 w-4" />
-              <span className="font-semibold">Language</span>
-              <ChevronDown className="h-4 w-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem
-                onClick={() => handleLanguageChange("en")}
-                className="flex cursor-pointer items-center gap-2"
-              >
-                <span>🇺🇸</span>
-                English
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => handleLanguageChange("zh")}
-                className="flex cursor-pointer items-center gap-2"
-              >
-                <span>🇨🇳</span>
-                中文
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => handleLanguageChange("fr")}
-                className="flex cursor-pointer items-center gap-2"
-              >
-                <span>🇫🇷</span>
-                Français
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => handleLanguageChange("ar")}
-                className="flex cursor-pointer items-center gap-2"
-              >
-                <span>🇦🇪</span>
-                العربية
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
+        <DropdownMenu>
+          <DropdownMenuTrigger className="flex items-center gap-2">
+            <Globe className="h-4 w-4" />
+            <span className="font-semibold">Language</span>
+            <ChevronDown className="h-4 w-4" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="bg-white">
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange("en")}
+              className="flex cursor-pointer items-center gap-2"
+            >
+              <span>🇺🇸</span>
+              English
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange("zh")}
+              className="flex cursor-pointer items-center gap-2"
+            >
+              <span>🇨🇳</span>
+              中文
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange("fr")}
+              className="flex cursor-pointer items-center gap-2"
+            >
+              <span>🇫🇷</span>
+              Français
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange("ar")}
+              className="flex cursor-pointer items-center gap-2"
+            >
+              <span>🇦🇪</span>
+              العربية
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import { Merriweather } from "next/font/google";
 import "../globals.css";
 import { Navbar, MobileNavbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
+import Footerr from "../shared/footer/footer";
 import { Open_Sans } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
@@ -20,6 +21,13 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: [
+      {
+        url: "/asset/favicon.ico",
+      },
+    ],
+  },
   title: "Surge",
   description: "Surge",
 };
@@ -44,6 +52,7 @@ export default function RootLayout({
             <Navbar />
           </div>
           {children}
+          <Footerr />
         </MantineProvider>
       </body>
     </html>

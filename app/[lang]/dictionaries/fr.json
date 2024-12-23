@@ -76,5 +76,17 @@
     "product5title": "Graines de Ricin",
     "product5desc": "Nos graines de ricin, cultivées en Éthiopie et au Kenya, sont réputées pour leur rendement en huile supérieur et leur pureté. L'huile de ricin extraite de ces graines est un ingrédient essentiel dans des industries allant des produits pharmaceutiques et cosmétiques aux biocarburants. Nous proposons des graines de ricin de qualité industrielle, idéales pour l'extraction d'huile à rendement élevé dans les applications industrielles, ainsi que des graines de ricin biologiques, cultivées sans produits chimiques et parfaites pour les marchés premium. Riches en acide ricinoléique, nos graines sont récoltées sous un contrôle qualité strict pour garantir une production optimale d'huile et sont disponibles sous forme brute ou traitée.",
     "contactbutton": "Contactez-nous"
+  },
+  "contactPage": {
+    "heading": "Connectez-vous avec Surge Crops Trading",
+    "subheading": "Que vous cherchiez à vous procurer des produits agricoles de qualité supérieure ou que vous ayez des questions sur nos services, nous sommes là pour vous aider. Contactez-nous dès aujourd'hui et grandissons ensemble.",
+    "contactdetail": "Détails de Contact",
+    "location": "523 Avenue Sylvan, 5ème étage, Dubaï, Émirats Arabes Unis",
+    "getintouch": "Entrer en Contact",
+    "name": "Nom",
+    "email": "E-mail",
+    "phonenumber": "Numéro de Téléphone",
+    "message": "Message",
+    "button": "Envoyer"
   }
 }
