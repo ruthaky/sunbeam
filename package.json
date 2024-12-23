@@ -19,6 +19,7 @@
     "@react-email/components": "^0.0.31",
     "@react-email/render": "^1.0.3",
     "@tabler/icons-react": "^3.24.0",
+    "@types/negotiator": "^0.6.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.464.0",
