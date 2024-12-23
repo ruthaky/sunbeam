@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import HeroSection from "./sections/hero-section";
