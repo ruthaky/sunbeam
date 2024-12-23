@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/public/images/full logo.svg";
+import logo from "@/public/asset/SURGE CROPS.png";
 import Image from "next/image";
 // import {
 //   FaFacebook,
@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div>
-      <footer className="bg-black">
+      <footer className="bg-white">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="hidden  mb-6 md:mb-0 md:flex ">
@@ -19,7 +19,7 @@ export default function Footer() {
                 <Image
                   src={logo.src}
                   alt="logo"
-                  width={120}
+                  width={300}
                   height={100}
                   className=""
                 />
@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
             <div className="grid pt-10 grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-6 text-sm font-medium text-yellow uppercase dark:text-white">
+                <h2 className="mb-4 text-sm font-semibold text-black uppercase">
                   Company
                 </h2>
                 <ul className="text-[#5a5a5a] dark:text-gray-400 font-medium">
@@ -40,7 +40,35 @@ export default function Footer() {
                       href="https://uspholdings.com/"
                       className="hover:underline"
                     >
+                      Home
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a
+                      target="_blank"
+                      href="https://uspholdings.com/"
+                      className="hover:underline"
+                    >
                       About
+                    </a>
+                  </li>
+
+                  <li className="mb-4">
+                    <a
+                      target="_blank"
+                      href="https://uspholdings.com/"
+                      className="hover:underline"
+                    >
+                      Products
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a
+                      target="_blank"
+                      href="https://uspholdings.com/"
+                      className="hover:underline"
+                    >
+                      Contact
                     </a>
                   </li>
                   {/* <li>
@@ -51,7 +79,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-medium text-yellow uppercase dark:text-white">
+                <h2 className="mb-4 text-sm font-semibold text-black uppercase">
                   Socials
                 </h2>
                 <ul className="text-[#5a5a5a] dark:text-gray-400 font-medium">
@@ -64,27 +92,47 @@ export default function Footer() {
                       Instagram
                     </a>
                   </li>
-                  <li>
-                    <a href="#" className="hover:underline">
+                  <li className="mb-4">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/signature.residence.bole/"
+                      className="hover:underline "
+                    >
                       Twitter
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/signature.residence.bole/"
+                      className="hover:underline "
+                    >
+                      Facebook
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/signature.residence.bole/"
+                      className="hover:underline "
+                    >
+                      Linkedin
                     </a>
                   </li>
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-medium text-yellow uppercase dark:text-white">
+                <h2 className="mb-4 text-sm font-semibold text-black uppercase ">
                   Contact
                 </h2>
                 <ul className="text-[#5a5a5a] dark:text-gray-400 font-medium">
-                  <li className="mb-4 text-[14px]">
-                    info@thesignatureresidence.com
-                  </li>
-                  <li>+251911234446</li>
+                  <li className="mb-4 text-[14px]">info@surgecrops.com</li>
+                  <li>+971 55 181 9398 </li>
                 </ul>
               </div>
             </div>
           </div>
-          <hr className="my-6 border-[#5a5a5a] sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <hr className="my-6 border-primary sm:mx-auto dark:border-primary lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-[#5a5a5a] sm:text-center dark:text-gray-400">
               © 2024{" "}
@@ -92,7 +140,7 @@ export default function Footer() {
                 href="https://www.thesignatureresidence.com/"
                 className="hover:underline"
               >
-                Signature Residence
+                Surge Crops Trading
               </a>
               . All Rights Reserved.
             </span>

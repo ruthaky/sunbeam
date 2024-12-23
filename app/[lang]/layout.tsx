@@ -3,6 +3,7 @@ import { Merriweather } from "next/font/google";
 import "../globals.css";
 import { Navbar, MobileNavbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
+import Footerr from "../shared/footer/footer";
 import { Open_Sans } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
@@ -51,6 +52,7 @@ export default function RootLayout({
             <Navbar />
           </div>
           {children}
+          <Footerr />
         </MantineProvider>
       </body>
     </html>
