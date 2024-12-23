@@ -30,6 +30,22 @@ export const metadata: Metadata = {
   },
   title: "Surge",
   description: "Surge",
+  openGraph: {
+    title: "Surge",
+    description: "The best place to find your surge of inspiration.",
+    url: "https://surgecrops.com",
+    siteName: "Surge",
+    images: [
+      {
+        url: "/asset/surgelogo.png", // Replace this with your image name
+        width: 800,
+        height: 600,
+        alt: "Surge - Your surge of inspiration", // Optional alt text
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
