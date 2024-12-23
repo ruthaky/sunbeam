@@ -3,7 +3,7 @@ import React from "react";
 import ContactSection from "./sections/page";
 import { getDictionary } from "../dictionaries";
 
-export default async function About({ params: { lang } }: any) {
+export default async function Contact({ params: { lang } }: any) {
   const dictionary = await getDictionary(lang);
-  return <ContactSection contactTexts={dictionary.contactPage} />;
+  return <ContactSection contactText={dictionary.contactPage} />;
 }

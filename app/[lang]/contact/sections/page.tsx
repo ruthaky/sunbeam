@@ -7,9 +7,9 @@ import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
 
 export default function ContactSection({
-  contactTexts,
+  contactText,
 }: {
-  contactTexts: any;
+  contactText: any;
 }) {
   const initialFormData = {
     name: "",
@@ -65,17 +65,17 @@ export default function ContactSection({
       >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
           <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
-            {contactTexts.heading}
+            {contactText.heading}
             <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
           </div>
           <div className="text-[20px] lg:w-[900px] text-[#eeeeeed6] leading-6">
-            {contactTexts.subheading}
+            {contactText.subheading}
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-6 w-full lg:w-1/3 h-full lg:pt-0 pt-[50px] bg-white px-5 lg:pl-28 lg:pr-12 py-10 lg:py-28">
         <div className="flex flex-col gap-2 text-[30px] lg:text-[50px]  font-normal tracking-tight leading-none ">
-          {contactTexts.contactdetail}
+          {contactText.contactdetail}
         </div>
         {/* <div className="text-[25px]  tracking-tight leading-none">
             Whether it's working with rice farmers in
@@ -85,7 +85,7 @@ export default function ContactSection({
             <div>
               <FiMapPin size={35} />
             </div>
-            <p>{contactTexts.location}</p>
+            <p>{contactText.location}</p>
           </div>
           <div className="flex flex-row gap-4 text-[20px] items-center">
             <BsTelephone size={35} />
@@ -99,7 +99,7 @@ export default function ContactSection({
       </div>
       <div className="flex flex-col gap-6 w-full lg:w-2/3 h-full px-5 lg:px-12 lg:pr-28 py-10 lg:py-28">
         <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-normal tracking-tight leading-none ">
-          {contactTexts.getintouch}
+          {contactText.getintouch}
         </div>
 
         <form
@@ -111,7 +111,7 @@ export default function ContactSection({
               htmlFor="name"
               className="text-[20px] font-light block text-white mb-2"
             >
-              {contactTexts.name}
+              {contactText.name}
             </label>
             <input
               type="text"
@@ -127,7 +127,7 @@ export default function ContactSection({
               htmlFor="email"
               className="text-[20px] font-light block text-white mb-2"
             >
-              {contactTexts.email}
+              {contactText.email}
             </label>
             <input
               type="email"
@@ -143,7 +143,7 @@ export default function ContactSection({
               htmlFor="phonenumber"
               className="text-[20px] font-light block text-white mb-2"
             >
-              {contactTexts.phonenumber}
+              {contactText.phonenumber}
             </label>
             <input
               type="text"
@@ -159,7 +159,7 @@ export default function ContactSection({
               htmlFor="message"
               className="text-[20px] font-light block text-white mb-2"
             >
-              {contactTexts.message}
+              {contactText.message}
             </label>
             <textarea
               id="message"
@@ -171,7 +171,7 @@ export default function ContactSection({
           </div>
           <div className="w-full flex h-auto justify-end">
             <Button type="submit" variant="contact">
-              {contactTexts.button}
+              {contactText.button}
             </Button>
           </div>
         </form>
