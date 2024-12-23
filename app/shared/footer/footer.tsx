@@ -35,39 +35,23 @@ export default function Footer() {
                 </h2>
                 <ul className="text-[#5a5a5a] dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://uspholdings.com/"
-                      className="hover:underline"
-                    >
+                    <a href="/" className="hover:underline">
                       Home
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://uspholdings.com/"
-                      className="hover:underline"
-                    >
+                    <a href="/about" className="hover:underline">
                       About
                     </a>
                   </li>
 
                   <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://uspholdings.com/"
-                      className="hover:underline"
-                    >
+                    <a href="/products" className="hover:underline">
                       Products
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://uspholdings.com/"
-                      className="hover:underline"
-                    >
+                    <a href="/contact" className="hover:underline">
                       Contact
                     </a>
                   </li>
@@ -86,7 +70,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <a
                       target="_blank"
-                      href="https://www.instagram.com/signature.residence.bole/"
+                      href="https://www.instagram.com/surgecrops/profilecard/?igsh=MWRhc3Z1a2ZkbDUweg=="
                       className="hover:underline "
                     >
                       Instagram
@@ -95,7 +79,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <a
                       target="_blank"
-                      href="https://www.instagram.com/signature.residence.bole/"
+                      href="https://x.com/surgecrops?s=21&t=35OU63AnXcZmm3FJlZGrkA"
                       className="hover:underline "
                     >
                       Twitter
@@ -104,7 +88,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <a
                       target="_blank"
-                      href="https://www.instagram.com/signature.residence.bole/"
+                      href="https://web.facebook.com/profile.php?id=61570314600876&rdid=xpJfxyJoyFhAhh5V&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1AXb12jsEb%2F%3F_rdc%3D1%26_rdr"
                       className="hover:underline "
                     >
                       Facebook
@@ -113,7 +97,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <a
                       target="_blank"
-                      href="https://www.instagram.com/signature.residence.bole/"
+                      href="https://www.linkedin.com/company/surge-crops-trading/"
                       className="hover:underline "
                     >
                       Linkedin

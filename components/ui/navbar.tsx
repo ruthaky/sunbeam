@@ -157,7 +157,7 @@ export const Navbar = () => {
             <span className="font-semibold">Language</span>
             <ChevronDown className="h-4 w-4" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent>
+          <DropdownMenuContent className="bg-white">
             <DropdownMenuItem
               onClick={() => handleLanguageChange("en")}
               className="flex cursor-pointer items-center gap-2"
