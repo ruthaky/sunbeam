@@ -8,7 +8,19 @@ import ProductsSection from "./sections/products-section";
 import ContactSection from "./sections/contact-section";
 // import Form from './sections/form'
 
-export default function Home({ heroTexts }: { heroTexts: any }) {
+export default function Home({
+  heroTexts,
+  aboutTexts,
+  productTexts,
+  serviceTexts,
+  contactTexts,
+}: {
+  heroTexts: any;
+  aboutTexts: any;
+  productTexts: any;
+  contactTexts: any;
+  serviceTexts: any;
+}) {
   return (
     <div className="relatve overflow-x-hidden">
       {/* <h1 className="text-4xl font-bold text-white ">Surge</h1>
@@ -16,11 +28,11 @@ export default function Home({ heroTexts }: { heroTexts: any }) {
 
       <HeroSection heroTexts={heroTexts} />
       {/* <MapSection /> */}
-      <AboutSection />
-      <ProductsSection />
-      <ServicesSection />
+      <AboutSection aboutTexts={aboutTexts} />
+      <ProductsSection productTexts={productTexts} />
+      <ServicesSection serviceTexts={serviceTexts} />
       {/* <Form /> */}
-      <ContactSection />
+      <ContactSection contactTexts={contactTexts} />
     </div>
   );
 }
