@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import React from "react";
 import AboutSection from "./sections/aboutsection";
 import { getDictionary } from "../dictionaries";

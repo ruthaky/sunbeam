@@ -52,7 +52,7 @@ export const MobileNavbar = () => {
           size="45px"
           color="#bea632"
           className="invisible xl:visible  3xl:h-[60px] 3xl:w-[60px] fixed top-4 right-[10px]  xl:right-[115px] 3xl:right-[155px]"
-          //style={}
+        //style={}
         />
         <Burger
           opened={opened}
@@ -61,7 +61,7 @@ export const MobileNavbar = () => {
           size="35px"
           color="#bea632"
           className="fixed xl:hidden top-2 right-[10px] lg:right-[20px] "
-          //style={}
+        //style={}
         />
       </Flex>
       <Collapse in={opened} className="relative">
@@ -71,10 +71,10 @@ export const MobileNavbar = () => {
             onClick={toggle}
             className="fixed ml-0 -z-10 top-0 right-0 flex flex-col items-center justify-center bg-white gap-4 3xl:gap-6 pt-4 border h-screen w-full lg:w-[300px] 3xl:w-[400px]"
           >
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/products">Products</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href={`/${pathname.split('/')[1]}`}>Home</Link>
+            <Link href={`/${pathname.split('/')[1]}/about`}>About</Link>
+            <Link href={`/${pathname.split('/')[1]}/products`}>Products</Link>
+            <Link href={`/${pathname.split('/')[1]}/contact`}>Contact</Link>
           </Flex>
         </div>
       </Collapse>
@@ -144,10 +144,10 @@ export const Navbar = () => {
       </Link>
       <div className="flex flex-row gap-14">
         <div className="flex flex-row items-center gap-10 font-semibold ">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href={`/${pathname.split('/')[1]}`}>Home</Link>
+          <Link href={`/${pathname.split('/')[1]}/about`}>About</Link>
+          <Link href={`/${pathname.split('/')[1]}/products`}>Products</Link>
+          <Link href={`/${pathname.split('/')[1]}/contact`}>Contact</Link>
         </div>
         <div className="flex items-center">
           <DropdownMenu>
