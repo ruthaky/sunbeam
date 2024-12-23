@@ -1,6 +1,6 @@
 import Image from "next/image";
 import heroImage from "@/public/asset/heroimage.png";
-import coffee from "@/public/asset/coffee.jpg";
+import coffee from "@/public/asset/coffee1.jpg";
 import sesame from "@/public/asset/sesame.jpg";
 import soybean from "@/public/asset/soybean.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
@@ -17,13 +17,16 @@ export default function ProductSection({
   return (
     <div className="overflow-x-hidden">
       {" "}
-      <div className="w-full flex relative text-white h-screen text-9xl py-100 bg-cover bg-[url('/asset/coffee.jpg')]">
+      <div
+        className="w-full flex relative text-white h-screen text-9xl py-100 bg-cover"
+        style={{ backgroundImage: `url(${coffee.src})` }}
+      >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
           <div className=" flex flex-col gap-2 text-[35px] width lg:text-[60px] font-semibold tracking-tight leading-none">
             {productpageTexts.heading}
             <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
           </div>
-          <div className="text-[20px] lg:w-[700px] text-[#eeeeeed6] leading-6">
+          <div className="text-[20px] lg:w-[900px] text-[#eeeeeed6] leading-6">
             {productpageTexts.subheading}
           </div>
         </div>

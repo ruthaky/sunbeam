@@ -20,6 +20,13 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: [
+      {
+        url: "/asset/favicon.ico",
+      },
+    ],
+  },
   title: "Surge",
   description: "Surge",
 };
