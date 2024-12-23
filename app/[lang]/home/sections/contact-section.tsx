@@ -1,8 +1,15 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { FiMapPin } from "react-icons/fi";
+import { BsTelephone } from "react-icons/bs";
+import { IoMailOpenOutline } from "react-icons/io5";
 
-export default function ContactSection() {
+export default function ContactSection({
+  contactTexts,
+}: {
+  contactTexts: any;
+}) {
   const initialFormData = {
     name: "",
     email: "",
@@ -53,16 +60,32 @@ export default function ContactSection() {
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full bg-secondary">
       <div className="flex flex-col gap-6 w-full lg:w-1/3 h-full bg-primary px-5 lg:pl-28 lg:pr-12 py-10 lg:py-20">
-        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-normal tracking-tight leading-none ">
-          Contact Details
+        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px]  font-normal tracking-tight leading-none ">
+          {contactTexts.contactdetail}
         </div>
-        <div className="text-[25px] text-white tracking-tight leading-none">
+        {/* <div className="text-[25px]  tracking-tight leading-none">
           Whether it's working with rice farmers in
+        </div> */}
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-row gap-4 text-[20px] items-center">
+            <div>
+              <FiMapPin size={35} />
+            </div>
+            <p>{contactTexts.location}</p>
+          </div>
+          <div className="flex flex-row gap-4 text-[20px] items-center">
+            <BsTelephone size={35} />
+            <p>+1 (234) 56789, +1 987 654 3210</p>
+          </div>
+          <div className="flex flex-row gap-4 text-[20px] items-center">
+            <IoMailOpenOutline size={35} />
+            <p>support@surge.com</p>
+          </div>
         </div>
       </div>
       <div className="flex flex-col gap-6 w-full lg:w-2/3 h-full px-5 lg:px-12 lg:pr-28 py-10 lg:py-20">
         <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-normal tracking-tight leading-none ">
-          Get in touch
+          {contactTexts.getintouch}
         </div>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -71,7 +94,7 @@ export default function ContactSection() {
               htmlFor="name"
               className="text-[20px] font-light block text-white mb-2"
             >
-              Name
+              {contactTexts.name}
             </label>
             <input
               type="text"
@@ -87,7 +110,7 @@ export default function ContactSection() {
               htmlFor="email"
               className="text-[20px] font-light block text-white mb-2"
             >
-              Email
+              {contactTexts.email}
             </label>
             <input
               type="email"
@@ -103,7 +126,7 @@ export default function ContactSection() {
               htmlFor="phonenumber"
               className="text-[20px] font-light block text-white mb-2"
             >
-              Phone Number
+              {contactTexts.phonenumber}
             </label>
             <input
               type="text"
@@ -119,7 +142,7 @@ export default function ContactSection() {
               htmlFor="message"
               className="text-[20px] font-light block text-white mb-2"
             >
-              Message
+              {contactTexts.message}
             </label>
             <textarea
               id="message"
@@ -130,7 +153,7 @@ export default function ContactSection() {
             />
           </div>
           <div className="w-full flex h-auto justify-end">
-            <Button type="submit">Send</Button>
+            <Button type="submit">{contactTexts.button}</Button>
           </div>
         </form>
         {status && <p className="text-white mt-4">{status}</p>}

@@ -69,7 +69,7 @@ export const MobileNavbar = () => {
           {" "}
           <Flex
             onClick={toggle}
-            className="fixed ml-0 -z-10 top-0 right-0 flex flex-col items-center justify-center bg-black bg-opacity-85 backdrop-blur-sm gap-4 3xl:gap-6 pt-4 border h-screen w-full lg:w-[300px] 3xl:w-[400px]"
+            className="fixed ml-0 -z-10 top-0 right-0 flex flex-col items-center justify-center bg-white gap-4 3xl:gap-6 pt-4 border h-screen w-full lg:w-[300px] 3xl:w-[400px]"
           >
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
