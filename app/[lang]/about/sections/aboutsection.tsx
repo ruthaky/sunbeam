@@ -56,7 +56,7 @@ export default function AboutSection({
           <Image src={heroImage} alt="logo" className="" />
         </div>
         <div className="flex flex-col gap-6 lg:w-1/2">
-          <div className=" flex flex-col gap-2 text-[60px] font-semibold tracking-tight leading-none">
+          <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
             {aboutpageTexts.missionheading}
             <div className="h-[5px] w-[300px] bg-primary"></div>
           </div>
@@ -90,11 +90,11 @@ export default function AboutSection({
       </div>
 
       <div className="w-full h-auto ">
-        <div className=" flex flex-col gap-2 text-[60px] font-semibold tracking-tight leading-none px-10 pt-20">
+        <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none px-4 lg:px-10 pt-20">
           {aboutpageTexts.gallerytitle}
           <div className="h-[5px] w-[160px] bg-primary"></div>
         </div>
-        <div className="h-screen w-full flex px-10 pb-16 pt-10 gap-10">
+        <div className="h-screen w-full flex px-4 lg:px-10 pb-4 lg:pb-16 pt-10 gap-4 lg:gap-10">
           <div className="w-1/2 h-full bg-pink-500">
             {" "}
             <Image
@@ -103,7 +103,7 @@ export default function AboutSection({
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-1/2 h-full  flex flex-col gap-10">
+          <div className="w-1/2 h-full  flex flex-col gap-4 lg:gap-10">
             <div className="w-full h-1/2 bg-red-600">
               {" "}
               <Image
@@ -121,8 +121,8 @@ export default function AboutSection({
             </div>
           </div>
         </div>
-        <div className="h-screen w-full flex  pt-5 pb-10 px-10 gap-10">
-          <div className="w-1/2 h-full flex flex-col gap-10">
+        <div className="h-screen w-full flex  lg:pt-5 pb-4 lg:pb-10 px-4 lg:px-10 gap-4 lg:gap-10">
+          <div className="w-1/2 h-full flex flex-col gap-4 lg:gap-10">
             <div className="w-full h-1/2 bg-red-600">
               {" "}
               <Image
@@ -149,7 +149,7 @@ export default function AboutSection({
             />
           </div>
         </div>
-        <div className="flex-col lg:flex-row  lg:h-[400px] w-full gap-4 lg:gap-10 px-10 flex ">
+        <div className="flex-col lg:flex-row  lg:h-[400px] w-full gap-4 lg:gap-10 px-4 lg:px-10 flex ">
           <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
             {" "}
             <Image
