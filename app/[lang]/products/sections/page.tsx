@@ -18,17 +18,18 @@ export default function ProductSection({
     <div className="overflow-x-hidden">
       {" "}
       <div className="w-full flex relative text-white h-screen text-9xl py-100 bg-cover bg-[url('/asset/coffee.jpg')]">
-        <div className="absolute flex flex-col px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div className="text-[60px] font-bold text-primary text-left w-[700px]">
+        <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
+          <div className=" flex flex-col gap-2 text-[35px] width lg:text-[60px] font-semibold tracking-tight leading-none">
             {productpageTexts.heading}
+            <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
           </div>
-          <div className="text-[20px] w-[700px] text-[#eeeeeed6]">
+          <div className="text-[20px] lg:w-[700px] text-[#eeeeeed6] leading-6">
             {productpageTexts.subheading}
           </div>
         </div>
       </div>
-      <div className="w-full h-auto p-12 px-28 flex flex-col gap-10">
-        <div className="w-full h-[500px] flex flex-row gap-10">
+      <div className="w-full h-auto p-12 px-4 lg:px-28 flex flex-col gap-10">
+        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
           <div className="h-full w-2/6 ">
             <Image
               src={coffee}
@@ -36,12 +37,12 @@ export default function ProductSection({
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-8">
-            <div className="flex flex-col gap-2 text-[50px] font-semibold tracking-tight leading-none ">
+          <div className="flex flex-col relative gap-2 lg:gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
+            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
               {productpageTexts.product1title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[20px] text-[#696969]">
+            <div className="text-[12px] lg:text-[20px] text-[#696969]">
               {productpageTexts.product1desc}
             </div>
             <div className="absolute bottom-8">
@@ -49,13 +50,13 @@ export default function ProductSection({
             </div>
           </div>
         </div>
-        <div className="w-full h-[500px] flex flex-row gap-10">
-          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-8">
-            <div className="flex flex-col gap-2 text-[50px] font-semibold tracking-tight leading-none ">
+        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
+          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
+            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
               {productpageTexts.product2title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[20px] text-[#696969]">
+            <div className="text-[12px] lg:text-[20px] text-[#696969]">
               {productpageTexts.product2desc}
             </div>
             <div className="absolute bottom-8">
@@ -71,7 +72,7 @@ export default function ProductSection({
             />
           </div>
         </div>
-        <div className="w-full h-[500px] flex flex-row gap-10">
+        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
           <div className="h-full w-2/6 ">
             {" "}
             <Image
@@ -80,12 +81,12 @@ export default function ProductSection({
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-8">
-            <div className="flex flex-col gap-2 text-[50px] font-semibold tracking-tight leading-none ">
+          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
+            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
               {productpageTexts.product3title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[20px] text-[#696969]">
+            <div className="text-[12px] lg:text-[20px] text-[#696969]">
               {productpageTexts.product3desc}
             </div>
             <div className="absolute bottom-8">
@@ -93,13 +94,13 @@ export default function ProductSection({
             </div>
           </div>
         </div>
-        <div className="w-full h-[500px] flex flex-row gap-10">
-          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-8">
-            <div className="flex flex-col gap-2 text-[50px] font-semibold tracking-tight leading-none ">
+        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
+          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
+            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
               {productpageTexts.product4title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[20px] text-[#696969]">
+            <div className="text-[12px] lg:text-[20px] text-[#696969]">
               {productpageTexts.product4desc}
             </div>
             <div className="absolute bottom-8">
@@ -115,7 +116,7 @@ export default function ProductSection({
             />
           </div>
         </div>
-        <div className="w-full h-[500px] flex flex-row gap-10">
+        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
           <div className="h-full w-2/6 ">
             {" "}
             <Image
@@ -124,12 +125,12 @@ export default function ProductSection({
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-8">
-            <div className="flex flex-col gap-2 text-[50px] font-semibold tracking-tight leading-none ">
+          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
+            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
               {productpageTexts.product5title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
-            <div className="text-[20px] text-[#696969]">
+            <div className="text-[12px] lg:text-[20px] text-[#696969]">
               {productpageTexts.product5desc}
             </div>
             <div className="absolute bottom-8">
