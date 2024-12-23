@@ -13,12 +13,13 @@ export default function Home({
   aboutTexts,
   productTexts,
   serviceTexts,
-  contactTexts
+  contactTexts,
 }: {
   heroTexts: any;
   aboutTexts: any;
   productTexts: any;
-  contactTexts:any;
+  contactTexts: any;
+  serviceTexts: any;
 }) {
   return (
     <div className="relatve overflow-x-hidden">
