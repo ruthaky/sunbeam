@@ -66,27 +66,27 @@ export default function ContactSection({
         {/* <div className="text-[25px]  tracking-tight leading-none">
           Whether it's working with rice farmers in
         </div> */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 lg:gap-8">
           <div className="flex flex-row gap-4 text-[20px] items-center">
-            <div className="w-[25px] lg:w-[35px] flex items-start justify-start">
+            <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
               <FiMapPin className="flex w-full h-full" />
             </div>
             <p className="text-nowrap">{contactTexts.location}</p>
           </div>
           <div className="flex flex-row gap-4 text-[20px] items-center">
-            <div className="w-[25px] lg:w-[35px] flex items-start justify-start">
+            <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
               <BsTelephone className="flex w-full h-full" />
             </div>
 
-            <p>+1 (234) 56789, +1 987 654 3210</p>
+            <p>+971 55 181 9398</p>
           </div>
           <div className="flex flex-row gap-4 text-[20px] items-center">
-            <div className="w-[25px] lg:w-[35px] flex items-start justify-start">
+            <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
               {" "}
               <IoMailOpenOutline className="flex w-full h-full" />
             </div>
 
-            <p>support@surge.com</p>
+            <p>info@surgecrops.com</p>
           </div>
         </div>
       </div>

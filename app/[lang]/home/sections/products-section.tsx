@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import sesame from "@/public/asset/sesame.jpg";
 import soybean from "@/public/asset/soybean.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
 import { Merriweather } from "next/font/google";
+import { useRouter, usePathname } from "next/navigation";
 
 const merriweather = Merriweather({
   weight: ["400", "700"],
@@ -44,7 +46,12 @@ export default function ProductsSection({
       link: "#kidneybean",
     },
   ];
-
+  const router = useRouter();
+  const pathname = usePathname();
+  const handleLinkClick = (path: string) => {
+    close(); // Close the menu
+    router.push(path); // Navigate to the specified path
+  };
   return (
     <div className="flex flex-col gap-6 lg:gap-10 w-full p-5 py-[15%] lg:py-0  lg:px-28 h-auto lg:h-screen bg-secondary justify-center ">
       <div className="flex flex-col lg:gap-2 text-[35px] lg:text-[60px] text-white font-semibold tracking-tight leading-none ">
@@ -62,7 +69,11 @@ export default function ProductsSection({
               style={{ backgroundImage: `url(${product.image.src})` }}
             ></div>
 
-            <Link className="flex lg:hidden" href={`/products${product.link}`}>
+            <Link
+              className="flex lg:hidden"
+              href={`/${pathname.split("/")[1]}products${product.link}`}
+              onClick={() => handleLinkClick("/products${product.link}")}
+            >
               <div className="relative h-auto lg:h-full w-full inset-0 bg-white/90 flex flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                 <div className="text-[25px] font-bold">{product.title}</div>
                 <div className="text-[17px] mt-2 text-left">
@@ -82,7 +93,10 @@ export default function ProductsSection({
       </div>
 
       <div className="flex justify-end">
-        <Link href="/products">
+        <Link
+          href={`/${pathname.split("/")[1]}/products`}
+          onClick={() => handleLinkClick("/products")}
+        >
           <Button variant="contact">{productTexts.button}</Button>
         </Link>
       </div>

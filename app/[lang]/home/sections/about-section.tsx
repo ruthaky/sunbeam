@@ -1,8 +1,10 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import heroImage from "@/public/asset/Group 23.png";
 import { Merriweather } from "next/font/google";
+import { useRouter, usePathname } from "next/navigation";
 
 const merriweather = Merriweather({
   weight: ["400", "700"],
@@ -11,6 +13,12 @@ const merriweather = Merriweather({
 });
 
 export default function AboutSection({ aboutTexts }: { aboutTexts: any }) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const handleLinkClick = (path: string) => {
+    close(); // Close the menu
+    router.push(path); // Navigate to the specified path
+  };
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full px-4 lg:px-28 items-center justify-center  pt-[20%] lg:py-0 pb-[15%]">
       <div className="hidden lg:flex items-center justify-start w-1/2 h-full ">
@@ -27,8 +35,10 @@ export default function AboutSection({ aboutTexts }: { aboutTexts: any }) {
           <br />
           {aboutTexts.subheading2}
         </p>
-        <Link href="/about">
-          {" "}
+        <Link
+          href={`/${pathname.split("/")[1]}/about`}
+          onClick={() => handleLinkClick("/about")}
+        >
           <Button>{aboutTexts.button}</Button>
         </Link>
       </div>
