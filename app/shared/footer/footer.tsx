@@ -1,14 +1,23 @@
+"use client";
 import React from "react";
 import logo from "@/public/asset/SURGE CROPS.png";
 import Image from "next/image";
+import Link from "next/link";
 // import {
 //   FaFacebook,
 //   FaInstagram,
 //   FaTwitter,
 //   FaLinkedin,
 // } from "react-icons/fa6";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Footer() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const handleLinkClick = (path: string) => {
+    close(); // Close the menu
+    router.push(path); // Navigate to the specified path
+  };
   return (
     <div>
       <footer className="bg-white">
@@ -30,30 +39,46 @@ export default function Footer() {
             </div>
             <div className="grid pt-10 grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-4 text-sm font-semibold text-black uppercase">
-                  Company
+                <h2 className="mb-2 text-[18px] font-semibold text-black">
+                  Links
                 </h2>
-                <ul className="text-[#5a5a5a] dark:text-gray-400 font-medium">
+                <ul className="text-[#5a5a5a] dark:text-primary font-medium">
                   <li className="mb-4">
-                    <a href="/" className="hover:underline">
+                    <Link
+                      className="hover:underline"
+                      href={`/${pathname.split("/")[1]}/`}
+                      onClick={() => handleLinkClick("/")}
+                    >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <a href="/about" className="hover:underline">
+                    <Link
+                      className="hover:underline"
+                      href={`/${pathname.split("/")[1]}/about`}
+                      onClick={() => handleLinkClick("/about")}
+                    >
                       About
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="mb-4">
-                    <a href="/products" className="hover:underline">
+                    <Link
+                      className="hover:underline"
+                      href={`/${pathname.split("/")[1]}/products`}
+                      onClick={() => handleLinkClick("/products")}
+                    >
                       Products
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <a href="/contact" className="hover:underline">
+                    <Link
+                      className="hover:underline"
+                      href={`/${pathname.split("/")[1]}/contact`}
+                      onClick={() => handleLinkClick("/contact")}
+                    >
                       Contact
-                    </a>
+                    </Link>
                   </li>
                   {/* <li>
                     <a href="#" className="hover:underline">
@@ -63,10 +88,28 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-4 text-sm font-semibold text-black uppercase">
+                <h2 className="mb-2 text-[18px] font-semibold text-black">
                   Socials
                 </h2>
-                <ul className="text-[#5a5a5a] dark:text-gray-400 font-medium">
+                <ul className="text-[#5a5a5a] dark:text-primary font-medium">
+                  <li className="mb-4">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/company/surge-crops-trading/"
+                      className="hover:underline "
+                    >
+                      Linkedin
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a
+                      target="_blank"
+                      href="https://web.facebook.com/profile.php?id=61570314600876&rdid=xpJfxyJoyFhAhh5V&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1AXb12jsEb%2F%3F_rdc%3D1%26_rdr"
+                      className="hover:underline "
+                    >
+                      Facebook
+                    </a>
+                  </li>
                   <li className="mb-4">
                     <a
                       target="_blank"
@@ -85,33 +128,17 @@ export default function Footer() {
                       Twitter
                     </a>
                   </li>
-                  <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://web.facebook.com/profile.php?id=61570314600876&rdid=xpJfxyJoyFhAhh5V&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1AXb12jsEb%2F%3F_rdc%3D1%26_rdr"
-                      className="hover:underline "
-                    >
-                      Facebook
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://www.linkedin.com/company/surge-crops-trading/"
-                      className="hover:underline "
-                    >
-                      Linkedin
-                    </a>
-                  </li>
                 </ul>
               </div>
               <div>
-                <h2 className="mb-4 text-sm font-semibold text-black uppercase ">
+                <h2 className="mb-2 text-[18px] font-semibold text-black">
                   Contact
                 </h2>
-                <ul className="text-[#5a5a5a] dark:text-gray-400 text-nowrap font-medium">
-                  <li className="mb-4 text-[14px]">info@surgecrops.com</li>
-                  <li>+971 55 181 9398 </li>
+                <ul className="text-[#5a5a5a] dark:text-primary text-nowrap font-medium">
+                  <li className="mb-4 text-[14px] text-nowrap">
+                    info@surgecrops.com
+                  </li>
+                  <li className="text-nowrap">+971 55 181 9398 </li>
                 </ul>
               </div>
             </div>
@@ -157,9 +184,8 @@ export default function Footer() {
               <a
                 target="_blank"
                 href="#"
-                className="text-[#5a5a5a] hover:text-yellow dark:hover:text-white ms-5"
+                className="text-primary hover:text-yellow dark:hover:text-white ms-5"
               >
-                {/* <FaLinkedin /> */}
                 <span className="sr-only">Linkedin account</span>
               </a>
             </div>

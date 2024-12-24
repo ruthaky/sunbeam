@@ -1,8 +1,10 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import heroImage from "@/public/asset/heroimage.png";
 import { Merriweather } from "next/font/google";
+import { useRouter, usePathname } from "next/navigation";
 
 const merriweather = Merriweather({
   weight: ["400", "700"],
@@ -10,6 +12,12 @@ const merriweather = Merriweather({
   variable: "--font-merriweather",
 });
 export default function HeroSection({ heroTexts }: { heroTexts: any }) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const handleLinkClick = (path: string) => {
+    close(); // Close the menu
+    router.push(path); // Navigate to the specified path
+  };
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[150px] lg:py-0 px-4 lg:px-28 items-center justify-center">
       <div className="flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2">
@@ -19,8 +27,10 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
           {heroTexts.hero}
         </div>
         <p className="text-[20px] tracking-tight ">{heroTexts.subheading}</p>
-        <Link href="/contact">
-          {" "}
+        <Link
+          href={`/${pathname.split("/")[1]}/contact`}
+          onClick={() => handleLinkClick("/contact")}
+        >
           <Button>{heroTexts.button}</Button>
         </Link>
       </div>

@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/asset/surgelogo.png";
@@ -34,7 +33,11 @@ export const MobileNavbar = () => {
 
   return (
     <div className="flex justify-between items-center md:hidden h-[50px] w-full bg-white fixed left-0 top-0 z-10 px-4">
-      <Link href="/" className="h-full w-[80px]">
+      <Link
+        className="h-full w-[80px]"
+        href={`/${pathname.split("/")[1]}/`}
+        onClick={() => handleLinkClick("/")}
+      >
         <Image src={logo} alt="logo" />
       </Link>
 
@@ -138,10 +141,17 @@ export const Navbar = () => {
     const newPath = segments.join("/");
     router.push(newPath);
   };
-
+  const handleLinkClick = (path: string) => {
+    close(); // Close the menu
+    router.push(path); // Navigate to the specified path
+  };
   return (
     <div className="hidden md:flex flex-row bg-white fixed left-0 top-0 w-full border justify-between py-1 px-28 z-10">
-      <Link href="/" className="h-full w-[110px]">
+      <Link
+        className="h-full w-[110px]"
+        href={`/${pathname.split("/")[1]}/`}
+        onClick={() => handleLinkClick("/")}
+      >
         <Image src={logo} alt="logo" />
       </Link>
       <div className="flex flex-row gap-14 items-center">
