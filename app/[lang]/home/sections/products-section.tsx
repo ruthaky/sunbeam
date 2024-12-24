@@ -23,21 +23,25 @@ export default function ProductsSection({
       image: coffee,
       title: productTexts.coffeetitle,
       description: productTexts.coffeedesc,
+      link: "#coffee",
     },
     {
       image: sesame,
       title: productTexts.sesametitle,
       description: productTexts.sesamedesc,
+      link: "#sesame",
     },
     {
       image: soybean,
       title: productTexts.soybeanstitle,
       description: productTexts.soybeansdesc,
+      link: "#soybean",
     },
     {
       image: kidneybeans,
       title: productTexts.kidneybeanstitle,
       description: productTexts.kidneybeansdesc,
+      link: "#kidneybean",
     },
   ];
 
@@ -47,19 +51,27 @@ export default function ProductsSection({
         {productTexts.heading}
         <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary "></div>
       </div>
-      <div className="flex flex-col lg:flex-row w-full h-auto justify-around gap-6 ">
+      <div className="flex flex-col lg:flex-row w-full h-auto justify-around gap-6">
         {products.map((product, index) => (
           <div
             key={index}
-            className="relative cursor-pointer w-full lg:w-1/4 h-[400px] lg:h-full group"
+            className="relative cursor-pointer w-full lg:w-1/4 group"
           >
-            <Image
-              src={product.image}
-              alt={product.title}
-              className="w-full  h-full lg:h-[380px] object-cover"
-            />
-            {/* Hover Overlay */}
-            <div className="absolute h-auto w-full inset-0 bg-white/90 flex flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+            <div
+              className="absolute inset-0 w-full h-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${product.image.src})` }}
+            ></div>
+
+            <Link className="flex lg:hidden" href={`/products${product.link}`}>
+              <div className="relative h-auto lg:h-full w-full inset-0 bg-white/90 flex flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <div className="text-[25px] font-bold">{product.title}</div>
+                <div className="text-[17px] mt-2 text-left">
+                  {product.description}
+                </div>
+              </div>
+            </Link>
+
+            <div className="hidden lg:flex relative h-auto lg:h-full w-full inset-0 bg-white/90 flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
               <div className="text-[25px] font-bold">{product.title}</div>
               <div className="text-[17px] mt-2 text-left">
                 {product.description}
@@ -68,6 +80,7 @@ export default function ProductsSection({
           </div>
         ))}
       </div>
+
       <div className="flex justify-end">
         <Link href="/products">
           <Button variant="contact">{productTexts.button}</Button>
