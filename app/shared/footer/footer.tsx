@@ -109,7 +109,7 @@ export default function Footer() {
                 <h2 className="mb-4 text-sm font-semibold text-black uppercase ">
                   Contact
                 </h2>
-                <ul className="text-[#5a5a5a] dark:text-gray-400 font-medium">
+                <ul className="text-[#5a5a5a] dark:text-gray-400 text-nowrap font-medium">
                   <li className="mb-4 text-[14px]">info@surgecrops.com</li>
                   <li>+971 55 181 9398 </li>
                 </ul>

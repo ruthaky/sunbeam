@@ -17,7 +17,7 @@ export default function ServicesSection({
   serviceTexts: any;
 }) {
   return (
-    <div className="flex flex-col lg:flex-row gap-5 lg:gap-20 h-auto lg:h-auto w-full bg-white p-5 py-[8%] lg:px-28">
+    <div className="flex flex-col lg:flex-row gap-5 lg:gap-20 h-auto lg:h-auto w-full bg-white p-5 py-[8%] lg:py-0 lg:px-28">
       <div className="flex flex-col gap-6 lg:w-2/5 h-full justify-start py-10 lg:py-20">
         <div className="flex flex-col gap-2 text-[35px] lg:text-[60px] text-black font-semibold tracking-tight leading-none ">
           {serviceTexts.heading}
@@ -36,7 +36,7 @@ export default function ServicesSection({
             <p>{serviceTexts.qualitydesc}</p>
           </div>
           <div className="w-full h-full p-4 lg:p-10 flex flex-col gap-2 bg-muted justify-center">
-            <IconAward width={50} height={50} />
+            <FaRegHandshake className="h-[50px] w-[50px]" />
             <p className="font-bold text-[20px]">{serviceTexts.trusttitle}</p>
             <p>{serviceTexts.trustdesc}</p>
           </div>
@@ -47,10 +47,10 @@ export default function ServicesSection({
             <p className="font-bold text-[20px]">{serviceTexts.affordtitle}</p>
             <p>{serviceTexts.afforddesc}</p>
           </div>
-          <div className="w-full h-full p-4 lg:p-10 flex flex-col gap-2 bg-muted justify-center">
-            <FaRegHandshake className="h-[50px] w-[50px]" />
-            <p className="font-bold text-[20px]">{serviceTexts.diversetitle}</p>
-            <p>{serviceTexts.diversedesc}</p>
+          <div className="w-full h-full mb-4 lg:mb-0 p-4 lg:p-10 flex flex-col gap-2 bg-muted justify-center">
+            <FaHandHoldingUsd className="h-[50px] w-[50px]" />
+            <p className="font-bold text-[20px]">{serviceTexts.affordtitle}</p>
+            <p>{serviceTexts.afforddesc}</p>
           </div>
         </div>
       </div>

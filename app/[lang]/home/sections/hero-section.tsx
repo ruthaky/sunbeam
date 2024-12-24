@@ -14,7 +14,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[150px] lg:py-0 px-4 lg:px-28 items-center justify-center">
       <div className="flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2">
         <div
-          className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold tracking-tight  leading-[35px]`}
+          className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold tracking-tight  leading-[35px] lg:leading-[55px]`}
         >
           {heroTexts.hero}
         </div>

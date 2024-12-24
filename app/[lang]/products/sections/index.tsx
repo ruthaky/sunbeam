@@ -8,6 +8,7 @@ import castor from "@/public/asset/castor.jpg";
 import Contact from "../../contact/sections";
 import ContactSection from "../../home/sections/contact-section";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ProductSection({
   productpageTexts,
@@ -32,7 +33,10 @@ export default function ProductSection({
         </div>
       </div>
       <div className="w-full h-auto p-12 px-4 lg:px-28 flex flex-col gap-10">
-        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
+        <section
+          id="coffee"
+          className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
+        >
           <div className="h-full w-2/6 ">
             <Image
               src={coffee}
@@ -52,8 +56,11 @@ export default function ProductSection({
               <Button>{productpageTexts.contactbutton}</Button>
             </div>
           </div>
-        </div>
-        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
+        </section>
+        <section
+          id="sesame"
+          className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
+        >
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
             <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
               {productpageTexts.product2title}
@@ -74,8 +81,11 @@ export default function ProductSection({
               className="w-full h-full object-cover"
             />
           </div>
-        </div>
-        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
+        </section>
+        <section
+          id="soybean"
+          className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
+        >
           <div className="h-full w-2/6 ">
             {" "}
             <Image
@@ -96,8 +106,11 @@ export default function ProductSection({
               <Button>{productpageTexts.contactbutton}</Button>
             </div>
           </div>
-        </div>
-        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
+        </section>
+        <section
+          id="kidneybean"
+          className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
+        >
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
             <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
               {productpageTexts.product4title}
@@ -118,8 +131,11 @@ export default function ProductSection({
               className="w-full h-full object-cover"
             />
           </div>
-        </div>
-        <div className="w-full h-[500px] flex flex-row gap-0 lg:gap-10">
+        </section>
+        <section
+          id="castor"
+          className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
+        >
           <div className="h-full w-2/6 ">
             {" "}
             <Image
@@ -139,8 +155,9 @@ export default function ProductSection({
             <div className="absolute bottom-8">
               <Button>{productpageTexts.contactbutton}</Button>
             </div>
+            <Link href="#coffee">Hello</Link>
           </div>
-        </div>
+        </section>
       </div>
       {/* <ContactSection contactTexts={undefined} /> */}
     </div>

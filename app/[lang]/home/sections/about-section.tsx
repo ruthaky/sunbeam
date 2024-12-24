@@ -12,7 +12,7 @@ const merriweather = Merriweather({
 
 export default function AboutSection({ aboutTexts }: { aboutTexts: any }) {
   return (
-    <div className="flex flex-col lg:flex-row h-auto w-full px-4 lg:px-28 items-center justify-center lg:pb-0 pt-[20%] pb-[15%]">
+    <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full px-4 lg:px-28 items-center justify-center  pt-[20%] lg:py-0 pb-[15%]">
       <div className="hidden lg:flex items-center justify-start w-1/2 h-full ">
         <Image src={heroImage} alt="logo" className="" />
       </div>
