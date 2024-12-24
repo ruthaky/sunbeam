@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import ServiceCard from "../components/service-card";
 import { IconAward } from "@tabler/icons-react";
+import Image from "next/image";
 import { FaRegHandshake } from "react-icons/fa";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { Merriweather } from "next/font/google";
+import diversity from "@/public/asset/diversity.svg";
 
 const merriweather = Merriweather({
   weight: ["400", "700"],
@@ -48,9 +50,15 @@ export default function ServicesSection({
             <p>{serviceTexts.afforddesc}</p>
           </div>
           <div className="w-full h-full mb-4 lg:mb-0 p-4 lg:p-10 flex flex-col gap-2 bg-muted justify-center">
-            <FaHandHoldingUsd className="h-[50px] w-[50px]" />
-            <p className="font-bold text-[20px]">{serviceTexts.affordtitle}</p>
-            <p>{serviceTexts.afforddesc}</p>
+            <Image
+              src={diversity.src}
+              alt="diversity"
+              width={50}
+              height={50}
+              className="h-[50px] w-[50px]"
+            />
+            <p className="font-bold text-[20px]">{serviceTexts.diversetitle}</p>
+            <p>{serviceTexts.diversedesc}</p>
           </div>
         </div>
       </div>

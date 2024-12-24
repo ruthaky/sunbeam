@@ -59,8 +59,8 @@ export default function ContactSection({
 
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-secondary">
-      <div className="flex flex-col gap-6 w-full lg:w-1/3 h-full bg-primary px-5 lg:pl-28 lg:pr-12 py-10 lg:py-28">
-        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px]  font-normal tracking-tight leading-none ">
+      <div className="flex flex-col gap-6 w-full lg:w-[600px] h-full bg-primary px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28">
+        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] font-semibold lg:font-normal tracking-tight leading-none ">
           {contactTexts.contactdetail}
         </div>
         {/* <div className="text-[25px]  tracking-tight leading-none">
@@ -68,23 +68,30 @@ export default function ContactSection({
         </div> */}
         <div className="flex flex-col gap-5">
           <div className="flex flex-row gap-4 text-[20px] items-center">
-            <div>
-              <FiMapPin size={35} />
+            <div className="w-[25px] lg:w-[35px] flex items-start justify-start">
+              <FiMapPin className="flex w-full h-full" />
             </div>
-            <p>{contactTexts.location}</p>
+            <p className="text-nowrap">{contactTexts.location}</p>
           </div>
           <div className="flex flex-row gap-4 text-[20px] items-center">
-            <BsTelephone size={35} />
+            <div className="w-[25px] lg:w-[35px] flex items-start justify-start">
+              <BsTelephone className="flex w-full h-full" />
+            </div>
+
             <p>+1 (234) 56789, +1 987 654 3210</p>
           </div>
           <div className="flex flex-row gap-4 text-[20px] items-center">
-            <IoMailOpenOutline size={35} />
+            <div className="w-[25px] lg:w-[35px] flex items-start justify-start">
+              {" "}
+              <IoMailOpenOutline className="flex w-full h-full" />
+            </div>
+
             <p>support@surge.com</p>
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-6 w-full lg:w-2/3 h-full px-5 lg:px-12 lg:pr-28 py-10 lg:py-28">
-        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-normal tracking-tight leading-none ">
+        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-semibold lg:font-normal tracking-tight leading-none ">
           {contactTexts.getintouch}
         </div>
 
