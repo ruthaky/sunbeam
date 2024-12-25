@@ -63,8 +63,9 @@ export default function AboutSection({
           {aboutpageTexts.storyheading}
           <div
 
-            className="h-[10px] w-[220px]  bg-primary"
+            className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary"
           />
+          <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" />
         </div>
         <div className="text-[#545454]">
           {" "}
@@ -88,10 +89,11 @@ export default function AboutSection({
             className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
           >
             {aboutpageTexts.missionheading}
-            <motion.div
+            <div
 
-              className="h-[10px] bg-primary"
+              className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary"
             />
+            <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" />
           </div>
           <p className="text-[20px] tracking-tight">
             {aboutpageTexts.missionsubheading}
@@ -127,10 +129,11 @@ export default function AboutSection({
           className={` ${merriweather.variable} font-merriweather  flex flex-col gap-2 text-[35px] lg:text-[50px] font-semibold tracking-tight leading-none px-4 lg:px-10 pt-20`}
         >
           {aboutpageTexts.gallerytitle}
-          <motion.div
+          <div
 
-            className="h-[10px] bg-primary"
+            className="h-[10px] w-[80px] mt-2 lg:hidden bg-primary"
           />
+          <div className="h-[10px] w-[120px] mt-2 hidden lg:block bg-primary" />
         </div>
         <div className="h-screen w-full flex px-4 lg:px-10 pb-4 pt-10 gap-4 lg:gap-10">
           <div className="w-1/2 h-full ">
