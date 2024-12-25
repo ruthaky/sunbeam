@@ -21,7 +21,7 @@ export const MobileNavbar = () => {
 
   // Determine the current language from the URL
   const currentLanguage = pathname.split("/")[1] || "en"; // Default to "en" if no locale is found
-  const languageFlags = {
+  const languageFlags: Record<string, string> = {
     en: "🇺🇸",
     zh: "🇨🇳",
     fr: "🇫🇷",
@@ -54,7 +54,7 @@ export const MobileNavbar = () => {
         <div className="flex items-center gap-4">
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1">
-              <span>{languageFlags[currentLanguage]}</span>
+              <span>{languageFlags[currentLanguage] || "🌐"}</span>
               <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-white">
