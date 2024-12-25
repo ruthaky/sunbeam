@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from "@/public/asset/Group 23.png";
+import heroImage from "@/public/asset/Group 23.svg";
 import { Merriweather } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
 
