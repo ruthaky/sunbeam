@@ -77,7 +77,7 @@ export default function RootLayout({
       <meta property="og:image:alt" content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment." />
       <meta property="og:image:url" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
       <body
-        className={`${openSans.variable} font-openSans antialiased  min-h-screen flex flex-col overflow-x-hidden`}
+        className={`${openSans.variable} font-openSans antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
       >
         {" "}
         <MantineProvider>
