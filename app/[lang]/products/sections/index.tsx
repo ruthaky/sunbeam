@@ -2,7 +2,7 @@ import Image from "next/image";
 import heroImage from "@/public/asset/heroimage.png";
 import coffee from "@/public/asset/coffee1.jpg";
 import sesame from "@/public/asset/sesame.png";
-import soybean from "@/public/asset/soybean.jpg";
+import soybean from "@/public/asset/soybean2.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
 import castor from "@/public/asset/castor.jpg";
 import Contact from "../../contact/sections";

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import coffee from "@/public/asset/coffee.jpg";
 import sesame from "@/public/asset/sesame.png";
-import soybean from "@/public/asset/soybean.jpg";
+import soybean from "@/public/asset/soybean2.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
 import { Merriweather } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
