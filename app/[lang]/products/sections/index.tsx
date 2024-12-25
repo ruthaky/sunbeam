@@ -64,7 +64,10 @@ export default function ProductSection({
               {productpageTexts.product1desc}
             </div>
             <div className="absolute bottom-8">
-              <Button>{productpageTexts.contactbutton}</Button>
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20coffee%you%20offer">
+                {" "}
+                <Button>{productpageTexts.contactbutton}</Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -83,7 +86,10 @@ export default function ProductSection({
               {productpageTexts.product2desc}
             </div>
             <div className="absolute bottom-8">
-              <Button>{productpageTexts.contactbutton}</Button>
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20sesame%20seeds%you%20offer">
+                {" "}
+                <Button>{productpageTexts.contactbutton}</Button>
+              </Link>
             </div>
           </div>
           <div className="h-full w-2/6 ">
@@ -118,7 +124,10 @@ export default function ProductSection({
               {productpageTexts.product3desc}
             </div>
             <div className="absolute bottom-8">
-              <Button>{productpageTexts.contactbutton}</Button>
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20soy%20beans%you%20offer">
+                {" "}
+                <Button>{productpageTexts.contactbutton}</Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -137,7 +146,10 @@ export default function ProductSection({
               {productpageTexts.product4desc}
             </div>
             <div className="absolute bottom-8">
-              <Button>{productpageTexts.contactbutton}</Button>
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20kidney%20beans%20you%20offer">
+                {" "}
+                <Button>{productpageTexts.contactbutton}</Button>
+              </Link>
             </div>
           </div>
           <div className="h-full w-2/6 ">
@@ -172,9 +184,11 @@ export default function ProductSection({
               {productpageTexts.product5desc}
             </div>
             <div className="absolute bottom-8">
-              <Button>{productpageTexts.contactbutton}</Button>
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20castor%20seed%20you%20offer">
+                {" "}
+                <Button>{productpageTexts.contactbutton}</Button>
+              </Link>
             </div>
-            <Link href="#coffee">Hello</Link>
           </div>
         </section>
       </div>

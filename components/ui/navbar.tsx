@@ -104,6 +104,7 @@ export const MobileNavbar = () => {
           <Link
             href={`/${pathname.split("/")[1]}`}
             onClick={() => handleLinkClick("/")}
+            className="hover:underline hover:underline-offset-4 transition ease-in"
           >
             Home
           </Link>
@@ -156,10 +157,30 @@ export const Navbar = () => {
       </Link>
       <div className="flex flex-row gap-14 items-center">
         <div className="flex flex-row gap-10 font-semibold">
-          <Link href={`/${pathname.split("/")[1]}`}>Home</Link>
-          <Link href={`/${pathname.split("/")[1]}/about`}>About</Link>
-          <Link href={`/${pathname.split("/")[1]}/products`}>Products</Link>
-          <Link href={`/${pathname.split("/")[1]}/contact`}>Contact</Link>
+          <Link
+            className="hover:underline hover:underline-offset-4 transition ease-in-out duration-300"
+            href={`/${pathname.split("/")[1]}`}
+          >
+            Home
+          </Link>
+          <Link
+            className="hover:underline hover:underline-offset-4 transition ease-in-out duration-300"
+            href={`/${pathname.split("/")[1]}/about`}
+          >
+            About
+          </Link>
+          <Link
+            className="hover:underline hover:underline-offset-4 transition ease-in-out duration-300"
+            href={`/${pathname.split("/")[1]}/products`}
+          >
+            Products
+          </Link>
+          <Link
+            className="hover:underline hover:underline-offset-4 transition ease-in-out duration-300"
+            href={`/${pathname.split("/")[1]}/contact`}
+          >
+            Contact
+          </Link>
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger className="flex items-center gap-2">
