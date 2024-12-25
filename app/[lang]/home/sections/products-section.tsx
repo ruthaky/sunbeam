@@ -79,11 +79,14 @@ export default function ProductsSection({
                 handleLinkClick(`/${language}/products${product.link}`)
               }
             >
-              <div className="relative h-auto lg:h-full w-full inset-0 bg-white/90 flex flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
-                <div className="text-[25px] font-bold">{product.title}</div>
-                <div className="text-[17px] mt-2 text-left">
-                  {product.description}
+              <div className="flex">
+                <div className="relative h-auto lg:h-full w-full inset-0 bg-primary  flex flex-col items-start py-10 px-4 opacity-95 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="text-[25px] font-bold">{product.title}</div>
+                  <div className="text-[17px] mt-2 text-left">
+                    {product.description}
+                  </div>
                 </div>
+                <div className="h-[400px] w-full bg-primary"></div>
               </div>
             </Link>
 
