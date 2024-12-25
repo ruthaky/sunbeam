@@ -26,7 +26,7 @@ export default function ProductSection({
     <div className="overflow-x-hidden">
       {" "}
       <div
-        className="w-full flex relative text-white h-screen text-9xl py-100 bg-cover"
+        className="w-full flex relative text-white h-[700px] lg:h-screen text-9xl py-100 bg-cover"
         style={{ backgroundImage: `url(${coffee.src})` }}
       >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
