@@ -64,18 +64,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta property="og:image" content="/asset/surge-thumbnail.png" />
+      <meta property="og:image" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment." />
-      <meta property="og:image:url" content="https://surgecrops.com" />
-      <meta property="og:image:secure_url" content="https://surgecrops.com" />
+      <meta property="og:image:url" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
+      <meta property="og:image:secure_url" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment." />
-      <meta property="og:image:url" content="https://surgecrops.com" />
+      <meta property="og:image:url" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
       <body
         className={`${openSans.variable} font-openSans antialiased  min-h-screen flex flex-col overflow-x-hidden`}
       >
