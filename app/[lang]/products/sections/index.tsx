@@ -9,6 +9,13 @@ import Contact from "../../contact/sections";
 import ContactSection from "../../home/sections/contact-section";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Merriweather } from "next/font/google";
+
+const merriweather = Merriweather({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
 
 export default function ProductSection({
   productpageTexts,
@@ -23,7 +30,9 @@ export default function ProductSection({
         style={{ backgroundImage: `url(${coffee.src})` }}
       >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div className=" flex flex-col gap-2 text-[35px] width lg:text-[60px] font-semibold tracking-tight leading-none">
+          <div
+            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[60px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
+          >
             {productpageTexts.heading}
             <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
           </div>
@@ -45,7 +54,9 @@ export default function ProductSection({
             />
           </div>
           <div className="flex flex-col relative gap-2 lg:gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
-            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
+            <div
+              className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none `}
+            >
               {productpageTexts.product1title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
@@ -62,7 +73,9 @@ export default function ProductSection({
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
         >
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
-            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
+            <div
+              className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none `}
+            >
               {productpageTexts.product2title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
@@ -95,7 +108,9 @@ export default function ProductSection({
             />
           </div>
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
-            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
+            <div
+              className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none `}
+            >
               {productpageTexts.product3title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
@@ -112,7 +127,9 @@ export default function ProductSection({
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
         >
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
-            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
+            <div
+              className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none `}
+            >
               {productpageTexts.product4title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>
@@ -145,7 +162,9 @@ export default function ProductSection({
             />
           </div>
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
-            <div className="flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none ">
+            <div
+              className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none `}
+            >
               {productpageTexts.product5title}
               {/* <div className="h-[4px] w-[220px] bg-primary "></div> */}
             </div>

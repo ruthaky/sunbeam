@@ -30,7 +30,9 @@ export default function ServicesSection({
   return (
     <div className="flex flex-col lg:flex-row gap-5 lg:gap-20 h-auto lg:h-auto w-full bg-white p-5 py-[8%] lg:py-0 lg:px-28">
       <div className="flex flex-col gap-6 lg:w-2/5 h-full justify-start py-10 lg:py-20">
-        <div className="flex flex-col gap-2 text-[35px] lg:text-[60px] text-black font-semibold tracking-tight leading-none ">
+        <div
+          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
+        >
           {serviceTexts.heading}
           <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary "></div>
         </div>

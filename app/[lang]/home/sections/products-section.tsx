@@ -55,7 +55,9 @@ export default function ProductsSection({
   const language = pathname.split("/")[1];
   return (
     <div className="flex flex-col gap-6 lg:gap-10 w-full p-5 py-[15%] lg:py-0  lg:px-28 h-auto lg:h-screen bg-secondary justify-center ">
-      <div className="flex flex-col lg:gap-2 text-[35px] lg:text-[60px] text-white font-semibold tracking-tight leading-none ">
+      <div
+        className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] text-white font-semibold tracking-wide leading-none `}
+      >
         {productTexts.heading}
         <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary "></div>
       </div>

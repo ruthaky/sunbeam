@@ -25,7 +25,9 @@ export default function AboutSection({ aboutTexts }: { aboutTexts: any }) {
         <Image src={heroImage} alt="logo" className="" />
       </div>
       <div className="flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2">
-        <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
+        <div
+          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
+        >
           {aboutTexts.heading}
           <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary"></div>
         </div>
