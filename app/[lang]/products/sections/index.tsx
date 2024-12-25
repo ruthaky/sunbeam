@@ -64,7 +64,7 @@ export default function ProductSection({
               {productpageTexts.product1desc}
             </div>
             <div className="absolute bottom-8">
-              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20coffee%you%20offer">
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20coffee%20you%20offer">
                 {" "}
                 <Button>{productpageTexts.contactbutton}</Button>
               </Link>
@@ -86,7 +86,7 @@ export default function ProductSection({
               {productpageTexts.product2desc}
             </div>
             <div className="absolute bottom-8">
-              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20sesame%20seeds%you%20offer">
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20sesame%20seeds%20you%20offer">
                 {" "}
                 <Button>{productpageTexts.contactbutton}</Button>
               </Link>
@@ -124,7 +124,7 @@ export default function ProductSection({
               {productpageTexts.product3desc}
             </div>
             <div className="absolute bottom-8">
-              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20soy%20beans%you%20offer">
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20soy%20beans%20you%20offer">
                 {" "}
                 <Button>{productpageTexts.contactbutton}</Button>
               </Link>

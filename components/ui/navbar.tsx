@@ -19,6 +19,15 @@ export const MobileNavbar = () => {
   const pathname = usePathname();
   const [opened, { toggle, close }] = useDisclosure(false);
 
+  // Determine the current language from the URL
+  const currentLanguage = pathname.split("/")[1] || "en"; // Default to "en" if no locale is found
+  const languageFlags: Record<string, string> = {
+    en: "🇺🇸",
+    zh: "🇨🇳",
+    fr: "🇫🇷",
+    ar: "🇦🇪",
+  };
+
   const handleLanguageChange = (locale: string) => {
     const segments = pathname.split("/");
     segments[1] = locale;
@@ -42,11 +51,10 @@ export const MobileNavbar = () => {
       </Link>
 
       <div className="flex flex-row gap-1">
-        <div className="flex items-center gap-4 ">
+        <div className="flex items-center gap-4">
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1">
-              <Globe className="h-4 w-4" />
-              <span className="font-semibold">Lang</span>
+              <span>{languageFlags[currentLanguage] || "🌐"}</span>
               <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-white">

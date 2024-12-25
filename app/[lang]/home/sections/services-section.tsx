@@ -38,7 +38,7 @@ export default function ServicesSection({
         </div>
         <p className="text-[20px] tracking-tight">{serviceTexts.subheading}</p>
         <Link
-          href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20products%you%20offer"
+          href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20products%20you%20offer"
           onClick={() => handleLinkClick("/contact")}
         >
           <Button>{serviceTexts.button}</Button>
