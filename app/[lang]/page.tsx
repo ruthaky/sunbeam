@@ -2,7 +2,12 @@ import Image from "next/image";
 import Home from "./home";
 import { getDictionary } from "./dictionaries";
 
-export default async function Page({ params: { lang } }: any) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ lang: string }>
+}) {
+  const lang = (await params).lang;
   const dictionary = await getDictionary(lang);
   return (
     <>

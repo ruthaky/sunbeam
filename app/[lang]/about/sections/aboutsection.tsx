@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import heroImage from "@/public/asset/Group 23.png";
 import coffee from "@/public/asset/coffeee.jpg";
@@ -13,6 +14,7 @@ import coffeestore from "@/public/asset/coffeestorage.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import { getDictionary } from "../../dictionaries";
 import { Merriweather } from "next/font/google";
+import { motion } from "framer-motion";
 const merriweather = Merriweather({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -30,23 +32,39 @@ export default function AboutSection({
         style={{ backgroundImage: `url(${coffee.src})` }}
       >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div
-            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[60px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] md:text-[50px] lg:text-[80px] text-white font-semibold lg:font-normal tracking-tight leading-tight `}
           >
             {aboutpageTexts.introheading}
-            <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
-          </div>
-          <div className="text-[20px] lg:w-[900px] text-[#eeeeeed6] leading-6">
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 1, delay: 1 }}
+              className="h-[10px] w-[300px] lg:w-[900px] bg-primary"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="text-[20px] lg:w-[900px] text-[#eeeeeed6] leading-8"
+          >
             {aboutpageTexts.introsubheading}
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="w-full h-auto lg:h-screen flex flex-col gap-10 px-5 lg:px-28 py-10 justify-center">
         <div
-          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
+          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-8 `}
         >
           {aboutpageTexts.storyheading}
-          <div className="h-[5px] w-[200px] bg-primary"></div>
+          <div
+
+            className="h-[10px] w-[220px]  bg-primary"
+          />
         </div>
         <div className="text-[#545454]">
           {" "}
@@ -70,7 +88,10 @@ export default function AboutSection({
             className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
           >
             {aboutpageTexts.missionheading}
-            <div className="h-[5px] w-[300px] bg-primary"></div>
+            <motion.div
+
+              className="h-[10px] bg-primary"
+            />
           </div>
           <p className="text-[20px] tracking-tight">
             {aboutpageTexts.missionsubheading}
@@ -106,7 +127,10 @@ export default function AboutSection({
           className={` ${merriweather.variable} font-merriweather  flex flex-col gap-2 text-[35px] lg:text-[50px] font-semibold tracking-tight leading-none px-4 lg:px-10 pt-20`}
         >
           {aboutpageTexts.gallerytitle}
-          <div className="h-[5px] w-[160px] bg-primary"></div>
+          <motion.div
+
+            className="h-[10px] bg-primary"
+          />
         </div>
         <div className="h-screen w-full flex px-4 lg:px-10 pb-4 pt-10 gap-4 lg:gap-10">
           <div className="w-1/2 h-full ">
