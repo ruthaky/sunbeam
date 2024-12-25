@@ -9,6 +9,7 @@ import { Merriweather } from "next/font/google";
 import diversity from "@/public/asset/diversity.svg";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 const merriweather = Merriweather({
   weight: ["400", "700"],
@@ -34,7 +35,20 @@ export default function ServicesSection({
           className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
         >
           {serviceTexts.heading}
-          <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary "></div>
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "240px" }}
+            viewport={{ once: true }}
+            transition={{ duration: 2, ease: "easeOut" }}
+            className="h-[8px] mt-2 ml-2 bg-primary lg:hidden"
+          />
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "350px" }}
+            viewport={{ once: true }}
+            transition={{ duration: 2, ease: "easeOut" }}
+            className="h-[8px] ml-2 bg-primary hidden lg:block"
+          />
         </div>
         <p className="text-[20px] tracking-tight">{serviceTexts.subheading}</p>
         <Link

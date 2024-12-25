@@ -22,29 +22,38 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   icons: {
-    icon: [
-      {
-        url: "/asset/favicon.ico",
-      },
-    ],
+    icon: '/asset/surgelogo.png',
   },
   title: "Surge",
   description: "Surge",
   openGraph: {
-    title: "Surge",
-    description: "The best place to find your surge of inspiration.",
+    title: "Surge Crops",
+    description: "Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.",
     url: "https://surgecrops.com",
     siteName: "Surge",
     images: [
       {
-        url: "/asset/surgelogo.png", // Replace this with your image name
-        width: 800,
-        height: 600,
-        alt: "Surge - Your surge of inspiration", // Optional alt text
+        url: '/asset/surge-thumbnail.png', // Replace this with your image name
+        width: 1200,
+        height: 630,
+        alt: "Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.", // Optional alt text
       },
     ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      {
+        url: '/asset/surge-thumbnail.png', // Replace this with your image name
+        width: 1200,
+        height: 630,
+        alt: "Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.", // Optional alt text
+      },
+    ],
+    creator: "@surgecrops",
+    site: "surgecrops.com",
   },
 };
 
@@ -55,6 +64,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta property="og:image" content="/asset/surge-thumbnail.png" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment." />
+      <meta property="og:image:url" content="https://surgecrops.com" />
+      <meta property="og:image:secure_url" content="https://surgecrops.com" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment." />
+      <meta property="og:image:url" content="https://surgecrops.com" />
       <body
         className={`${openSans.variable} font-openSans antialiased  min-h-screen flex flex-col overflow-x-hidden`}
       >
