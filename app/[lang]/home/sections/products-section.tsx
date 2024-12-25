@@ -86,7 +86,7 @@ export default function ProductsSection({
                     {product.description}
                   </div>
                 </div>
-                <div className="h-[400px] w-full bg-primary"></div>
+                <div className="h-[400px] w-1/2 bg-primary"></div>
               </div>
             </Link>
 
