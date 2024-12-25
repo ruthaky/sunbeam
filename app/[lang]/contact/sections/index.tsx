@@ -5,6 +5,12 @@ import { useState } from "react";
 import { FiMapPin } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
+import { Merriweather } from "next/font/google";
+const merriweather = Merriweather({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
 
 export default function ContactSection({ contactText }: { contactText: any }) {
   const initialFormData = {
@@ -60,7 +66,9 @@ export default function ContactSection({ contactText }: { contactText: any }) {
         style={{ backgroundImage: `url(${coffee.src})` }}
       >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
+          <div
+            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[60px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
+          >
             {contactText.heading}
             <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
           </div>
@@ -71,7 +79,9 @@ export default function ContactSection({ contactText }: { contactText: any }) {
       </div>
       <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-secondary ">
         <div className="flex flex-col gap-6 w-full lg:w-1/3 h-full pt-[50px] bg-primary px-5 lg:pl-28 lg:pr-12 py-10 lg:py-28">
-          <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] font-normal tracking-tight leading-none ">
+          <div
+            className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[45px] font-semibold tracking-wide leading-none `}
+          >
             {contactText.contactdetail}
           </div>
           {/* <div className="text-[25px]  tracking-tight leading-none">
@@ -95,7 +105,9 @@ export default function ContactSection({ contactText }: { contactText: any }) {
           </div>
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-2/3 h-full px-5 lg:px-12 lg:pr-28 py-10 lg:py-28">
-          <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-normal tracking-tight leading-none ">
+          <div
+            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[45px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
+          >
             {contactText.getintouch}
           </div>
 

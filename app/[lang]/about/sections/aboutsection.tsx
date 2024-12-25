@@ -11,7 +11,12 @@ import coffee4 from "@/public/asset/coffee4.jpg";
 import castor from "@/public/asset/castor.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import { getDictionary } from "../../dictionaries";
-
+import { Merriweather } from "next/font/google";
+const merriweather = Merriweather({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
 export default function AboutSection({
   aboutpageTexts,
 }: {
@@ -24,7 +29,9 @@ export default function AboutSection({
         style={{ backgroundImage: `url(${coffee.src})` }}
       >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
+          <div
+            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[60px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
+          >
             {aboutpageTexts.introheading}
             <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
           </div>
@@ -34,7 +41,9 @@ export default function AboutSection({
         </div>
       </div>
       <div className="w-full h-auto lg:h-screen flex flex-col gap-10 px-5 lg:px-28 py-10 justify-center">
-        <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
+        <div
+          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
+        >
           {aboutpageTexts.storyheading}
           <div className="h-[5px] w-[200px] bg-primary"></div>
         </div>
@@ -56,7 +65,9 @@ export default function AboutSection({
           <Image src={heroImage} alt="logo" className="" />
         </div>
         <div className="flex flex-col gap-6 lg:w-1/2">
-          <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none">
+          <div
+            className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
+          >
             {aboutpageTexts.missionheading}
             <div className="h-[5px] w-[300px] bg-primary"></div>
           </div>
@@ -90,7 +101,9 @@ export default function AboutSection({
       </div>
 
       <div className="w-full h-auto ">
-        <div className=" flex flex-col gap-2 text-[35px] lg:text-[60px] font-semibold tracking-tight leading-none px-4 lg:px-10 pt-20">
+        <div
+          className={` ${merriweather.variable} font-merriweather  flex flex-col gap-2 text-[35px] lg:text-[50px] font-semibold tracking-tight leading-none px-4 lg:px-10 pt-20`}
+        >
           {aboutpageTexts.gallerytitle}
           <div className="h-[5px] w-[160px] bg-primary"></div>
         </div>

@@ -4,6 +4,13 @@ import { useState } from "react";
 import { FiMapPin } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
+import { Merriweather } from "next/font/google";
+
+const merriweather = Merriweather({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
 
 export default function ContactSection({
   contactTexts,
@@ -60,7 +67,9 @@ export default function ContactSection({
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-secondary">
       <div className="flex flex-col gap-6 w-full lg:w-[600px] h-full bg-primary px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28">
-        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] font-semibold lg:font-normal tracking-tight leading-none ">
+        <div
+          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] font-semibold tracking-wide leading-none `}
+        >
           {contactTexts.contactdetail}
         </div>
         {/* <div className="text-[25px]  tracking-tight leading-none">
@@ -91,7 +100,9 @@ export default function ContactSection({
         </div>
       </div>
       <div className="flex flex-col gap-6 w-full lg:w-2/3 h-full px-5 lg:px-12 lg:pr-28 py-10 lg:py-28">
-        <div className="flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-semibold lg:font-normal tracking-tight leading-none ">
+        <div
+          className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[50px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
+        >
           {contactTexts.getintouch}
         </div>
 

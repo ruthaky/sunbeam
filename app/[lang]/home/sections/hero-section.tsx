@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from "@/public/asset/heroimage.png";
+import heroImage from "@/public/asset/Group 20.svg";
 import { Merriweather } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
 

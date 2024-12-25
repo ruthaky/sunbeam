@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import coffee from "@/public/asset/coffee.jpg";
-import sesame from "@/public/asset/sesame.jpg";
+import sesame from "@/public/asset/sesame.png";
 import soybean from "@/public/asset/soybean.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
 import { Merriweather } from "next/font/google";
@@ -52,9 +52,12 @@ export default function ProductsSection({
     close(); // Close the menu
     router.push(path); // Navigate to the specified path
   };
+  const language = pathname.split("/")[1];
   return (
     <div className="flex flex-col gap-6 lg:gap-10 w-full p-5 py-[15%] lg:py-0  lg:px-28 h-auto lg:h-screen bg-secondary justify-center ">
-      <div className="flex flex-col lg:gap-2 text-[35px] lg:text-[60px] text-white font-semibold tracking-tight leading-none ">
+      <div
+        className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] text-white font-semibold tracking-wide leading-none `}
+      >
         {productTexts.heading}
         <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary "></div>
       </div>
@@ -68,11 +71,13 @@ export default function ProductsSection({
               className="absolute inset-0 w-full h-full bg-cover bg-center"
               style={{ backgroundImage: `url(${product.image.src})` }}
             ></div>
-
+            {/* <Link className="flex lg:hidden" href={`/products${product.link}`}></Link> */}
             <Link
               className="flex lg:hidden"
-              href={`/${pathname.split("/")[1]}products${product.link}`}
-              onClick={() => handleLinkClick("/products${product.link}")}
+              href={`/${language}/products${product.link}`}
+              onClick={() =>
+                handleLinkClick(`/${language}/products${product.link}`)
+              }
             >
               <div className="relative h-auto lg:h-full w-full inset-0 bg-white/90 flex flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                 <div className="text-[25px] font-bold">{product.title}</div>
