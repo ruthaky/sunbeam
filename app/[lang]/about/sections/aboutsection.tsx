@@ -1,6 +1,6 @@
 import Image from "next/image";
 import heroImage from "@/public/asset/Group 23.png";
-import coffee from "@/public/asset/coffee.jpg";
+import coffee from "@/public/asset/coffeee.jpg";
 import sesame from "@/public/asset/sesame.jpg";
 import soybean from "@/public/asset/soybean.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
@@ -9,6 +9,7 @@ import coffee2 from "@/public/asset/coffee2.jpg";
 import coffee3 from "@/public/asset/coffee3.jpg";
 import coffee4 from "@/public/asset/coffee4.jpg";
 import castor from "@/public/asset/castor.jpg";
+import coffeestore from "@/public/asset/coffeestorage.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import { getDictionary } from "../../dictionaries";
 import { Merriweather } from "next/font/google";
@@ -107,25 +108,25 @@ export default function AboutSection({
           {aboutpageTexts.gallerytitle}
           <div className="h-[5px] w-[160px] bg-primary"></div>
         </div>
-        <div className="h-screen w-full flex px-4 lg:px-10 pb-4 lg:pb-16 pt-10 gap-4 lg:gap-10">
-          <div className="w-1/2 h-full bg-pink-500">
+        <div className="h-screen w-full flex px-4 lg:px-10 pb-4 pt-10 gap-4 lg:gap-10">
+          <div className="w-1/2 h-full ">
             {" "}
             <Image
-              src={coffee1}
+              src={coffeestore}
               alt="Gallery Image"
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-1/2 h-full  flex flex-col gap-4 lg:gap-10">
-            <div className="w-full h-1/2 bg-red-600">
+          <div className="w-1/2 h-full  flex flex-col gap-4 lg:gap-0">
+            <div className="w-full h-1/2 ">
               {" "}
               <Image
-                src={coffee4}
+                src={coffee1}
                 alt="Gallery Image"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-full h-1/2 bg-violet-600">
+            <div className="w-full h-1/2 ">
               <Image
                 src={coffee2}
                 alt="Gallery Image"
@@ -135,8 +136,8 @@ export default function AboutSection({
           </div>
         </div>
         <div className="h-screen w-full flex  lg:pt-5 pb-4 lg:pb-10 px-4 lg:px-10 gap-4 lg:gap-10">
-          <div className="w-1/2 h-full flex flex-col gap-4 lg:gap-10">
-            <div className="w-full h-1/2 bg-red-600">
+          <div className="w-1/2 h-full flex flex-col gap-4 lg:gap-0">
+            <div className="w-full h-1/2">
               {" "}
               <Image
                 src={coffee4}
@@ -144,7 +145,7 @@ export default function AboutSection({
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-full h-1/2 bg-violet-600">
+            <div className="w-full h-1/2">
               {" "}
               <Image
                 src={coffee3}
@@ -153,7 +154,7 @@ export default function AboutSection({
               />
             </div>
           </div>
-          <div className="w-1/2 h-full bg-pink-500">
+          <div className="w-1/2 h-full ">
             {" "}
             <Image
               src={coffee4}
@@ -163,7 +164,7 @@ export default function AboutSection({
           </div>
         </div>
         <div className="flex-col lg:flex-row  lg:h-[400px] w-full gap-4 lg:gap-10 px-4 lg:px-10 flex ">
-          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
+          <div className="h-[250px] lg:h-[400px] lg:w-1/3 ">
             {" "}
             <Image
               src={coffee4}
@@ -171,7 +172,7 @@ export default function AboutSection({
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
+          <div className="h-[250px] lg:h-[400px] lg:w-1/3 ">
             {" "}
             <Image
               src={coffee3}
@@ -179,7 +180,7 @@ export default function AboutSection({
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
+          <div className="h-[250px] lg:h-[400px] lg:w-1/3 ">
             {" "}
             <Image
               src={coffee1}
@@ -187,7 +188,7 @@ export default function AboutSection({
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="h-[250px] lg:h-[400px] lg:w-1/3 bg-orange-400">
+          <div className="h-[250px] lg:h-[400px] lg:w-1/3 ">
             {" "}
             <Image
               src={castor}
