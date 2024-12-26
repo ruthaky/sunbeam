@@ -5,6 +5,7 @@ import { FiMapPin } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Merriweather } from "next/font/google";
+import Link from "next/link";
 
 const merriweather = Merriweather({
   weight: ["400", "700"],
@@ -80,7 +81,9 @@ export default function ContactSection({
             <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
               <FiMapPin className="flex w-full h-full" />
             </div>
-            <p className="text-nowrap">{contactTexts.location}</p>
+            <Link href="https://maps.google.com/?q=25.272150,55.338219">
+              <p className="text-nowrap">{contactTexts.location}</p>
+            </Link>
           </div>
           <div className="flex flex-row gap-4 text-[20px] items-center">
             <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
