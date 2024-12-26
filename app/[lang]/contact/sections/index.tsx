@@ -6,6 +6,7 @@ import { FiMapPin } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Merriweather } from "next/font/google";
+import { motion } from "framer-motion";
 const merriweather = Merriweather({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -65,16 +66,29 @@ export default function ContactSection({ contactText }: { contactText: any }) {
         className="w-full flex relative text-white h-[700px] text-9xl py-100 lg:py-0 bg-cover"
         style={{ backgroundImage: `url(${coffee.src})` }}
       >
-        <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div
-            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[60px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
+        <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] md:text-[50px] lg:text-[80px] text-white font-semibold lg:font-normal tracking-tight leading-tight `}
           >
             {contactText.heading}
-            <div className="h-[5px] w-[300px] lg:w-[900px] bg-primary"></div>
-          </div>
-          <div className="text-[20px] lg:w-[900px] text-[#eeeeeed6] leading-6">
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 1, delay: 1 }}
+              className="h-[10px] w-[300px] lg:w-[900px] bg-primary"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="text-[20px] lg:w-[900px] text-[#eeeeeed6] leading-8"
+          >
             {contactText.subheading}
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-secondary ">

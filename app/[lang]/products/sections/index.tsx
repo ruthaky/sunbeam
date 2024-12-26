@@ -35,8 +35,11 @@ export default function ProductSection({
         style={{ backgroundImage: `url(${coffee.src})` }}
       >
         <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
-          <div
-            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[60px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] md:text-[50px] lg:text-[80px] text-white font-semibold lg:font-normal tracking-tight leading-tight `}
           >
             {productpageTexts.heading}
             <motion.div
@@ -45,7 +48,7 @@ export default function ProductSection({
               transition={{ duration: 1, delay: 1 }}
               className="h-[10px] w-[300px] lg:w-[900px] bg-primary"
             />
-         </motion.div>
+          </motion.div>
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
