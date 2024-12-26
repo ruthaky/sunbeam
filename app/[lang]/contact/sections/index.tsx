@@ -65,7 +65,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
         className="w-full flex relative text-white h-[700px] text-9xl py-100 lg:py-0 bg-cover"
         style={{ backgroundImage: `url(${coffee.src})` }}
       >
-        <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-secondary bg-opacity-80 top-0 left-0 h-full w-full justify-center">
+        <div className="absolute flex flex-col px-4 lg:px-28 gap-5 bg-opacity-80 top-0 left-0 h-full w-full justify-center">
           <div
             className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[30px] lg:text-[60px] text-white font-semibold lg:font-normal tracking-tight leading-none `}
           >
