@@ -8,6 +8,7 @@ import soybean from "@/public/asset/soybean2.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
 import { Merriweather } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 const merriweather = Merriweather({
   weight: ["400", "700"],
@@ -59,7 +60,20 @@ export default function ProductsSection({
         className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[50px] text-white font-semibold tracking-wide leading-none `}
       >
         {productTexts.heading}
-        <div className="h-[5px] w-[150px] lg:w-[300px] bg-primary "></div>
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "180px" }}
+          viewport={{ once: true }}
+          transition={{ duration: 2, ease: "easeOut" }}
+          className="h-[8px] mt-2 ml-1 bg-primary lg:hidden"
+        />
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "250px" }}
+          viewport={{ once: true }}
+          transition={{ duration: 2, ease: "easeOut" }}
+          className="h-[8px] ml-2 bg-primary hidden lg:block"
+        />
       </div>
       <div className="flex flex-col lg:flex-row w-full h-auto justify-around gap-6">
         {products.map((product, index) => (
