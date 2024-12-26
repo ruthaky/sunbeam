@@ -45,7 +45,7 @@ export default function ProductSection({
               transition={{ duration: 1, delay: 1 }}
               className="h-[10px] w-[300px] lg:w-[900px] bg-primary"
             />
-          </motion.div>
+         </motion.div>
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
