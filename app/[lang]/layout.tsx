@@ -88,6 +88,18 @@ export default function RootLayout({
 </script>
           `}
       </Script>
+      <Script strategy="afterInteractive">
+        {
+          `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJDYF9BQS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZJDYF9BQS6');
+</script> `
+        }
+      </Script>
+
       <body
         className={`${openSans.variable} font-openSans antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
       >
