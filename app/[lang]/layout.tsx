@@ -77,18 +77,16 @@ export default function RootLayout({
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment." />
       <meta property="og:image:url" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
-      <Script strategy="afterInteractive">
+      <Script id="microsoft-clarity" strategy="afterInteractive">
         {`
-        <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "po18vi2fr8");
-</script>
-          `}
+  `}
       </Script>
-      <Script strategy="afterInteractive">
+      <Script id="google-analytics" strategy="afterInteractive">
         {
           `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJDYF9BQS6"></script>
 <script>
