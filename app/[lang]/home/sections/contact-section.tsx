@@ -6,6 +6,8 @@ import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Merriweather } from "next/font/google";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 
 const merriweather = Merriweather({
   weight: ["400", "700"],
@@ -27,6 +29,9 @@ export default function ContactSection({
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState("");
+  const router = useRouter();
+  const params = useParams();
+  const lang = params.lang;
 
   // const handleChange = (event: any) => {
   //   setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -50,17 +55,19 @@ export default function ContactSection({
       });
 
       // Parse the JSON response
-      const result = await response.json();
+    
 
       if (response.ok) {
+        const result = await response.json();
         setStatus("Form submitted successfully!");
         setFormData({ name: "", email: "", phonenumber: "", message: "" });
-        console.log("Form data:", formData);
+        console.log("Form data:", formData, "Response:", result);
       } else {
-        setStatus(`Error: ${result.error || "Failed to submit the form."}`);
+        const error = await response.text();
+        setStatus(`Error: ${error}`);
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.log("Error submitting form:", error);
       setStatus("An error occurred. Please try again later.");
     }
   };
