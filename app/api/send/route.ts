@@ -5,10 +5,10 @@ import { NextResponse } from "next/server";
 const resend = new Resend("re_FJQQNXDC_PniodFAmR6HbCg3xuprVziPH");
 
 export async function POST(request: Request) {
-  const body = await request.json();
+ 
   try {
     // const { name, email, phonenumber, message } = body;
-
+ const body = await request.json();
     const data = await resend.emails.send({
       from: "Contact form <onboarding@resend.dev>", // Verified sender email
       to: ["info@surgecrops.com"], // Replace with your receiving email
