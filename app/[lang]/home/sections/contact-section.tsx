@@ -55,7 +55,6 @@ export default function ContactSection({
       });
 
       // Parse the JSON response
-    
 
       if (response.ok) {
         const result = await response.json();
@@ -84,12 +83,12 @@ export default function ContactSection({
           Whether it's working with rice farmers in
         </div> */}
         <div className="flex flex-col gap-5 lg:gap-8">
-          <div className="flex flex-row gap-4 text-[20px] items-center">
+          <div className="flex flex-row gap-4 text-[20px] items-center ">
             <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
               <FiMapPin className="flex w-full h-full" />
             </div>
             <Link href="https://maps.google.com/?q=25.272150,55.338219">
-              <p className="text-nowrap">{contactTexts.location}</p>
+              <p className="text-wrap lg:text-nowrap">{contactTexts.location}</p>
             </Link>
           </div>
           <div className="flex flex-row gap-4 text-[20px] items-center">
@@ -99,13 +98,13 @@ export default function ContactSection({
 
             <p>+971 55 181 9398</p>
           </div>
-          <div className="flex flex-row gap-4 text-[20px] items-center">
-            <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
-              {" "}
-              <IoMailOpenOutline className="flex w-full h-full" />
+          <div className="flex flex-row gap-4 text-[20px] items-start">
+            <IoMailOpenOutline size={35} />
+            <div className="flex flex-col gap-2">
+              <p>info@surgecrops.com</p>
+              <p>sales@surgecrops.com</p>
+              <p>marketing@surgecrops.com</p>
             </div>
-
-            <p>info@surgecrops.com</p>
           </div>
         </div>
       </div>

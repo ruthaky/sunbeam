@@ -92,7 +92,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-secondary ">
-        <div className="flex flex-col gap-6 w-full lg:w-1/3 h-full pt-[50px] bg-primary px-5 lg:pl-28 lg:pr-12 py-10 lg:py-28">
+        <div className="flex flex-col gap-6 w-full lg:w-[600px] h-full pt-[50px] bg-primary px-5 lg:pl-28 lg:pr-12 py-10 lg:py-28">
           <div
             className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[45px] font-semibold tracking-wide leading-none `}
           >
@@ -110,11 +110,15 @@ export default function ContactSection({ contactText }: { contactText: any }) {
             </div>
             <div className="flex flex-row gap-4 text-[20px] items-center">
               <BsTelephone size={35} />
-              <p>+1 (234) 56789, +1 987 654 3210</p>
+              <p>+971 55 181 9398</p>
             </div>
-            <div className="flex flex-row gap-4 text-[20px] items-center">
+            <div className="flex flex-row gap-4 text-[20px] items-start">
               <IoMailOpenOutline size={35} />
-              <p>support@surge.com</p>
+              <div className="flex flex-col gap-2">
+                <p>info@surgecrops.com</p>
+                <p>sales@surgecrops.com</p>
+                <p>marketing@surgecrops.com</p>
+              </div>
             </div>
           </div>
         </div>
