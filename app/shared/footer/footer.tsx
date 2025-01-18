@@ -138,6 +138,12 @@ export default function Footer() {
                   <li className="mb-4 text-[14px] text-nowrap">
                     info@surgecrops.com
                   </li>
+                  <li className="mb-4 text-[14px] text-nowrap">
+                    sales@surgecrops.com
+                  </li>
+                  <li className="mb-4 text-[14px] text-nowrap">
+                    marketing@surgecrops.com
+                  </li>
                   <li className="text-nowrap">+971 55 181 9398 </li>
                 </ul>
               </div>
