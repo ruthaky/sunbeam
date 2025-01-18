@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import heroImage from "@/public/asset/heroimage.png";
-import coffee from "@/public/asset/coffee1.jpg";
+import coffee from "@/public/asset/coffeebeans.jpeg";
 import sesame from "@/public/asset/sesame.png";
 import soybean from "@/public/asset/soybean2.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
@@ -62,16 +62,17 @@ export default function ProductSection({
       <div className="w-full h-auto p-12 px-4 lg:px-28 flex flex-col gap-10">
         <section
           id="coffee"
-          className="w-full h-fit flex flex-row gap-0 lg:gap-10"
+          className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
         >
           <div className="h-full w-2/6 ">
+            {" "}
             <Image
               src={coffee}
               alt="Gallery Image"
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col relative gap-2 lg:gap-4 h-auto w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
+          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EBEBEB] text-black p-4 lg:p-8">
             <div
               className={`${merriweather.variable} font-merriweather flex flex-col gap-2 text-[24px] lg:text-[50px] font-semibold tracking-tight leading-none `}
             >
@@ -80,8 +81,8 @@ export default function ProductSection({
             <div className="text-[12px] lg:text-[20px] text-[#696969]">
               {productpageTexts.product1desc}
             </div>
-            <div className="flex">
-              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20the%20coffee%20you%20offer">
+            <div className="absolute bottom-8">
+              <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20soy%20beans%20you%20offer">
                 {" "}
                 <Button>{productpageTexts.contactbutton}</Button>
               </Link>
