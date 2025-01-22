@@ -1,13 +1,13 @@
 {
   "heroSection": {
-    "hero": "From Africa's Richest Soils to the World’s Finest Markets",
+    "hero": "From Africa's Richest Soils to the World's Finest Markets",
     "subheading": "Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.",
     "button": "Connect with our Team"
   },
   "aboutSection": {
     "heading": "Who We Are",
-    "subheading": "Surge Crops Trading, headquartered in Dubai, UAE, connects Africa’s agricultural richness with global demand. We specialize in sourcing high-quality crops and coffee from Ethiopia, Kenya, Tanzania, Rwanda, and Uganda. With a commitment to sustainability, traceability, and excellence, we’ve built trusted partnerships across markets in China, Europe, North America, Southeast Asia, and beyond.",
-    "subheading2": "Our mission is simple: to create value for farmers and customers by ensuring the smooth, ethical, and efficient trade of nature’s finest yields.",
+    "subheading": "Surge Crops Trading, headquartered in Dubai, UAE, connects Africa's agricultural richness with global demand. We specialize in sourcing high-quality crops and coffee from Ethiopia, Kenya, Tanzania, Rwanda, and Uganda. With a commitment to sustainability, traceability, and excellence, we've built trusted partnerships across markets in China, Europe, North America, Southeast Asia, and beyond.",
+    "subheading2": "Our mission is simple: to create value for farmers and customers by ensuring the smooth, ethical, and efficient trade of nature's finest yields.",
     "button": "Read More"
   },
   "productSection": {
@@ -66,7 +66,7 @@
     "heading": "Premium Agricultural Products Tailored for Your Needs",
     "subheading": "Explore our diverse range of high-quality agricultural products, meticulously sourced to meet global standards. From aromatic coffee and versatile sesame seeds to nutrient-rich beans and soybeans, our offerings are designed to cater to the demands of international markets. At Surge Crops Trading, we prioritize quality, reliability, and sustainability, ensuring that every product delivers exceptional value to our partners worldwide.",
     "product1title": "Coffee",
-    "product1desc": "We bring you the finest coffee beans from Ethiopia, Kenya, Rwanda, and Uganda—countries celebrated as the birthplace of coffee. Our selection includes high-altitude grown Arabica beans, known for their complex acidity and rich aromas, as well as robust, full-bodied Robusta beans with higher caffeine content, sourced from low-altitude regions. For premium roasters, we offer specialty-grade, single-origin beans that showcase Africa’s unique terroir, with flavor profiles ranging from fruity and floral to bold and earthy. All our coffee is ethically sourced and traceable, meeting the needs of specialty coffee markets, cafes, and global roasters. Available in both green and roasted forms, our coffee represents Africa’s excellence in every cup.",
+    "product1desc": "We bring you the finest coffee beans from Ethiopia, Kenya, Rwanda, and Uganda—countries celebrated as the birthplace of coffee. Our selection includes high-altitude grown Arabica beans, known for their complex acidity and rich aromas, as well as robust, full-bodied Robusta beans with higher caffeine content, sourced from low-altitude regions. For premium roasters, we offer specialty-grade, single-origin beans that showcase Africa's unique terroir, with flavor profiles ranging from fruity and floral to bold and earthy. All our coffee is ethically sourced and traceable, meeting the needs of specialty coffee markets, cafes, and global roasters. Available in both green and roasted forms, our coffee represents Africa's excellence in every cup.",
     "product2title": "Sesame Seeds",
     "product2desc": "Our sesame seeds, sourced from Ethiopia, Tanzania, and Uganda, are renowned for their premium quality, high oil content, and nutty flavor. These seeds are perfect for culinary, industrial, and cosmetic applications, offering a rich nutritional profile. We provide hulled sesame seeds with a smooth texture and mild flavor for food-grade uses, unhulled sesame seeds that retain natural fiber and nutty taste for industrial processing, and black sesame seeds, a gourmet choice for bakeries, sauces, and traditional medicine. Sourced sustainably from smallholder farms, our sesame seeds boast oil content of up to 50% and are available in bulk packaging for export markets.",
     "product3title": "Soybeans",
@@ -79,7 +79,7 @@
   },
   "contactPage": {
     "heading": "Connect with Surge Crops Trading",
-    "subheading": "Whether you’re looking to source premium agricultural products or have inquiries about our services, we’re here to help. Reach out to us today and let’s grow together.s",
+    "subheading": "Whether you're looking to source premium agricultural products or have inquiries about our services, we're here to help. Reach out to us today and let's grow together.s",
     "contactdetail": "Contact Detail",
     "location": "78CQ+V75 Dubai - United Arab Emirates",
     "getintouch": "Get In Touch",
@@ -88,5 +88,10 @@
     "phonenumber": "Phone Number",
     "message": "Message",
     "button": "submit"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
   }
 }
