@@ -1,5 +1,5 @@
 import "server-only";
-
+import { notFound } from "next/navigation";
 const dictionaries = {
   en: () => import("./dictionaries/en.json").then((module) => module.default),
   fr: () => import("./dictionaries/fr.json").then((module) => module.default),
@@ -7,4 +7,10 @@ const dictionaries = {
   zh: () => import("./dictionaries/zh.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale) => dictionaries[locale]();
+export const getDictionary = async (locale) => {
+  try {
+    return await dictionaries[locale]();
+  } catch (error) {
+    notFound();
+  }
+};
