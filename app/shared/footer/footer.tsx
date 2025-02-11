@@ -154,7 +154,7 @@ export default function Footer() {
             <span className="text-sm text-[#5a5a5a] sm:text-center dark:text-gray-400">
               © 2024{" "}
               <a
-                href="https://www.thesignatureresidence.com/"
+                href="#"
                 className="hover:underline"
               >
                 Surge Crops Trading
@@ -162,38 +162,7 @@ export default function Footer() {
               . All Rights Reserved.
             </span>
             <div className="flex mt-4 sm:justify-center sm:mt-0">
-              <a
-                target="_blank"
-                href="#"
-                className="text-[#5a5a5a] hover:text-yellow dark:hover:text-white"
-              >
-                {/* <FaFacebook /> */}
-
-                <span className="sr-only">Facebook page</span>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/signature.residence.bole/"
-                className="text-[#5a5a5a] hover:text-yellow dark:hover:text-white ms-5"
-              >
-                {/* <FaInstagram /> */}
-                <span className="sr-only">Instagram</span>
-              </a>
-              <a
-                target="_blank"
-                href="#"
-                className="text-[#5a5a5a] hover:text-yellow dark:hover:text-white ms-5"
-              >
-                {/* <FaTwitter /> */}
-                <span className="sr-only">Twitter page</span>
-              </a>
-              <a
-                target="_blank"
-                href="#"
-                className="text-primary hover:text-yellow dark:hover:text-white ms-5"
-              >
-                <span className="sr-only">Linkedin account</span>
-              </a>
+           
             </div>
           </div>
         </div>
