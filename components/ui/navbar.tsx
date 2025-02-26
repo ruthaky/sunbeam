@@ -112,7 +112,7 @@ export const MobileNavbar = () => {
           <Link
             href={`/${pathname.split("/")[1]}`}
             onClick={() => handleLinkClick("/")}
-            className="hover:underline hover:underline-offset-4 transition ease-in"
+            className="underline-hover"
           >
             Home
           </Link>
@@ -166,25 +166,25 @@ export const Navbar = () => {
       <div className="flex flex-row gap-14 items-center">
         <div className="flex flex-row gap-10 font-semibold">
           <Link
-            className="hover:underline hover:underline-offset-4 transition ease-in-out duration-300"
+            className="underline-hover"
             href={`/${pathname.split("/")[1]}`}
           >
             Home
           </Link>
           <Link
-            className="hover:underline hover:underline-offset-4 transition ease-in-out duration-300"
+            className="underline-hover"
             href={`/${pathname.split("/")[1]}/about`}
           >
             About
           </Link>
           <Link
-            className="hover:underline hover:underline-offset-4 transition ease-in-out duration-300"
+            className="underline-hover"
             href={`/${pathname.split("/")[1]}/products`}
           >
             Products
           </Link>
           <Link
-            className="hover:underline hover:underline-offset-4 transition ease-in-out duration-300"
+            className="underline-hover"
             href={`/${pathname.split("/")[1]}/contact`}
           >
             Contact
