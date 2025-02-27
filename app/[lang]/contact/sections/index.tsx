@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import coffee from "@/public/asset/coffee.jpg";
+import coffee from "@/public/asset/coffee0.jpg";
 import { useState } from "react";
 import { FiMapPin } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";

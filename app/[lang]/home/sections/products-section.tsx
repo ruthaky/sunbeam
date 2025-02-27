@@ -2,8 +2,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import coffee from "@/public/asset/coffee.jpg";
-import sesame from "@/public/asset/sesame.png";
+import coffee from "@/public/asset/coffee00.png";
+import sesame from "@/public/asset/sesame0.png";
 import soybean from "@/public/asset/soybean2.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
 import { Merriweather } from "next/font/google";
@@ -104,7 +104,7 @@ export default function ProductsSection({
               </div>
             </Link>
 
-            <div className="hidden lg:flex relative h-auto lg:h-full w-full inset-0 bg-white/90 flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+            <div className="hidden lg:flex relative h-auto lg:h-full w-full inset-0 bg-white/90 flex-col items-start py-10 px-4 opacity-75 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
               <div className="text-[25px] font-bold">{product.title}</div>
               <div className="text-[17px] mt-2 text-left">
                 {product.description}

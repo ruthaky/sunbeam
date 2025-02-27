@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from "@/public/asset/Group 23.svg";
+import heroImage from "@/public/asset/Group.png";
 import { Merriweather } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
@@ -22,8 +22,8 @@ export default function AboutSection({ aboutTexts }: { aboutTexts: any }) {
   };
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full px-4 lg:px-28 items-center justify-center  pt-[20%] lg:py-0 pb-[15%]">
-      <div className="hidden lg:flex items-center justify-start w-1/2 h-full ">
-        <Image src={heroImage} alt="logo" className="" />
+      <div className="hidden lg:flex items-center justify-start w-1/2 h-full">
+        <Image src={heroImage} alt="logo" className="p-0" />
       </div>
       <div className="flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2">
         <div
