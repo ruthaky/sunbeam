@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import heroImage from "@/public/asset/heroimage.png";
-import coffee from "@/public/asset/coffeebeans.jpeg";
-import sesame from "@/public/asset/sesame.png";
+import coffee from "@/public/asset/coffee00.png";
+import sesame from "@/public/asset/sesame0.png";
 import soybean from "@/public/asset/soybean2.jpg";
 import kidneybeans from "@/public/asset/kidneybeans.jpg";
 import castor from "@/public/asset/castor.jpg";
