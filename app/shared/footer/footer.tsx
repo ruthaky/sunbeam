@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import logo from "@/public/asset/SURGE CROPS.png";
+import logo from "@/public/asset/sunbeamlogo.png";
 import Image from "next/image";
 import Link from "next/link";
+import heroImage from "@/public/asset/bottom.svg";
 // import {
 //   FaFacebook,
 //   FaInstagram,
@@ -20,15 +21,36 @@ export default function Footer() {
   };
   return (
     <div>
-      <footer className="bg-white">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <footer className="bg-[#ff92581b] relative flex">
+        <div
+          className="absolute bottom-0 h-[32px] w-full bg-cover bg-center flex justify-center items-center"
+          style={{ backgroundImage: `url(${heroImage.src})` }}
+        >
+          {" "}
+          {/* <Image
+            src={heroImage}
+            alt="Gallery Image"
+            className="w-full h-[50px] object-center object-cover z-0"
+          /> */}
+          <div className="flex items-center justify-center z-10 ">
+            <span className="text-[12px] text-[#ffffffa7] sm:text-center">
+              © 2024{" "}
+              <a href="#" className="hover:underline">
+                Surge Crops Trading
+              </a>
+              . All Rights Reserved.
+            </span>
+            {/* <div className="flex mt-4 sm:justify-center sm:mt-0"></div> */}
+          </div>
+        </div>
+        <div className="mx-auto w-full px-28 py-6 lg:pb-24">
           <div className="md:flex md:justify-between">
             <div className="hidden  mb-6 md:mb-0 md:flex ">
               <a href="/" className="flex items-center">
                 <Image
                   src={logo.src}
                   alt="logo"
-                  width={300}
+                  width={200}
                   height={100}
                   className=""
                 />
@@ -37,12 +59,12 @@ export default function Footer() {
                 </span> */}
               </a>
             </div>
-            <div className="grid pt-10 grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div className="grid pt-10 grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-3">
               <div>
                 <h2 className="mb-2 text-[18px] font-semibold text-black">
                   Links
                 </h2>
-                <ul className="text-[#5a5a5a] dark:text-primary font-medium">
+                <ul className="text-[#5a5a5a] font-medium">
                   <li className="mb-4">
                     <Link
                       className="hover:underline"
@@ -91,7 +113,7 @@ export default function Footer() {
                 <h2 className="mb-2 text-[18px] font-semibold text-black">
                   Socials
                 </h2>
-                <ul className="text-[#5a5a5a] dark:text-primary font-medium">
+                <ul className="text-[#5a5a5a] font-medium">
                   <li className="mb-4">
                     <a
                       target="_blank"
@@ -134,7 +156,7 @@ export default function Footer() {
                 <h2 className="mb-2 text-[18px] font-semibold text-black">
                   Contact
                 </h2>
-                <ul className="text-[#5a5a5a] dark:text-primary text-nowrap font-medium">
+                <ul className="text-[#5a5a5a] text-nowrap font-medium">
                   <li className="mb-4 text-[14px] text-nowrap">
                     info@surgecrops.com
                   </li>
@@ -149,22 +171,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-primary sm:mx-auto dark:border-primary lg:my-8" />
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-[#5a5a5a] sm:text-center dark:text-gray-400">
-              © 2024{" "}
-              <a
-                href="#"
-                className="hover:underline"
-              >
-                Surge Crops Trading
-              </a>
-              . All Rights Reserved.
-            </span>
-            <div className="flex mt-4 sm:justify-center sm:mt-0">
-           
-            </div>
-          </div>
+          {/* <hr className="my-6 border-[#ff4789] sm:mx-auto lg:my-8 border-t-[2px]" /> */}
         </div>
       </footer>
     </div>

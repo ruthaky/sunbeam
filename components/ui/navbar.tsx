@@ -1,139 +1,40 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/asset/surgelogo.png";
-import { Globe } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "./dropdown-menu";
-import { ChevronDown } from "lucide-react";
+import logo from "@/public/asset/sunbeamlogo.png";
 import { useRouter, usePathname } from "next/navigation";
 import { Burger, Flex, Collapse } from "@mantine/core";
+import { useState, useEffect } from "react";
 import { useDisclosure } from "@mantine/hooks";
+
 
 export const MobileNavbar = () => {
   const router = useRouter();
   const pathname = usePathname();
   const [opened, { toggle, close }] = useDisclosure(false);
 
-  // Determine the current language from the URL
-  const currentLanguage = pathname.split("/")[1] || "en"; // Default to "en" if no locale is found
-  const languageFlags: Record<string, string> = {
-    en: "🇺🇸",
-    zh: "🇨🇳",
-    fr: "🇫🇷",
-    ar: "🇦🇪",
-  };
-
-  const handleLanguageChange = (locale: string) => {
-    const segments = pathname.split("/");
-    segments[1] = locale;
-    const newPath = segments.join("/");
-    router.push(newPath);
-  };
-
   const handleLinkClick = (path: string) => {
-    close(); // Close the menu
-    router.push(path); // Navigate to the specified path
+    close();
+    router.push(path);
   };
 
   return (
     <div className="flex justify-between items-center md:hidden h-[50px] w-full bg-white fixed left-0 top-0 z-10 px-4">
-      <Link
-        className="h-full w-[80px]"
-        href={`/${pathname.split("/")[1]}/`}
-        onClick={() => handleLinkClick("/")}
-      >
+      <Link className="h-full w-[80px]" href="/" onClick={() => handleLinkClick("/")}> 
         <Image src={logo} alt="logo" />
       </Link>
-
-      <div className="flex flex-row gap-1">
-        <div className="flex items-center gap-4">
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1">
-              <span>{languageFlags[currentLanguage] || "🌐"}</span>
-              <ChevronDown className="h-4 w-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-white">
-              <DropdownMenuItem
-                onClick={() => handleLanguageChange("en")}
-                className="flex cursor-pointer items-center gap-1"
-              >
-                <span>🇺🇸</span>
-                English
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => handleLanguageChange("zh")}
-                className="flex cursor-pointer items-center gap-1"
-              >
-                <span>🇨🇳</span>
-                中文
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => handleLanguageChange("fr")}
-                className="flex cursor-pointer items-center gap-1"
-              >
-                <span>🇫🇷</span>
-                Français
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => handleLanguageChange("ar")}
-                className="flex cursor-pointer items-center gap-1"
-              >
-                <span>🇦🇪</span>
-                العربية
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-        <Flex className="h-full items-center w-full">
-          <Burger
-            opened={opened}
-            onClick={toggle}
-            size="30px"
-            color="#000"
-            className=""
-          />
-        </Flex>
-      </div>
-      <Collapse
-        in={opened}
-        className="absolute top-[50px] left-0 w-full bg-white z-20"
-      >
-        <Flex
-          direction="column"
-          align="center"
-          className="gap-4 py-4 border-t"
-          onClick={toggle} // Ensure clicking links closes the menu
-        >
-          <Link
-            href={`/${pathname.split("/")[1]}`}
-            onClick={() => handleLinkClick("/")}
-            className="underline-hover"
-          >
-            Home
-          </Link>
-          <Link
-            href={`/${pathname.split("/")[1]}/about`}
-            onClick={() => handleLinkClick("/about")}
-          >
-            About
-          </Link>
-          <Link
-            href={`/${pathname.split("/")[1]}/products`}
-            onClick={() => handleLinkClick("/products")}
-          >
-            Products
-          </Link>
-          <Link
-            href={`/${pathname.split("/")[1]}/contact`}
-            onClick={() => handleLinkClick("/contact")}
-          >
-            Contact
-          </Link>
+      <Flex className="h-full items-center w-full">
+        <Burger opened={opened} onClick={toggle} size="30px" color="#000" />
+      </Flex>
+      <Collapse in={opened} className="absolute top-[50px] left-0 w-full bg-white z-20">
+        <Flex direction="column" align="center" className="gap-4 py-4 border-t" onClick={toggle}>
+          <Link href="/" onClick={() => handleLinkClick("/")}>Home</Link>
+          <Link href="/about" onClick={() => handleLinkClick("/about")}>About</Link>
+          <Link href="/services" onClick={() => handleLinkClick("/services")}>Services</Link>
+          <Link href="/abaservicerequest" onClick={() => handleLinkClick("/abaservicerequest")}>ABA Service Request</Link>
+          <Link href="/career" onClick={() => handleLinkClick("/career")}>Career</Link>
+          <Link href="/contact" onClick={() => handleLinkClick("/contact")}>Contact</Link>
+          <Link href="/graduatestudents" onClick={() => handleLinkClick("/graduatestudents")}>Graduate Students</Link>
         </Flex>
       </Collapse>
     </div>
@@ -141,92 +42,40 @@ export const MobileNavbar = () => {
 };
 
 export const Navbar = () => {
-  const router = useRouter();
-  const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleLanguageChange = (locale: string) => {
-    const segments = pathname.split("/");
-    segments[1] = locale;
-    const newPath = segments.join("/");
-    router.push(newPath);
-  };
-  const handleLinkClick = (path: string) => {
-    close(); // Close the menu
-    router.push(path); // Navigate to the specified path
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="hidden md:flex flex-row bg-white fixed left-0 top-0 w-full border justify-between py-1 px-28 z-10">
-      <Link
-        className="h-full w-[110px]"
-        href={`/${pathname.split("/")[1]}/`}
-        onClick={() => handleLinkClick("/")}
-      >
+    <div
+      className={`hidden md:flex flex-row fixed left-0 top-0 w-full justify-between py-1 px-28 z-50 transition-all duration-500 ease-in-out ${
+        isScrolled ? "bg-white shadow-lg" : "bg-white/0"
+      }`}
+    >
+      <Link className="h-full w-[80px]" href="/">
         <Image src={logo} alt="logo" />
       </Link>
       <div className="flex flex-row gap-14 items-center">
         <div className="flex flex-row gap-10 font-semibold">
-          <Link
-            className="underline-hover"
-            href={`/${pathname.split("/")[1]}`}
-          >
-            Home
-          </Link>
-          <Link
-            className="underline-hover"
-            href={`/${pathname.split("/")[1]}/about`}
-          >
-            About
-          </Link>
-          <Link
-            className="underline-hover"
-            href={`/${pathname.split("/")[1]}/products`}
-          >
-            Products
-          </Link>
-          <Link
-            className="underline-hover"
-            href={`/${pathname.split("/")[1]}/contact`}
-          >
-            Contact
-          </Link>
+          <Link className="underline-hover" href="/">Home</Link>
+          <Link className="underline-hover" href="/about">About</Link>
+          <Link className="underline-hover" href="/services">Services</Link>
+          <Link className="underline-hover" href="/contact">Contact</Link>
+          <Link className="underline-hover" href="/career">Career</Link>
+          <Link className="underline-hover" href="/abarequest">ABA Service Request</Link>
+          <Link className="underline-hover" href="/graduatestudents">Graduate Students</Link>
         </div>
-        <DropdownMenu>
-          <DropdownMenuTrigger className="flex items-center gap-2">
-            <Globe className="h-4 w-4" />
-            <span className="font-semibold">Language</span>
-            <ChevronDown className="h-4 w-4" />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="bg-white">
-            <DropdownMenuItem
-              onClick={() => handleLanguageChange("en")}
-              className="flex cursor-pointer items-center gap-2"
-            >
-              <span>🇺🇸</span>
-              English
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => handleLanguageChange("zh")}
-              className="flex cursor-pointer items-center gap-2"
-            >
-              <span>🇨🇳</span>
-              中文
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => handleLanguageChange("fr")}
-              className="flex cursor-pointer items-center gap-2"
-            >
-              <span>🇫🇷</span>
-              Français
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => handleLanguageChange("ar")}
-              className="flex cursor-pointer items-center gap-2"
-            >
-              <span>🇦🇪</span>
-              العربية
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
       </div>
     </div>
   );

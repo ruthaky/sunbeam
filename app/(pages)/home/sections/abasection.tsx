@@ -1,0 +1,103 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { Fredoka } from "next/font/google";
+import Bluebg from "@/public/asset/bluebg.svg";
+import star from "@/public/asset/bluestar.svg";
+
+const merriweather = Fredoka({
+  weight: ["300", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
+
+// ✅ Ensure component is properly exported
+export default function Abasection() {
+  return (
+    <div
+      className="relative w-full h-auto pt-[150px] pb-[180px] flex flex-col gap-10 px-5 lg:px-[200px] justify-center bg-cover"
+      style={{ backgroundImage: `url(${Bluebg.src})` }}
+    >
+      {/* ✅ Floating Star 1 */}
+      <motion.div
+        animate={{ y: [0, -20, 0] }} // Moves up & down
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -top-10 right-0 w-[230px] h-[250px] z-0"
+      >
+        <Image
+          src={star}
+          alt="Gallery Image"
+          width={100}
+          height={120}
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+
+      {/* ✅ Floating Star 2 */}
+      <motion.div
+        animate={{ y: [0, 20, 0] }} // Moves slightly different than the first
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -bottom-20 -left-10 w-[300px] h-[350px] z-0"
+      >
+        <Image
+          src={star}
+          alt="Gallery Image"
+          width={300}
+          height={350}
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+
+      {/* ✅ Section Content */}
+      <div  className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[35px] lg:text-[42px] font-semibold leading-none `}>
+        What is ABA?
+        {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
+        <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
+      </div>
+
+      <div className="text-[#545454] pb-10 z-10 flex flex-col gap-10">
+        <p className="text-[20px] tracking-tight">
+          Sunbeam ABA Therapy understands that every child is unique and
+          deserves a personalized, compassionate approach to therapy. We are
+          dedicated to providing individualized, evidence-based Applied Behavior
+          Analysis (ABA) therapy that supports meaningful progress in each
+          child's life. Our team works closely with both the child and their
+          family to develop customized treatment plans that address specific
+          challenges while promoting independence, communication, and functional
+          skills.
+          <br />
+          <br />
+          We believe that early intervention can be life-changing, but we also
+          recognize the importance of allowing children to experience the joys
+          of childhood. Our approach blends structured, research-backed
+          techniques with naturalistic teaching strategies, ensuring that
+          learning happens in an engaging and supportive environment. We focus
+          not just on skills development, but on building confidence, fostering
+          connections, and empowering children to navigate the world with
+          greater ease.
+          <br />
+          <br />
+          At Sunbeam ABA Therapy, we view parents as essential partners in their
+          child's therapy journey. We collaborate closely with families to
+          ensure that ABA principles are integrated seamlessly into daily
+          routines, promoting consistent progress across home, school, and
+          social settings. Through education, training, and ongoing support, we
+          equip parents with the tools and knowledge they need to reinforce
+          learning and help their child thrive. Our mission is to provide
+          compassionate, high-quality ABA therapy that illuminates each child’s
+          potential—helping them shine in their own unique way.
+        </p>
+
+        {/* ✅ Service Request Button */}
+        <div>
+          <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20ABA%20services">
+            <Button>ABA Service Request</Button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
