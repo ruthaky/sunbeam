@@ -6,7 +6,7 @@ import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Fredoka } from "next/font/google";
 import Link from "next/link";
-import Image from "@/public/asset/IMG_9376.jpg";
+// import Image from "@/public/asset/IMG_9376.jpg";
 import { useRouter } from "next/navigation";
 import { useParams } from "next/navigation";
 
@@ -72,7 +72,7 @@ export default function ContactSection() {
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-white">
       <div
         className="flex flex-col relative  w-full lg:w-[600px] h-full bg-cover "
-        style={{ backgroundImage: `url(${Image.src})` }}
+        // style={{ backgroundImage: `url(${Image.src})` }}
       >
         <div className="absolute top-0 left-0 flex flex-col gap-6 w-full h-full bg-[#ffeb89] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
           <div

@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import oneonone from "@/public/asset/oneonone.jpg";
-import familytraining from "@/public/asset/familytraining.jpg";
-import occupationaltherapy from "@/public/asset/occupationaltherapy.jpg";
-import grouptherapy from "@/public/asset/grouptherapy.jpg";
+// import familytraining from "@/public/asset/familytraining.jpg";
+//import occupationaltherapy from "@/public/asset/occupationaltherapy.jpg";
+//import grouptherapy from "@/public/asset/grouptherapy.jpg";
 import speechtherapy from "@/public/asset/speechtherapy.jpg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -108,11 +108,11 @@ export default function ProductSection() {
           </div>
           <div className="h-full w-2/6 ">
             {" "}
-            <Image
+            {/* <Image
               src={occupationaltherapy}
               alt="Gallery Image"
               className="w-full h-full object-cover"
-            />
+            /> */}
           </div>
         </section>
         <section
@@ -121,11 +121,11 @@ export default function ProductSection() {
         >
           <div className="h-full w-2/6 ">
             {" "}
-            <Image
+            {/* <Image
               src={grouptherapy}
               alt="Gallery Image"
               className="w-full h-full object-cover"
-            />
+            /> */}
           </div>
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#e2fbff] text-black p-4 lg:p-24">
             <div
@@ -165,11 +165,11 @@ export default function ProductSection() {
           </div>
           <div className="h-full w-2/6 ">
             {" "}
-            <Image
+            {/* <Image
               src={familytraining}
               alt="Gallery Image"
               className="w-full h-full object-cover"
-            />
+            /> */}
           </div>
         </section>
         <section
