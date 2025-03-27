@@ -18,30 +18,33 @@ const merriweather = Fredoka({
 export default function ProductSection() {
   return (
     <div className="overflow-x-hidden">
-      <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[30px] pb-[100px] lg:pt-[90px] lg:py-0 px-4 lg:px-28 items-center bg-[#EFFFEA] justify-between">
-      <motion.div
+      <div className="relative flex flex-col lg:flex-row h-screen w-full pt-[30px] pb-[100px] lg:pt-[90px] lg:py-0 px-6 lg:px-28 items-center bg-[#EFFFEA] justify-center lg:justify-between">
+        {/* Hero Image for Mobile */}
+        <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex lg:hidden items-center justify-center w-full lg:w-1/3 h-screen"
+          className="z-0 absolute top-0 left-0 opacity-5 flex lg:hidden items-center justify-center w-full lg:w-1/3 h-full"
         >
           <Image
             src={heroImage}
             alt="logo"
-            className=" w-[350px] h-[600px] object-fill"
+            className="w-[350px] h-[600px] object-fill opacity-15"
           />
         </motion.div>
+
+        {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2"
+          className="z-10 flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none text-[#FF9358] `}
+            className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none text-[#FF9358]`}
           >
             Tailored ABA Therapy for Every Child’s Unique Journey
           </motion.div>
@@ -49,12 +52,14 @@ export default function ProductSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-[20px] tracking-tight "
+            className="text-[20px] tracking-tight"
           >
             From early intervention to social skills training, we provide
             personalized support tailored to each individual’s needs.
           </motion.p>
         </motion.div>
+
+        {/* Hero Image for Larger Screens */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -64,10 +69,11 @@ export default function ProductSection() {
           <Image
             src={heroImage}
             alt="logo"
-            className=" w-[350px] h-[600px] object-fill"
+            className="w-[350px] h-[600px] object-fill"
           />
         </motion.div>
       </div>
+
       <div className="w-full h-auto p-12 px-4 lg:px-28 flex flex-col gap-10">
         <section
           id="coffee"
