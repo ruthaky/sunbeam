@@ -257,7 +257,7 @@ export default function ServicesSection() {
         </div>
       </div>
       <div className="py-[100px] flex flex-col gap-6 justify-center lg:hidden">
-        <div className="flex flex-col gap-10 justify-center items-center py-4 px-6">
+        <div className="flex flex-col gap-10 justify-start items-start py-4 px-6">
           <div
             className={` ${merriweather.variable} font-merriweather font-semibold flex flex-col lg:gap-2 text-[35px] lg:text-[42px]  text-[#312f30] leading-none `}
           >
