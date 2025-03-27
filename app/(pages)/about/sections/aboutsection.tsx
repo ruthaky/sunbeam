@@ -97,7 +97,7 @@ export default function AboutSection() {
           />
         </motion.div>
       </div>
-      <div className="w-full h-auto lg:h-screen flex flex-col gap-10 px-5 lg:px-28 pb-10 pt-[18%] justify-center">
+      <div className="w-full h-auto lg:h-screen flex flex-col gap-4 lg:gap-10 px-5 lg:px-28 pb-10 pt-[18%] justify-center">
         <div
           className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[36px] lg:text-[42px] text-[#312f30] font-semibold leading-none `}
         >
