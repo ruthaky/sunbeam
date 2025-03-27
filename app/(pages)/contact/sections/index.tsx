@@ -113,9 +113,9 @@ export default function ContactSection() {
           className="flex flex-col relative  w-full lg:w-[600px] h-full bg-cover "
           // style={{ backgroundImage: `url(${image.src})` }}
         >
-          <div className="lg:absolute top-0 left-0 flex flex-col gap-6 w-full h-full bg-[#C3F498] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
+          <div className="lg:absolute top-0 left-0 flex flex-col gap-6 lg:gap-8 w-full h-full bg-[#C3F498] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
             <div
-              className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[35px] lg:text-[42px]  font-semibold leading-none `}
+              className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px]  font-semibold leading-none `}
             >
               Contact Info
               {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
@@ -152,9 +152,9 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 w-full lg:w-2/3 h-full px-5 lg:px-[60px] lg:pr-28 py-10 lg:py-28 bg-[#efffeaa4]">
+        <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/3 h-full px-5 lg:px-[60px] lg:pr-28 py-10 lg:py-28 bg-[#efffeaa4]">
           <div
-            className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[35px] lg:text-[42px]  font-semibold leading-none `}
+            className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px]  font-semibold leading-none `}
           >
             More questions?
             {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
@@ -168,7 +168,7 @@ export default function ContactSection() {
             <div>
               <label
                 htmlFor="name"
-                className="text-[20px] font-light block mb-2"
+                className="text-[18px] lg:text-[20px] block mb-2"
               >
                 Name
               </label>
@@ -177,14 +177,14 @@ export default function ContactSection() {
                 id="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full border-b border-white bg-[#b7b5aa31] py-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
+                className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
                 required
               />
             </div>
             <div>
               <label
                 htmlFor="email"
-                className="text-[20px] font-light block mb-2"
+                className="text-[18px] lg:text-[20px] block mb-2"
               >
                 Email
               </label>
@@ -193,14 +193,14 @@ export default function ContactSection() {
                 id="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full border-b border-white bg-[#b7b5aa31] py-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
+                className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
                 required
               />
             </div>
             <div>
               <label
                 htmlFor="phonenumber"
-                className="text-[20px] font-light block mb-2"
+                className="text-[18px] lg:text-[20px] block mb-2"
               >
                 Phonenumber
               </label>
@@ -209,14 +209,14 @@ export default function ContactSection() {
                 id="phonenumber"
                 value={formData.phonenumber}
                 onChange={handleInputChange}
-                className="w-full border-b border-white bg-[#b7b5aa31] py-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
+                className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
                 required
               />
             </div>
             <div>
               <label
                 htmlFor="message"
-                className="text-[20px] font-light block mb-2"
+                className="text-[18px] lg:text-[20px] block mb-2"
               >
                 Message
               </label>
@@ -224,13 +224,13 @@ export default function ContactSection() {
                 id="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                className="w-full border-b border-white bg-[#b7b5aa31] py-2 lg:h-[80px] focus:outline-none focus:border-b-2 focus:border-white"
+                className="w-full border-b border-white bg-[#b7b5aa31] p-2 lg:h-[80px] focus:outline-none focus:border-b-2 focus:border-white"
                 required
               />
             </div>
             <div className="w-full flex h-auto justify-end">
               <Button type="submit" variant="contact">
-                yes
+             Send
               </Button>
             </div>
           </form>

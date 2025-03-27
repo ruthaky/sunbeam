@@ -36,7 +36,7 @@ export default function MobileVillas() {
   }, [embla]);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center py-[100px]">
+    <div className="w-full flex flex-col items-center gap-6 lg:gap-8 justify-center py-[100px]">
       <div
         className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[30px] lg:text-[42px] font-semibold leading-none `}
       >
@@ -44,7 +44,7 @@ export default function MobileVillas() {
         {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
         <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
       </div>
-      <div className="w-[85%] flex justify-center items-center py-10">
+      <div className="w-[85%] flex justify-center items-center">
         <Carousel
           withIndicators
           height={600}

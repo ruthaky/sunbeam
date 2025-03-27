@@ -97,7 +97,7 @@ export default function AboutSection() {
           />
         </motion.div>
       </div>
-      <div className="w-full h-auto lg:h-screen flex flex-col gap-4 lg:gap-10 px-5 lg:px-28 pb-10 pt-[18%] justify-center">
+      <div className="w-full h-auto lg:h-screen flex flex-col gap-6 lg:gap-8 px-5 lg:px-28 pb-10 pt-[18%] justify-center">
         <div
           className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[36px] lg:text-[42px] text-[#312f30] font-semibold leading-none `}
         >
@@ -185,11 +185,11 @@ export default function AboutSection() {
               className="absolute -bottom-10 right-0 w-[150px] h-[150px] object-fit z-0"
             />
             <h3
-              className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[30px] lg:text-[42px]  text-[#619BA4] leading-none`}
+              className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[36px] lg:text-[42px]  text-[#619BA4] leading-none`}
             >
               Vision
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-[#545454] text-[16px] lg:text-[18px] text-center">
               Our mission is to provide exceptional services that foster growth
               and innovation for individuals and businesses alike.
             </p>
@@ -204,11 +204,11 @@ export default function AboutSection() {
             />
 
             <h3
-              className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[30px] lg:text-[42px]  text-[#A78C00] leading-none`}
+              className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[36px] lg:text-[42px]  text-[#A78C00] leading-none`}
             >
               Mission
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-[#545454] text-[16px] lg:text-[18px] text-center">
               We envision a future where creativity and technology merge to
               create impactful solutions for the world.
             </p>
@@ -222,12 +222,12 @@ export default function AboutSection() {
               className="absolute -bottom-10 right-0 w-[150px] h-[150px] object-fit z-0"
             />
             <h3
-              className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[30px] lg:text-[42px]  text-[#729652] leading-none`}
+              className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[36px] lg:text-[42px]  text-[#729652] leading-none`}
             >
               Values
             </h3>
 
-            <p className="text-gray-600 text-center">
+            <p className="text-[#545454] text-[16px] lg:text-[18px] text-center">
               Integrity, innovation, and excellence guide everything we do to
               ensure meaningful and lasting contributions.
             </p>

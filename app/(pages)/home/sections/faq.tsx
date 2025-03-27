@@ -71,9 +71,9 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="w-full h-auto  px-5 lg:px-[200px] py-20 flex flex-col gap-10">
+    <div className="w-full h-auto  px-5 lg:px-[200px] py-20 flex flex-col gap-6 lg:gap-8">
       <div
-        className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[35px] lg:text-[42px]  font-semibold leading-none `}
+        className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px]  font-semibold leading-none `}
       >
         Frequently asked questions
         {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
@@ -86,7 +86,7 @@ const FAQSection = () => {
             className="bg-[#f3f9f3] border border-gray-200 p-4 cursor-pointer rounded-[10px]"
             onClick={() => toggleFAQ(index)}
           >
-            <div className="flex justify-between items-center text-lg font-medium">
+            <div className="flex justify-between items-center text-[18px] lg:text-[20px] font-medium">
               <span>{faq.question}</span>
               <div
                 className={`w-8 h-8 flex items-center justify-center transition-all rounded-full duration-300 ${openedIndex === index ? "bg-[#CECFCD]" : "bg-[#C3F498]"}`}
@@ -99,7 +99,7 @@ const FAQSection = () => {
               </div>
             </div>
             <Collapse in={openedIndex === index}>
-              <p className="mt-2 text-gray-600">{faq.answer}</p>
+              <p className="mt-2 text-[#545454] text-[16px] lg:text-[18px]">{faq.answer}</p>
             </Collapse>
           </div>
         ))}

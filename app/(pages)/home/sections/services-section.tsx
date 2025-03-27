@@ -40,7 +40,7 @@ export default function ServicesSection() {
     <div>
       <div
         ref={sectionRef}
-        className="hidden lg:flex flex-col gap-5 h-screen justify-center w-full bg-white lg:py-0 "
+        className="hidden lg:flex flex-col gap-6 lg:gap-8 h-screen justify-center w-full bg-white lg:py-0 "
       >
         <div className="flex flex-col gap-6 justify-start py-4 px-28">
           <div

@@ -18,7 +18,7 @@ const merriweather = Fredoka({
 export default function Abasection() {
   return (
     <div
-      className="relative w-full h-auto py-[70px] lg:pt-[150px] lg:pb-[180px] flex flex-col gap-4 lg:gap-10 px-6 lg:px-[200px] bg-[#d4feff] lg:bg-opacity-0 justify-center bg-cover"
+      className="relative w-full h-auto py-[70px] lg:pt-[150px] lg:pb-[180px] flex flex-col gap-6 lg:gap-8 px-6 lg:px-[200px] bg-[#d4feff] lg:bg-opacity-0 justify-center bg-cover"
       style={{ backgroundImage: `url(${Bluebg.src})` }}
     >
       {/* ✅ Floating Star 1 */}
@@ -32,7 +32,7 @@ export default function Abasection() {
           alt="Gallery Image"
           width={10}
           height={12}
-          className="flex  w-[150px] lg:w-full h-full object-cover"
+          className="flex  w-[150px] lg:w-[300px] h-full object-cover"
         />
       
       </motion.div>
@@ -53,14 +53,14 @@ export default function Abasection() {
       </motion.div>
 
       {/* ✅ Section Content */}
-      <div  className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[35px] lg:text-[42px] font-semibold leading-none `}>
+      <div  className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px] font-semibold leading-none `}>
         What is ABA?
         {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
         <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
       </div>
 
-      <div className="text-[#545454] lg:pb-10 z-0 flex flex-col gap-10">
-        <p className="text-[15px] lg:text-[20px] tracking-tight">
+      <div className="text-[#545454] lg:pb-10 z-0 flex flex-col gap-6 lg:gap-8">
+        <p className="text-[18px] lg:text-[20px] tracking-tight">
           Sunbeam ABA Therapy understands that every child is unique and
           deserves a personalized, compassionate approach to therapy. We are
           dedicated to providing individualized, evidence-based Applied Behavior
