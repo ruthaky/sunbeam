@@ -56,7 +56,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className={`${merriweather.variable} font-merriweather font-semibold text-[55px] lg:text-[90px] tracking-tight leading-[45px] text-white lg:leading-[70px]`}
+          className={`${merriweather.variable} font-merriweather font-semibold text-[60px] lg:text-[90px] tracking-tight leading-none text-white `}
         >
           Holistic Therapy
         </motion.div>
