@@ -74,7 +74,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex lg:hidden items-center justify-center w-full z-10"
+          className="flex lg:hidden items-center justify-center w-full z-0"
         >
           <Image
             src={heroImage}

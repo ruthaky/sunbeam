@@ -59,7 +59,7 @@ export default function Abasection() {
         <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
       </div>
 
-      <div className="text-[#545454] lg:pb-10 z-10 flex flex-col gap-10">
+      <div className="text-[#545454] lg:pb-10 z-0 flex flex-col gap-10">
         <p className="text-[15px] lg:text-[20px] tracking-tight">
           Sunbeam ABA Therapy understands that every child is unique and
           deserves a personalized, compassionate approach to therapy. We are

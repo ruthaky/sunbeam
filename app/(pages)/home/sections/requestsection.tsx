@@ -20,7 +20,7 @@ function Requestsection() {
 
   return (
     <div className="flex relative w-full h-auto lg:h-[550px] bg-[#fff] justify-center items-center px-6 lg:px-[200px]">
-      <div className="relative z-10 w-full h-[290px] bg-[#FF9358] flex flex-col items-center justify-center gap-8 px-[60px] overflow-hidden rounded-[20px]">
+      <div className="relative z-0 w-full h-[290px] bg-[#FF9358] flex flex-col items-center justify-center gap-8 px-[60px] overflow-hidden rounded-[20px]">
         {/* Rotating Hero Icon 1 */}
         <motion.div
           style={{ rotate: rotateHero1 }}

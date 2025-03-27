@@ -38,7 +38,7 @@ export default function ProductSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="z-10 flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2"
+          className="z-0 flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
