@@ -72,7 +72,7 @@ export default function ContactSection() {
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-white">
       <div
         className="flex flex-col relative  w-full lg:w-[600px] h-auto lg:h-full bg-cover "
-        // style={{ backgroundImage: `url(${Image.src})` }}
+        style={{ backgroundImage: `url(${Image.src})` }}
       >
         <div className="lg:absolute top-0 left-0 flex flex-col gap-6 lg:gap-8 w-full h-full bg-[#ffeb89] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
           <div
@@ -113,7 +113,6 @@ export default function ContactSection() {
         </div>
       </div>
 
-      
       <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/3 h-auto lg:h-full px-5 lg:px-[60px] lg:pr-28 py-10 lg:py-28 bg-[#fbf5d7] bg-opacity-30">
         <div
           className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px]  font-semibold leading-none `}
@@ -128,7 +127,10 @@ export default function ContactSection() {
           className="flex flex-col gap-4 w-full lg:w-[700px]"
         >
           <div>
-            <label htmlFor="name" className="text-[18px] lg:text-[20px] block mb-2">
+            <label
+              htmlFor="name"
+              className="text-[18px] lg:text-[20px] block mb-2"
+            >
               Name
             </label>
             <input
