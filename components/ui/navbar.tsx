@@ -17,9 +17,23 @@ export const MobileNavbar = () => {
     router.push(path);
   };
 
+  // Prevent scrolling when menu is open
+  useEffect(() => {
+    if (opened) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"; // Cleanup on unmount
+    };
+  }, [opened]);
+
   return (
-    <div>
-      <Flex className=" z-100 flex justify-between items-center md:hidden h-[60px] w-full bg-white fixed left-0 top-0 z-10 px-4">
+    <div className="fixed top-0 left-0 h-auto w-full z-50">
+      {/* Navbar Header */}
+      <Flex className="z-50 flex justify-between items-center md:hidden h-[60px] w-full bg-white fixed left-0 top-0 px-4">
         <Link
           className="h-full w-[60px] lg:w-[80px]"
           href="/"
@@ -30,15 +44,16 @@ export const MobileNavbar = () => {
 
         <Burger opened={opened} onClick={toggle} size="30px" color="#000" />
       </Flex>
+
+      {/* Collapsible Menu */}
       <Collapse
         in={opened}
-        className="absolute  top-[60px] left-0 w-full bg-white z-20"
+        className="fixed top-[60px] left-0 w-full bg-white z-40"
       >
         <Flex
           direction="column"
           align="center"
-          className="gap-4 py-4 border-t fixed bg-white w-full"
-          onClick={toggle}
+          className="gap-4 py-4 border-t bg-white w-full"
         >
           <Link href="/" onClick={() => handleLinkClick("/")}>
             Home
