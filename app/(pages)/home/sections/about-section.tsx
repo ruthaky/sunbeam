@@ -44,10 +44,7 @@ export default function AboutSection() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <Link
-          href={`/${pathname.split("/")[1]}/about`}
-          onClick={() => handleLinkClick("/about")}
-        >
+        <Link href="/about">
           <Button>Read More</Button>
         </Link>
       </div>

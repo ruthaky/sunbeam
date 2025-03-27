@@ -54,7 +54,7 @@ export default function ServicesSection() {
           <div className="flex flex-row  gap-4 lg-flex-row w-auto h-[280px] lg:gap-10 px-28">
             <div className="w-[400px] rounded-[25px] h-full mb-4 lg:mb-0 p-4 flex flex-col gap-2 bg-[#C3F498]  justify-center ">
               <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
-                <Link href="/details">
+                <Link href="/services/#oneonone">
                   <motion.div
                     animate={
                       isHoveredgreen
@@ -128,7 +128,7 @@ export default function ServicesSection() {
                   />
                 </motion.div>
 
-                <Link href="/details">
+                <Link href="/services/#family">
                   <motion.div
                     animate={
                       isHoveredorange
@@ -155,7 +155,7 @@ export default function ServicesSection() {
 
             <div className="w-[400px] rounded-[25px] h-full mb-4 lg:mb-0 p-4 flex flex-col gap-2 bg-[#97EAFD] justify-center">
               <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
-                <Link href="/details">
+                <Link href="/services/#occupational">
                   <motion.div
                     animate={
                       isHoveredblue
@@ -229,7 +229,7 @@ export default function ServicesSection() {
                   />
                 </motion.div>
 
-                <Link href="/details">
+                <Link href="/services/#group">
                   <motion.div
                     animate={
                       isHoveredyellow

@@ -55,7 +55,7 @@ export default function ProductSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-[20px] tracking-tight"
+            className="text-[18px] lg:text-[20px] text-[#545454]"
           >
             From early intervention to social skills training, we provide
             personalized support tailored to each individual’s needs.
@@ -79,7 +79,7 @@ export default function ProductSection() {
 
       <div className="w-full h-auto p-12 px-4 lg:px-28 flex flex-col gap-10">
         <section
-          id="coffee"
+          id="oneonone"
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
         >
           <div className="h-full w-2/6 ">
@@ -107,7 +107,7 @@ export default function ProductSection() {
           </div>
         </section>
         <section
-          id="sesame"
+          id="family"
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-14"
         >
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EFF8EF] text-black p-4 lg:p-24">
@@ -134,7 +134,7 @@ export default function ProductSection() {
           </div>
         </section>
         <section
-          id="soybean"
+          id="occupational"
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-14"
         >
           <div className="h-full w-2/6 ">
@@ -162,7 +162,7 @@ export default function ProductSection() {
           </div>
         </section>
         <section
-          id="kidneybean"
+          id="group"
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-14"
         >
           <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#fffadb] text-black p-4 lg:p-24">
@@ -191,7 +191,7 @@ export default function ProductSection() {
           </div>
         </section>
         <section
-          id="castor"
+          id="speech"
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-14"
         >
           <div className="h-full w-2/6 ">

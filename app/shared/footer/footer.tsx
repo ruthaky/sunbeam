@@ -68,7 +68,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <Link
                       className="hover:underline"
-                      href={`/${pathname.split("/")[1]}/`}
+                      href="/"
                       onClick={() => handleLinkClick("/")}
                     >
                       Home
@@ -77,7 +77,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <Link
                       className="hover:underline"
-                      href={`/${pathname.split("/")[1]}/about`}
+                      href="/about"
                       onClick={() => handleLinkClick("/about")}
                     >
                       About
@@ -87,16 +87,16 @@ export default function Footer() {
                   <li className="mb-4">
                     <Link
                       className="hover:underline"
-                      href={`/${pathname.split("/")[1]}/products`}
+                      href="/services"
                       onClick={() => handleLinkClick("/products")}
                     >
-                      Products
+                      Services
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
                       className="hover:underline"
-                      href={`/${pathname.split("/")[1]}/contact`}
+                      href="/contact"
                       onClick={() => handleLinkClick("/contact")}
                     >
                       Contact
@@ -115,38 +115,22 @@ export default function Footer() {
                 </h2>
                 <ul className="text-[#5a5a5a] font-medium">
                   <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://www.linkedin.com/company/surge-crops-trading/"
-                      className="hover:underline "
-                    >
+                    <a target="_blank" href="#" className="hover:underline ">
                       Linkedin
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://web.facebook.com/profile.php?id=61570314600876&rdid=xpJfxyJoyFhAhh5V&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1AXb12jsEb%2F%3F_rdc%3D1%26_rdr"
-                      className="hover:underline "
-                    >
+                    <a target="_blank" href="#" className="hover:underline ">
                       Facebook
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://www.instagram.com/surgecrops/profilecard/?igsh=MWRhc3Z1a2ZkbDUweg=="
-                      className="hover:underline "
-                    >
+                    <a target="_blank" href="#" className="hover:underline ">
                       Instagram
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a
-                      target="_blank"
-                      href="https://x.com/surgecrops?s=21&t=35OU63AnXcZmm3FJlZGrkA"
-                      className="hover:underline "
-                    >
+                    <a target="_blank" href="#" className="hover:underline ">
                       Twitter
                     </a>
                   </li>
@@ -158,20 +142,19 @@ export default function Footer() {
                 </h2>
                 <ul className="text-[#5a5a5a] text-nowrap font-medium">
                   <li className="mb-4 text-[14px] text-nowrap">
-                    info@surgecrops.com
+                    admin@sunbeamcenter.com
                   </li>
-                  <li className="mb-4 text-[14px] text-nowrap">
+                  {/* <li className="mb-4 text-[14px] text-nowrap">
                     sales@surgecrops.com
                   </li>
                   <li className="mb-4 text-[14px] text-nowrap">
                     marketing@surgecrops.com
-                  </li>
-                  <li className="text-nowrap">+971 55 181 9398 </li>
+                  </li> */}
+                  <li className="text-nowrap">+1111111111 </li>
                 </ul>
               </div>
             </div>
           </div>
-          {/* <hr className="my-6 border-[#ff4789] sm:mx-auto lg:my-8 border-t-[2px]" /> */}
         </div>
       </footer>
     </div>

@@ -52,7 +52,7 @@ function Requestsection() {
           {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
         <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
         </div>
-        <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20soy%20beans%20you%20offer">
+        <Link href="#">
           <Button>ABA Service Request</Button>
         </Link>
       </div>

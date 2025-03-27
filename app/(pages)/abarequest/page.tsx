@@ -34,7 +34,7 @@ function page() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none `}
+          className={`${merriweather.variable} font-merriweather text-[36px] lg:text-[60px] font-semibold leading-none `}
         >
          ABA Service Request
         </motion.div>
@@ -42,7 +42,7 @@ function page() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-[20px] tracking-tight "
+          className="text-[18px] lg:text-[20px] text-[#545454]"
         >
           We are hiring- come be a part of an exciting, safe space work
           environment. We offer supervision for RBT’s, BCABa’s in their graduate
@@ -57,7 +57,7 @@ function page() {
             href={`/${pathname.split("/")[1]}/contact`}
             onClick={() => handleLinkClick("/contact")}
           >
-            <Button>hhh</Button>
+            <Button>ABA Service Request</Button>
           </Link>
         </motion.div>
       </motion.div>

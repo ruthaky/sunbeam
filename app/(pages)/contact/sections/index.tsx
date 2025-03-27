@@ -86,7 +86,7 @@ export default function ContactSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-[20px] tracking-tight "
+            className="text-[18px] lg:text-[20px] text-[#545454]"
           >
             We are hiring- come be a part of an exciting, safe space work
             environment. We offer supervision for RBT’s, BCABa’s in their
@@ -229,9 +229,7 @@ export default function ContactSection() {
               />
             </div>
             <div className="w-full flex h-auto justify-end">
-              <Button type="submit">
-             Send
-              </Button>
+              <Button type="submit">Send</Button>
             </div>
           </form>
           {status && <p className=" mt-4">{status}</p>}

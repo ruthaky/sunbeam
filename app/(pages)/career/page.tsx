@@ -58,7 +58,7 @@ function page() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-[20px] tracking-tight "
+              className="text-[18px] lg:text-[20px] text-[#545454]"
             >
               We are hiring- come be a part of an exciting, safe space work
               environment. We offer supervision for RBT’s, BCABa’s in their
@@ -76,49 +76,51 @@ function page() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 py-[70px] lg:py-24 px-4 lg:px-28">
+      <div className="flex flex-col gap-6 lg:gap-8 py-[70px] lg:py-24 px-4 lg:px-28">
         <p
-          className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold tracking-tight `}
+          className={`${merriweather.variable} font-merriweather text-[36px] lg:text-[42px] text-[#312f30] font-semibold tracking-tight `}
         >
           Current Openings
         </p>
-        <div className="flex flex-col gap-4">
-          <h1
-            className={`${merriweather.variable} font-merriweather text-[25px] lg:text-[25px] tracking-tight  `}
-          >
-            Opening 1
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <Link
-            href={`/${pathname.split("/")[1]}/contact`}
-            onClick={() => handleLinkClick("/contact")}
-          >
-            <Button>hhh</Button>
-          </Link>
-        </div>
-        <div className="flex flex-col gap-4">
-          <h1
-            className={`${merriweather.variable} font-merriweather text-[25px] lg:text-[25px] tracking-tight`}
-          >
-            Opening 2
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <Link
-            href={`/${pathname.split("/")[1]}/contact`}
-            onClick={() => handleLinkClick("/contact")}
-          >
-            <Button>hhh</Button>
-          </Link>
+        <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-4 lg:gap-6">
+            <h1
+              className={`${merriweather.variable} font-merriweather text-[25px] lg:text-[25px] tracking-tight leading-none `}
+            >
+              Opening 1
+            </h1>
+            <p className="text-[18px] lg:text-[20px] text-[#545454]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <Link
+              href={`/${pathname.split("/")[1]}/contact`}
+              onClick={() => handleLinkClick("/contact")}
+            >
+              <Button>Apply</Button>
+            </Link>
+          </div>
+          <div className="flex flex-col gap-4 lg:gap-6">
+            <h1
+              className={`${merriweather.variable} font-merriweather text-[25px] lg:text-[25px] tracking-tight leading-none`}
+            >
+              Opening 2
+            </h1>
+            <p className="text-[18px] lg:text-[20px] text-[#545454]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <Link
+              href={`/${pathname.split("/")[1]}/contact`}
+              onClick={() => handleLinkClick("/contact")}
+            >
+              <Button>Apply</Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
