@@ -19,7 +19,7 @@ export const MobileNavbar = () => {
 
   return (
     <div>
-      <Flex className="flex justify-between items-center md:hidden h-[60px] w-full bg-white fixed left-0 top-0 z-10 px-4">
+      <Flex className=" z-100 flex justify-between items-center md:hidden h-[60px] w-full bg-white fixed left-0 top-0 z-10 px-4">
         <Link
           className="h-full w-[60px] lg:w-[80px]"
           href="/"
@@ -91,7 +91,7 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`hidden md:flex flex-row fixed left-0 top-0 w-full justify-between py-1 px-28 z-50 transition-all duration-500 ease-in-out ${
+      className={` z-100 hidden md:flex flex-row fixed left-0 top-0 w-full justify-between py-1 px-28 z-50 transition-all duration-500 ease-in-out ${
         isScrolled ? "bg-white shadow-lg" : "bg-white/0"
       }`}
     >
