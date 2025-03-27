@@ -111,7 +111,7 @@ export default function ContactSection() {
       <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-white z-0">
         <div
           className="flex flex-col relative  w-full lg:w-[600px] h-full bg-cover "
-          style={{ backgroundImage: `url(${image})` }}
+          style={{ backgroundImage: `url(${image.src})` }}
         >
           <div className="lg:absolute top-0 left-0 flex flex-col gap-6 lg:gap-8 w-full h-full bg-[#C3F498] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
             <div
