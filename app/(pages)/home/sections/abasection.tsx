@@ -41,7 +41,7 @@ export default function Abasection() {
       <motion.div
         animate={{ y: [0, 20, 0] }} // Moves slightly different than the first
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -bottom-[35%] lg:-bottom-20 -left-10 w-[300px] h-[350px] z-0"
+        className="absolute -bottom-[15%] lg:-bottom-20 -left-10 w-[300px] h-[350px] z-0"
       >
         <Image
           src={star}

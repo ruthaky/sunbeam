@@ -272,7 +272,7 @@ export default function ServicesSection() {
                 withIndicators
                 loop
                 height="100%"
-                className="w-full h-full flex-1 snap-x"
+                className="w-full h-full flex-1 snap-x px-6"
                 plugins={[autoplay.current]}
                 onMouseEnter={autoplay.current.stop}
                 onMouseLeave={autoplay.current.reset}
@@ -292,17 +292,11 @@ export default function ServicesSection() {
                 <Carousel.Slide className="w-full flex  items-center justify-center snap-center">
                   <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#C3F498]  justify-center ">
                     <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
-                      <motion.div
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={isInView ? { scale: 1, opacity: 1 } : {}}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                      >
-                        <Image
-                          src={heroImage}
-                          alt="logo"
-                          className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
-                        />
-                      </motion.div>
+                      <Image
+                        src={heroImage}
+                        alt="logo"
+                        className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
+                      />
                     </div>
                     <div className="flex flex-row  items-start h-1/3 w-full">
                       {" "}
@@ -315,17 +309,11 @@ export default function ServicesSection() {
                 <Carousel.Slide className="w-full flex items-center justify-center snap-center">
                   <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#FF9358]  justify-center ">
                     <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
-                      <motion.div
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={isInView ? { scale: 1, opacity: 1 } : {}}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                      >
-                        <Image
-                          src={heroImage}
-                          alt="logo"
-                          className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
-                        />
-                      </motion.div>
+                      <Image
+                        src={heroImage}
+                        alt="logo"
+                        className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
+                      />
                     </div>
                     <div className="flex flex-row  items-start h-1/3 w-full">
                       {" "}
@@ -338,17 +326,11 @@ export default function ServicesSection() {
                 <Carousel.Slide className="w-full flex items-center justify-center snap-center">
                   <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#97EAFD]  justify-center ">
                     <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
-                      <motion.div
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={isInView ? { scale: 1, opacity: 1 } : {}}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                      >
-                        <Image
-                          src={heroImage}
-                          alt="logo"
-                          className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
-                        />
-                      </motion.div>
+                      <Image
+                        src={heroImage}
+                        alt="logo"
+                        className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
+                      />
                     </div>
                     <div className="flex flex-row  items-start h-1/3 w-full">
                       {" "}
@@ -361,17 +343,13 @@ export default function ServicesSection() {
                 <Carousel.Slide className="w-full flex items-center justify-center snap-center">
                   <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#FFE24F]  justify-center ">
                     <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
-                      <motion.div
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={isInView ? { scale: 1, opacity: 1 } : {}}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                      >
-                        <Image
-                          src={heroImage}
-                          alt="logo"
-                          className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
-                        />
-                      </motion.div>
+                      <Image
+                        src={heroImage} // Ensure correct reference
+                        alt="logo"
+                        width={230} // Explicit width
+                        height={230} // Explicit height
+                        className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-10"
+                      />
                     </div>
                     <div className="flex flex-row  items-start h-1/3 w-full">
                       {" "}
