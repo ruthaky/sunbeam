@@ -96,7 +96,7 @@ export default function ProductSection() {
             >
               ABA one-on-one direct therapy
             </div>
-            <div className="text-[18px] lg:text-[20px] text-[#545454]">
+            <div className="text-[16px] lg:text-[20px] text-[#545454]">
               We have trained and compassionate ABA therapists to enhance
               communication, social skills, adaptive behaviors, and overall
               independence, while reducing undesirable behaviors or limiting
@@ -116,7 +116,7 @@ export default function ProductSection() {
             >
               Family Caregiver/Training
             </div>
-            <div className="text-[18px] lg:text-[20px] text-[#545454]">
+            <div className="text-[16px] lg:text-[20px] text-[#545454]">
               Family Caregiver/Training: We offer parent training: caregivers of
               children receiving Applied Behavior Analysis (ABA) therapy are
               educated on how to implement behavioral strategies at home,
@@ -151,7 +151,7 @@ export default function ProductSection() {
             >
               Occupational Therapy
             </div>
-            <div className="text-[18px] lg:text-[20px] text-[#545454]">
+            <div className="text-[16px] lg:text-[20px] text-[#545454]">
               The primary goal of Occupational Therapy for ASD is to promote the
               development of essential skills and functional independence across
               various domains. OT practitioners work collaboratively with
@@ -171,7 +171,7 @@ export default function ProductSection() {
             >
               Group Session
             </div>
-            <div className="text-[18px] lg:text-[20px] text-[#545454]">
+            <div className="text-[16px] lg:text-[20px] text-[#545454]">
               We offer structured therapy sessions where multiple children
               participate together, guided by a therapist, to practice and
               develop social skills, communication abilities, and cooperative
@@ -208,7 +208,7 @@ export default function ProductSection() {
             >
               Speech Therapy
             </div>
-            <div className="text-[18px] lg:text-[20px] text-[#545454]">
+            <div className="text-[16px] lg:text-[20px] text-[#545454]">
               Coming soon please send inquire to admin@sunbeamcenter for more
               information on speech therapy.
             </div>
