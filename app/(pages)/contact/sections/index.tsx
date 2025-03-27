@@ -67,27 +67,7 @@ export default function ContactSection() {
   };
   return (
     <div>
-      <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[90px] lg:py-0 px-4 lg:px-28 items-center bg-[#fff] justify-between">
-        <motion.div
-          style={{ rotate }}
-          className="absolute top-[-300px] right-[-300px] w-[800px] h-[800px] -z-1"
-        >
-          <Image
-            src={heroIcon}
-            alt="Gallery Image"
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-        <motion.div
-          style={{ rotate }}
-          className="absolute bottom-[0px] left-[-50px] w-[150px] h-[150px] -z-1"
-        >
-          <Image
-            src={heroIcon2}
-            alt="Gallery Image"
-            className="w-full h-full object-cover z-10"
-          />
-        </motion.div>
+      <div className="flex flex-col lg:flex-row h-auto py-[100px] lg:h-screen w-full pt-[90px] lg:py-0 px-4 lg:px-28 items-center bg-[#fff] justify-between">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -133,7 +113,7 @@ export default function ContactSection() {
           className="flex flex-col relative  w-full lg:w-[600px] h-full bg-cover "
           // style={{ backgroundImage: `url(${image.src})` }}
         >
-          <div className="absolute top-0 left-0 flex flex-col gap-6 w-full h-full bg-[#C3F498] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
+          <div className="lg:absolute top-0 left-0 flex flex-col gap-6 w-full h-full bg-[#C3F498] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
             <div
               className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[35px] lg:text-[42px]  font-semibold leading-none `}
             >

@@ -25,10 +25,10 @@ export default function HeroSection() {
   const rotate = useTransform(scrollY, [0, 1300], [0, 360]);
   const rotate2 = useTransform(scrollY, [0, 1000], [0, 360]);
   return (
-    <div className="relative flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[90px] lg:py-0 px-4 lg:px-28 items-center bg-[#FF9358] justify-center">
+    <div className="relative flex flex-col lg:flex-row h-screen lg:h-screen w-full lg:pt-[90px] lg:py-0 px-6 lg:px-28 items-center bg-[#FF9358] justify-center">
       <motion.div
         style={{ rotate }}
-        className="absolute top-[-300px] right-[-300px] w-[800px] h-[800px] -z-1"
+        className="absolute -top-[50px] -right-[100px] lg:top-[-300px] lg:right-[-300px]  w-[300px] h-[300px] lg:w-[800px] lg:h-[800px] -z-1"
       >
         <Image
           src={heroIcon}
@@ -56,7 +56,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className={`${merriweather.variable} font-merriweather font-semibold text-[35px] lg:text-[90px] tracking-tight leading-[45px] text-white lg:leading-[70px]`}
+          className={`${merriweather.variable} font-merriweather font-semibold text-[55px] lg:text-[90px] tracking-tight leading-[45px] text-white lg:leading-[70px]`}
         >
           Holistic Therapy
         </motion.div>

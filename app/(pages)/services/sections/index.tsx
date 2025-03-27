@@ -1,13 +1,10 @@
 "use client";
 import Image from "next/image";
 import oneonone from "@/public/asset/oneonone.jpg";
-// import familytraining from "@/public/asset/familytraining.jpg";
-//import occupationaltherapy from "@/public/asset/occupationaltherapy.jpg";
-//import grouptherapy from "@/public/asset/grouptherapy.jpg";
 import speechtherapy from "@/public/asset/speechtherapy.jpg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import heroImage from "@/public/asset/shapes2.svg";
+import heroImage from "@/public/asset/shapesnew.svg";
 import { Fredoka } from "next/font/google";
 import { motion } from "framer-motion";
 import Requestsection from "../../home/sections/requestsection";
@@ -21,7 +18,19 @@ const merriweather = Fredoka({
 export default function ProductSection() {
   return (
     <div className="overflow-x-hidden">
-      <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[90px] lg:py-0 px-4 lg:px-28 items-center bg-[#EFFFEA] justify-between">
+      <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[30px] pb-[100px] lg:pt-[90px] lg:py-0 px-4 lg:px-28 items-center bg-[#EFFFEA] justify-between">
+      <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex lg:hidden items-center justify-center w-full lg:w-1/3 h-screen"
+        >
+          <Image
+            src={heroImage}
+            alt="logo"
+            className=" w-[350px] h-[600px] object-fill"
+          />
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,7 +87,7 @@ export default function ProductSection() {
             >
               ABA one-on-one direct therapy
             </div>
-            <div className="text-[12px] lg:text-[20px] text-[#696969]">
+            <div className="text-[15px] lg:text-[20px] text-[#696969]">
               We have trained and compassionate ABA therapists to enhance
               communication, social skills, adaptive behaviors, and overall
               independence, while reducing undesirable behaviors or limiting
@@ -98,7 +107,7 @@ export default function ProductSection() {
             >
               Family Caregiver/Training
             </div>
-            <div className="text-[12px] lg:text-[20px] text-[#696969]">
+            <div className="text-[15px] lg:text-[20px] text-[#696969]">
               Family Caregiver/Training: We offer parent training: caregivers of
               children receiving Applied Behavior Analysis (ABA) therapy are
               educated on how to implement behavioral strategies at home,
@@ -133,7 +142,7 @@ export default function ProductSection() {
             >
               Occupational Therapy
             </div>
-            <div className="text-[12px] lg:text-[20px] text-[#696969]">
+            <div className="text-[15px] lg:text-[20px] text-[#696969]">
               The primary goal of Occupational Therapy for ASD is to promote the
               development of essential skills and functional independence across
               various domains. OT practitioners work collaboratively with
@@ -153,7 +162,7 @@ export default function ProductSection() {
             >
               Group Session
             </div>
-            <div className="text-[12px] lg:text-[20px] text-[#696969]">
+            <div className="text-[15px] lg:text-[20px] text-[#696969]">
               We offer structured therapy sessions where multiple children
               participate together, guided by a therapist, to practice and
               develop social skills, communication abilities, and cooperative
@@ -190,7 +199,7 @@ export default function ProductSection() {
             >
               Speech Therapy
             </div>
-            <div className="text-[12px] lg:text-[20px] text-[#696969]">
+            <div className="text-[15px] lg:text-[20px] text-[#696969]">
               Coming soon please send inquire to admin@sunbeamcenter for more
               information on speech therapy.
             </div>

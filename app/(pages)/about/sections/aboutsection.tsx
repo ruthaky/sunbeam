@@ -35,8 +35,8 @@ export default function AboutSection() {
   return (
     <div className="overflow-x-hidden">
       <div className="relative justify-center">
-        <div className=" flex flex-col lg:flex-row h-auto lg:h-screen w-full p-4 lg:px-28 borbder border-b-[20px] border-b-orange-400  bg-[#fff] justify-center">
-          <motion.div
+        <div className=" flex flex-col lg:flex-row h-auto lg:h-screen w-full py-[100px] px-6 lg:p-4 lg:px-28 borbder border-b-[10px] blg:order-b-[20px] border-b-orange-400  bg-[#fff] justify-center">
+          {/* <motion.div
             style={{ rotate }}
             className="absolute top-[-300px] right-[-300px] w-[800px] h-[800px] -z-1 shadow-[10px]"
           >
@@ -45,7 +45,7 @@ export default function AboutSection() {
               alt="Gallery Image"
               className="w-full h-full object-cover opacity-30 "
             />
-          </motion.div>
+          </motion.div> */}
           {/* <motion.div
             style={{ rotate }}
             className="absolute bottom-[-80px] left-[-100px] w-[250px] h-[250px] -z-1"
@@ -60,47 +60,35 @@ export default function AboutSection() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col gap-6 w-full justify-center items-center"
+            className="flex flex-col gap-6 lg:gap-6 w-full justify-center items-center"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className={`${merriweather.variable} absolute top-[30%] font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none text-center ]`}
+              className={`${merriweather.variable} flex lg:absolute lg:top-[30%] font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none text-center ]`}
             >
               Compassionate Care, Life-Changing Growth
             </motion.div>
-            {/* <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-[20px] "
-          >
-            We are hiring- come be a part of an exciting, safe space work
-            environment. We offer supervision for RBT’s, BCABa’s in their
-            graduate program. We are hiring- come be a part of an exciting, safe
-            space work environment. We offer supervision for RBT’s, BCABa’s in
-            their graduate program.
-          </motion.p> */}
-            {/* <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <Link
-              href={`/${pathname.split("/")[1]}/contact`}
-              onClick={() => handleLinkClick("/contact")}
-            >
-              <Button>hhh</Button>
-            </Link>
-          </motion.div> */}
+            <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex lg:hidden items-center justify-center w-full z-10"
+        >
+          <Image
+            src={heroImage}
+            alt="logo"
+            className=" w-full rounded-[20px]"
+          />
+        </motion.div>
           </motion.div>
         </div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="absolute bottom-[-15%] lg:flex items-center px-28 justify-center w-full z-10"
+          className="lg:absolute lg:bottom-[-15%] hidden lg:flex items-center px-28 justify-center w-full z-10"
         >
           <Image
             src={heroImage}
@@ -120,36 +108,31 @@ export default function AboutSection() {
         <div className="text-[#545454]">
           <div>
             <p className="text-[20px] tracking-tight">
-              Sunbeam ABA Therapy understands that every child is unique and
-              deserves a personalized, compassionate approach to therapy. We are
-              dedicated to providing individualized, evidence-based Applied
-              Behavior Analysis (ABA) therapy that supports meaningful progress
-              in each child's life. Our team works closely with both the child
-              and their family to develop customized treatment plans that
-              address specific challenges while promoting independence,
-              communication, and functional skills.
+              At SunBeam ABA Therapy, our journey began with a simple yet
+              powerful belief: every child deserves the opportunity to shine. We
+              saw a need for compassionate, individualized care for children
+              with autism, and we set out to create a place where they could
+              learn, grow, and thrive.
               <br />
               <br />
-              We believe that early intervention can be life-changing, but we
-              also recognize the importance of allowing children to experience
-              the joys of childhood. Our approach blends structured,
-              research-backed techniques with naturalistic teaching strategies,
-              ensuring that learning happens in an engaging and supportive
-              environment. We focus not just on skills development, but on
-              building confidence, fostering connections, and empowering
-              children to navigate the world with greater ease.
+              SunBeam was founded with the mission of providing high-quality
+              Applied Behavior Analysis (ABA) therapy that empowers children and
+              supports families. We understand that no two children are the
+              same, and our approach reflects that—we tailor our programs to fit
+              each child’s unique strengths, challenges, and goals.
               <br />
               <br />
-              At Sunbeam ABA Therapy, we view parents as essential partners in
-              their child's therapy journey. We collaborate closely with
-              families to ensure that ABA principles are integrated seamlessly
-              into daily routines, promoting consistent progress across home,
-              school, and social settings. Through education, training, and
-              ongoing support, we equip parents with the tools and knowledge
-              they need to reinforce learning and help their child thrive. Our
-              mission is to provide compassionate, high-quality ABA therapy that
-              illuminates each child’s potential—helping them shine in their own
-              unique way.
+              More than just a therapy center, SunBeam is a community. We
+              believe in working hand-in-hand with parents, caregivers, and
+              educators to build a strong foundation for lifelong success. Our
+              dedicated team of professionals is passionate about making
+              meaningful progress, celebrating every milestone, and ensuring
+              that every child in our care feels valued and capable.
+              <br />
+              <br />
+              At SunBeam, we see the potential in every child. Our goal is to
+              nurture that potential, providing the support and guidance they
+              need to shine their brightest.
             </p>
           </div>
         </div>

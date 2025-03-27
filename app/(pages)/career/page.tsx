@@ -25,7 +25,7 @@ function page() {
 
   return (
     <div className=" flex flex-col">
-      <div className="flex relative flex-col lg:flex-row h-auto lg:h-screen w-full pt-[90px] lg:py-0 items-center bg-[#eafdff] justify-between">
+      <div className="flex relative flex-col lg:flex-row py-[100px] h-auto lg:h-screen w-full lg:pt-[90px] lg:py-0 items-center bg-[#eafdff] justify-between">
         <Image
           src={zigzag}
           alt="logo"
@@ -38,6 +38,14 @@ function page() {
             transition={{ duration: 0.6 }}
             className="flex flex-col gap-5 lg:gap-6 w-full lg:w-1/2"
           >
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="flex lg:hidden items-center justify-end w-full lg:w-[600px] h-full "
+            >
+              <Image src={heroImage} alt="logo" className="rounded-[20px]" />
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -56,18 +64,6 @@ function page() {
               environment. We offer supervision for RBT’s, BCABa’s in their
               graduate program.
             </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <Link
-                href={`/${pathname.split("/")[1]}/contact`}
-                onClick={() => handleLinkClick("/contact")}
-              >
-                <Button>hhh</Button>
-              </Link>
-            </motion.div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -80,7 +76,7 @@ function page() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 lg:py-24 px-4 lg:px-28">
+      <div className="flex flex-col gap-5 py-[70px] lg:py-24 px-4 lg:px-28">
         <p
           className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold tracking-tight `}
         >

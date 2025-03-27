@@ -18,36 +18,37 @@ const merriweather = Fredoka({
 export default function Abasection() {
   return (
     <div
-      className="relative w-full h-auto pt-[150px] pb-[180px] flex flex-col gap-10 px-5 lg:px-[200px] justify-center bg-cover"
+      className="relative w-full h-auto py-[70px] lg:pt-[150px] lg:pb-[180px] flex flex-col gap-4 lg:gap-10 px-6 lg:px-[200px] bg-[#d4feff] lg:bg-opacity-0 justify-center bg-cover"
       style={{ backgroundImage: `url(${Bluebg.src})` }}
     >
       {/* ✅ Floating Star 1 */}
       <motion.div
         animate={{ y: [0, -20, 0] }} // Moves up & down
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -top-10 right-0 w-[230px] h-[250px] z-0"
+        className="absolute -top-6 lg:-top-10 right-0 z-0"
       >
         <Image
           src={star}
           alt="Gallery Image"
-          width={100}
-          height={120}
-          className="w-full h-full object-cover"
+          width={10}
+          height={12}
+          className="flex  w-[150px] lg:w-full h-full object-cover"
         />
+      
       </motion.div>
 
       {/* ✅ Floating Star 2 */}
       <motion.div
         animate={{ y: [0, 20, 0] }} // Moves slightly different than the first
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -bottom-20 -left-10 w-[300px] h-[350px] z-0"
+        className="absolute -bottom-[35%] lg:-bottom-20 -left-10 w-[300px] h-[350px] z-0"
       >
         <Image
           src={star}
           alt="Gallery Image"
-          width={300}
-          height={350}
-          className="w-full h-full object-cover"
+          width={0}
+          height={0}
+          className="w-[150px] lg:w-full lg:h-full object-cover"
         />
       </motion.div>
 
@@ -58,8 +59,8 @@ export default function Abasection() {
         <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
       </div>
 
-      <div className="text-[#545454] pb-10 z-10 flex flex-col gap-10">
-        <p className="text-[20px] tracking-tight">
+      <div className="text-[#545454] lg:pb-10 z-10 flex flex-col gap-10">
+        <p className="text-[15px] lg:text-[20px] tracking-tight">
           Sunbeam ABA Therapy understands that every child is unique and
           deserves a personalized, compassionate approach to therapy. We are
           dedicated to providing individualized, evidence-based Applied Behavior

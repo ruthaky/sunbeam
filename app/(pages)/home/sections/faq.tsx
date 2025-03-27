@@ -12,34 +12,54 @@ const merriweather = Fredoka({
 
 const faqs = [
   {
-    question: "What services do you offer?",
+    question: "What is ABA therapy?",
     answer:
-      "We provide a range of services including ABA therapy, educational programs, and specialized support for children with developmental challenges.",
+      "Applied Behavior Analysis (ABA) is a science-based therapy that focuses on understanding and improving behaviors that impact learning, communication, and daily living skills. It is widely recognized as an effective treatment for individuals with autism and other developmental differences.",
   },
   {
-    question: "How can I request ABA services?",
+    question: "Who do you provide services for?",
     answer:
-      "You can request ABA services through our online ABA Service Request form or by contacting our support team.",
+      "SunBeam ABA Therapy primarily serves children with autism spectrum disorder (ASD), but our services may also benefit individuals with other developmental or behavioral challenges.",
   },
   {
-    question: "What is the process for enrolling in your programs?",
+    question: "What ages do you work with?",
     answer:
-      "The enrollment process includes an initial assessment, consultation with our team, and a personalized program plan for your child.",
+      "We provide ABA therapy for children of all ages, with early intervention being especially beneficial. However, we also work with older children depending on their needs.",
   },
   {
-    question: "What services do you offer?",
+    question: "Where do services take place?",
     answer:
-      "We provide a range of services including ABA therapy, educational programs, and specialized support for children with developmental challenges.",
+      "Our services are provided at our center, where we offer a structured and supportive environment for learning. However, we plan to expand to in-home, school, and community-based settings in the future to better serve our clients’ needs.",
   },
   {
-    question: "How can I request ABA services?",
+    question: "Do you accept insurance?",
     answer:
-      "You can request ABA services through our online ABA Service Request form or by contacting our support team.",
+      "Yes! We work with a variety of insurance providers to help families access ABA therapy. Contact us to verify your coverage and discuss your options.",
   },
   {
-    question: "What is the process for enrolling in your programs?",
+    question: "How do I get started with SunBeam?",
     answer:
-      "The enrollment process includes an initial assessment, consultation with our team, and a personalized program plan for your child.",
+      "The first step is to reach out to us for an initial consultation. We will discuss your child’s needs, answer your questions, and guide you through the intake and assessment process.",
+  },
+  {
+    question: "What does a typical ABA session look like?",
+    answer:
+      "Each session is tailored to the child’s individual goals. Sessions may focus on communication, social skills, daily living tasks, and behavior management using structured activities, play-based learning, and reinforcement strategies.",
+  },
+  {
+    question: "How long does my child need ABA therapy?",
+    answer:
+      "The duration of ABA therapy varies for each child. Some children may require short-term intervention, while others may benefit from long-term support. Our team continuously evaluates progress and adjusts the treatment plan accordingly.",
+  },
+  {
+    question: "How do you involve parents and caregivers?",
+    answer:
+      "Parent and caregiver involvement is a key part of ABA therapy. We provide training, resources, and ongoing support to help families reinforce learning and progress at home.",
+  },
+  {
+    question: "How do I know if ABA therapy is right for my child?",
+    answer:
+      "If your child has been diagnosed with autism or struggles with communication, behavior, or social skills, ABA therapy may be beneficial. Contact us to schedule a consultation and discuss how we can help.",
   },
 ];
 

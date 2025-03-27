@@ -71,10 +71,10 @@ export default function ContactSection() {
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen  w-full bg-white">
       <div
-        className="flex flex-col relative  w-full lg:w-[600px] h-full bg-cover "
+        className="flex flex-col relative  w-full lg:w-[600px] h-auto lg:h-full bg-cover "
         // style={{ backgroundImage: `url(${Image.src})` }}
       >
-        <div className="absolute top-0 left-0 flex flex-col gap-6 w-full h-full bg-[#ffeb89] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
+        <div className="lg:absolute top-0 left-0 flex flex-col gap-6 w-full h-full bg-[#ffeb89] bg-opacity-80 px-4 lg:pl-28 lg:pr-12 py-10 lg:py-28 text-black">
           <div
             className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[35px] lg:text-[42px]  font-semibold leading-none `}
           >
@@ -114,7 +114,7 @@ export default function ContactSection() {
       </div>
 
       
-      <div className="flex flex-col gap-6 w-full lg:w-2/3 h-full px-5 lg:px-[60px] lg:pr-28 py-10 lg:py-28 bg-[#fbf5d7] bg-opacity-30">
+      <div className="flex flex-col gap-6 w-full lg:w-2/3 h-auto lg:h-full px-5 lg:px-[60px] lg:pr-28 py-10 lg:py-28 bg-[#fbf5d7] bg-opacity-30">
         <div
           className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[35px] lg:text-[42px]  font-semibold leading-none `}
         >

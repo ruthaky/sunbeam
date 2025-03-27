@@ -19,12 +19,12 @@ function Requestsection() {
   const rotateHero2 = useTransform(scrollYProgress, [0, 1], [0, -360]); // Rotate in opposite direction
 
   return (
-    <div className="flex relative w-full h-[550px] bg-[#fff] justify-center items-center px-[200px]">
+    <div className="flex relative w-full h-auto lg:h-[550px] bg-[#fff] justify-center items-center px-6 lg:px-[200px]">
       <div className="relative z-10 w-full h-[290px] bg-[#FF9358] flex flex-col items-center justify-center gap-8 px-[60px] overflow-hidden rounded-[20px]">
         {/* Rotating Hero Icon 1 */}
         <motion.div
           style={{ rotate: rotateHero1 }}
-          className="absolute top-[-170px] right-[-170px] w-[400px] h-[400px] -z-1"
+          className="absolute top-[-50px] right-[-50px] lg:top-[-170px] lg:right-[-170px] w-[150px] h-[150px] lg:w-[400px] lg:h-[400px] -z-1"
         >
           <Image
             src={heroIcon}
@@ -36,7 +36,7 @@ function Requestsection() {
         {/* Rotating Hero Icon 2 (Opposite Direction) */}
         <motion.div
           style={{ rotate: rotateHero2 }}
-          className="absolute bottom-[-80px] left-[-100px] w-[250px] h-[250px] -z-1"
+          className="absolute bottom-[-50px] left-[-70px] lg:bottom-[-80px] lg:left-[-100px] w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] -z-1"
         >
           <Image
             src={heroIcon2}
@@ -46,9 +46,9 @@ function Requestsection() {
         </motion.div>
 
         <div
-          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[35px] lg:text-[42px] text-white  font-semibold leading-none `}
+          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[30px] lg:text-[42px] text-white text-center font-semibold leading-none `}
         >
-         Get started with Sunbeam ABA Therapy
+          Get started with Sunbeam ABA Therapy
           {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
         <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
         </div>
