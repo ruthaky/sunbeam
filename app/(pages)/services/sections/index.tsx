@@ -47,7 +47,7 @@ export default function ProductSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none text-[#FF9358]`}
+            className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none text-black lg:text-[#FF9358]`}
           >
             Tailored ABA Therapy for Every Child’s Unique Journey
           </motion.div>
