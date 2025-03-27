@@ -6,7 +6,7 @@ import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Fredoka } from "next/font/google";
 import Link from "next/link";
-import image from "@/public/asset/IMG_9376.jpg";
+import image from "@/public/asset/IMG_9376.png";
 import { useRouter } from "next/navigation";
 import { useParams } from "next/navigation";
 

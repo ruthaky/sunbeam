@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/public/asset/abouthero.svg";
 import Image from "next/image";
 import { useState } from "react";
-import image from "@/public/asset/IMG_9376.jpg";
+import image from "@/public/asset/IMG_9376.png";
 import { FiMapPin } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import { IoMailOpenOutline } from "react-icons/io5";
