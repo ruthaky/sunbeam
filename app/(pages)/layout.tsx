@@ -24,12 +24,12 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/asset/surgelogo.png',
+    icon: '/asset/sunbeamlogo.png',
   },
-  title: "Surge",
-  description: "Surge",
+  title: "Subeam",
+  description: "Sunbeam",
   openGraph: {
-    title: "Surge Crops",
+    title: "Sunbeam ABA cENTER",
     description: "Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.",
     url: "https://surgecrops.com",
     siteName: "Surge",
