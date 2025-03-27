@@ -104,7 +104,7 @@ export default function ContactSection() {
             <div className="flex flex-row gap-4 text-[20px] items-start">
               <IoMailOpenOutline size={35} />
               <div className="flex flex-col gap-2">
-                <p>info@surgecrops.com</p>
+                <p>admin@sunbeamcenter.com</p>
                 {/* <p>sales@surgecrops.com</p>
                 <p>marketing@surgecrops.com</p> */}
               </div>
