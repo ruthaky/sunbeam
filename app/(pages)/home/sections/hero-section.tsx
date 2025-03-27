@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from "@/public/asset/hero-kid.svg";
+import heroImage from "@/public/asset/hero-kid.jpg";
 import { Fredoka } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -28,7 +28,7 @@ export default function HeroSection() {
     <div className="relative flex flex-col lg:flex-row h-screen lg:h-screen w-full lg:pt-[90px] lg:py-0 px-6 lg:px-28 items-center bg-[#FF9358] justify-center">
       <motion.div
         style={{ rotate }}
-        className="absolute -top-[50px] -right-[100px] lg:top-[-300px] lg:right-[-300px]  w-[300px] h-[300px] lg:w-[800px] lg:h-[800px] -z-1"
+        className="absolute -top-[50px] -right-[100px] lg:top-[-300px] lg:right-[-300px]  w-[300px] h-[300px] lg:w-[800px] lg:h-[800px] z-10"
       >
         <Image
           src={heroIcon}
@@ -71,6 +71,17 @@ export default function HeroSection() {
           ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.
         </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="hidden lg:flex text-[20px] tracking-tight text-[#FF9358]"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </motion.p>
         {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,7 +99,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="hidden lg:flex items-end justify-end w-full lg:w-1/2 h-full z-10"
+        className="hidden lg:flex items-end justify-end w-full lg:w-1/2 h-full z-9"
       >
         <Image src={heroImage} alt="logo" className="" />
       </motion.div>

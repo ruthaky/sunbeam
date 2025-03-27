@@ -190,7 +190,7 @@ export default function ContactSection() {
             />
           </div>
           <div className="w-full flex h-auto justify-end">
-            <Button type="submit" variant="contact">
+            <Button type="submit">
               Send
             </Button>
           </div>

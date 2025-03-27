@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import heroImage from "@/public/asset/embrace.svg";
+import heroImage from "@/public/asset/embrace.jpg";
 import vision from "@/public/asset/vision.svg";
 import mission from "@/public/asset/mission.svg";
 import values from "@/public/asset/values.svg";
