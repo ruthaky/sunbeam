@@ -138,7 +138,7 @@ export default function ContactSection() {
               id="name"
               value={formData.name}
               onChange={handleInputChange}
-              className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
+              className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
               required
             />
           </div>
@@ -154,7 +154,7 @@ export default function ContactSection() {
               id="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
+              className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
               required
             />
           </div>
@@ -170,7 +170,7 @@ export default function ContactSection() {
               id="phonenumber"
               value={formData.phonenumber}
               onChange={handleInputChange}
-              className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[30px] lg:h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
+              className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[40px] focus:outline-none focus:border-b-2 focus:border-white"
               required
             />
           </div>
@@ -185,7 +185,7 @@ export default function ContactSection() {
               id="message"
               value={formData.message}
               onChange={handleInputChange}
-              className="w-full border-b border-white bg-[#b7b5aa31] p-2 lg:h-[80px] focus:outline-none focus:border-b-2 focus:border-white"
+              className="w-full border-b border-white bg-[#b7b5aa31] p-2 h-[80px] focus:outline-none focus:border-b-2 focus:border-white"
               required
             />
           </div>
