@@ -71,17 +71,17 @@ export default function AboutSection() {
               Compassionate Care, Life-Changing Growth
             </motion.div>
             <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex lg:hidden items-center justify-center w-full z-0"
-        >
-          <Image
-            src={heroImage}
-            alt="logo"
-            className=" w-full rounded-[20px]"
-          />
-        </motion.div>
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="flex lg:hidden items-center justify-center w-full z-0"
+            >
+              <Image
+                src={heroImage}
+                alt="logo"
+                className=" w-full rounded-[20px]"
+              />
+            </motion.div>
           </motion.div>
         </div>
         <motion.div
@@ -99,7 +99,7 @@ export default function AboutSection() {
       </div>
       <div className="w-full h-auto lg:h-screen flex flex-col gap-10 px-5 lg:px-28 pb-10 pt-[18%] justify-center">
         <div
-          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[30px] lg:text-[42px] text-[#312f30] font-semibold leading-none `}
+          className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[36px] lg:text-[42px] text-[#312f30] font-semibold leading-none `}
         >
           Our Story
           {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
@@ -107,7 +107,7 @@ export default function AboutSection() {
         </div>
         <div className="text-[#545454]">
           <div>
-            <p className="text-[20px] tracking-tight">
+            <p className="text-[18px] lg:text-[20px] tracking-tight">
               At SunBeam ABA Therapy, our journey began with a simple yet
               powerful belief: every child deserves the opportunity to shine. We
               saw a need for compassionate, individualized care for children
