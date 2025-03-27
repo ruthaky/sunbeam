@@ -298,7 +298,7 @@ export default function ServicesSection() {
                         className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                       />
                     </div>
-                    <div className="flex flex-row  items-start h-1/3 w-full">
+                    <div className="flex flex-row  items-center h-1/3 w-full">
                       {" "}
                       <p className="font-semibold text-[25px] w-[200px]">
                         ABA one-on-one direct therapy
@@ -315,7 +315,7 @@ export default function ServicesSection() {
                         className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                       />
                     </div>
-                    <div className="flex flex-row  items-start h-1/3 w-full">
+                    <div className="flex flex-row  items-center h-1/3 w-full">
                       {" "}
                       <p className="font-semibold text-[25px] w-[200px]">
                         ABA one-on-one direct therapy
@@ -332,7 +332,7 @@ export default function ServicesSection() {
                         className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                       />
                     </div>
-                    <div className="flex flex-row  items-start h-1/3 w-full">
+                    <div className="flex flex-row  items-center h-1/3 w-full">
                       {" "}
                       <p className="font-semibold text-[25px] w-[200px]">
                         ABA one-on-one direct therapy
@@ -351,7 +351,7 @@ export default function ServicesSection() {
                         className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-10"
                       />
                     </div>
-                    <div className="flex flex-row  items-start h-1/3 w-full">
+                    <div className="flex flex-row  items-center h-1/3 w-full">
                       {" "}
                       <p className="font-semibold text-[25px] w-[200px]">
                         ABA one-on-one direct therapy
