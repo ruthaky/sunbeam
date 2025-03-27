@@ -90,7 +90,7 @@ export default function ProductSection() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col relative gap-6 h-full w-3/4 bg-[#F6ECE3] text-black  px-4 pt-8 lg:pt-0 lg:p-24">
+          <div className="flex flex-col relative gap-6 h-full w-3/4 bg-[#F6ECE3] text-black  px-4 pt-8 lg:pt-24 lg:p-24">
             <div
               className={`${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[30px] lg:text-[42px] text-[#312f30] font-semibold leading-none`}
             >
@@ -110,7 +110,7 @@ export default function ProductSection() {
           id="family"
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-14"
         >
-          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EFF8EF] text-black  px-4 pt-8 lg:pt-0 lg:p-24">
+          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#EFF8EF] text-black  px-4 pt-8 lg:pt-24 lg:p-24">
             <div
               className={`${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[30px] lg:text-[42px] text-[#312f30] font-semibold leading-none`}
             >
@@ -145,7 +145,7 @@ export default function ProductSection() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#e2fbff] text-black  px-4 pt-8 lg:pt-0 lg:p-24">
+          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#e2fbff] text-black  px-4 pt-8 lg:pt-24 lg:p-24">
             <div
               className={`${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[30px] lg:text-[42px] text-[#312f30] font-semibold leading-none`}
             >
@@ -165,7 +165,7 @@ export default function ProductSection() {
           id="group"
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-14"
         >
-          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#fffadb] text-black  px-4 pt-8 lg:pt-0 lg:p-24">
+          <div className="flex flex-col relative gap-4 h-full w-3/4 bg-[#fffadb] text-black  px-4 pt-8 lg:pt-24 lg:p-24">
             <div
               className={`${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[30px] lg:text-[42px] text-[#312f30] font-semibold leading-none`}
             >
