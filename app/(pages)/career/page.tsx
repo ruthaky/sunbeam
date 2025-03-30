@@ -36,29 +36,31 @@ function page() {
       title: "Behavior Technician (BT)",
       salary: "Minimum USD $20.00/Per Hr. Maximum USD $23.00/Per Hr.",
       description: "Gain rewarding experience with Sunbeam ABA Center...",
-      details: `As a Behavior Technician at Sunbeam, you'll have the exciting role of helping children with autism learn, grow, and build communication, socialization, and self-help skills through a form of play-based therapy known as applied behavior analysis (ABA)! In this entry-level position, you'll work one-on-one with kids with autism after receiving our paid training to deliver ABA therapy.`
+      details: `As a Behavior Technician at Sunbeam, you'll have the exciting role of helping children with autism learn, grow, and build communication, socialization, and self-help skills through a form of play-based therapy known as applied behavior analysis (ABA)! In this entry-level position, you'll work one-on-one with kids with autism after receiving our paid training to deliver ABA therapy.`,
     },
     {
       id: "bcba",
       title: "Board Certified Behavior Analyst (FT BCBA)",
       salary: "Minimum: USD $78,100.00/Per Yr. Maximum: USD $94,000.00/Per Yr.",
-      description: "Are you a passionate BCBA® looking to make a meaningful difference...",
-      details: `Qualifications: \n- Current Board Certified Behavior Analyst (BCBA®) certification\n- Minimum 2 years of experience working with individuals with autism\n- Experience conducting assessments, overseeing treatment plans, and leading teams\n- Reliable transportation, valid driver's license\n- Ability to handle challenging behaviors and a full range of physical movement as required\n\nJob description:\n- Provide oversight and supervision for your team and clients\n- Mentor and support behavior technicians (BTs)\n- Write reports and conduct clinical reviews with funding sources\n- Attend monthly regional meetings for ongoing training and supervision\n- Conduct regular parent/caregiver trainings for family members\n- Ensure program directives from senior clinical team are implemented accurately and timely\n- Deliver individualized, person-centered care rooted in the principles of assent-based treatment`
+      description:
+        "Are you a passionate BCBA® looking to make a meaningful difference...",
+      details: `Qualifications: \n- Current Board Certified Behavior Analyst (BCBA®) certification\n- Minimum 2 years of experience working with individuals with autism\n- Experience conducting assessments, overseeing treatment plans, and leading teams\n- Reliable transportation, valid driver's license\n- Ability to handle challenging behaviors and a full range of physical movement as required\n\nJob description:\n- Provide oversight and supervision for your team and clients\n- Mentor and support behavior technicians (BTs)\n- Write reports and conduct clinical reviews with funding sources\n- Attend monthly regional meetings for ongoing training and supervision\n- Conduct regular parent/caregiver trainings for family members\n- Ensure program directives from senior clinical team are implemented accurately and timely\n- Deliver individualized, person-centered care rooted in the principles of assent-based treatment`,
     },
     {
       id: "bcaba",
       title: "Board Certified Assistant Behavior Analyst (BCaBA)",
       salary: "Minimum: USD $54,000 per Yr. Maximum: USD $61,000.00 per Yr.",
-      description: "If you're looking for a rewarding job working with children...",
-      details: `Job Responsibilities:\n- Assist BCBAs with intakes and assessments including completing skills assessments, functional behavior assessments, behavior support plans, and treatment planning.\n- Provide training for behavior technicians upon hire and on an ongoing basis.\n- Provide direct service to clients in the program.\n- Assist with training for parents and caregivers as needed.\n- Meet with RBT staff to provide supervision at least bi-weekly with support of BCBA.\n- Ensure necessary documentation is provided in order to facilitate reimbursement through primary funding sources.\n\nQualifications:\n- BCaBA or in a master's program in behavior analysis\n- Valid CPR and First Aid Certification`
+      description:
+        "If you're looking for a rewarding job working with children...",
+      details: `Job Responsibilities:\n- Assist BCBAs with intakes and assessments including completing skills assessments, functional behavior assessments, behavior support plans, and treatment planning.\n- Provide training for behavior technicians upon hire and on an ongoing basis.\n- Provide direct service to clients in the program.\n- Assist with training for parents and caregivers as needed.\n- Meet with RBT staff to provide supervision at least bi-weekly with support of BCBA.\n- Ensure necessary documentation is provided in order to facilitate reimbursement through primary funding sources.\n\nQualifications:\n- BCaBA or in a master's program in behavior analysis\n- Valid CPR and First Aid Certification`,
     },
     {
       id: "rbt",
       title: "Registered Behavior Technician (RBT)",
       salary: "Minimum $22.50 an hour Maximum $25.50 an hour",
       description: "Work 1:1 with children with autism using ABA strategies...",
-      details: `Job Responsibilities:\n- Work 1:1 with children with autism using ABA strategies under supervision of a BCBA\n- Implement individualized treatment plans designed and trained by a BCBA\n- Collect & record data to track client progress\n- Communicate with families & clinical teams to ensure client success\n- Attend scheduled supervisions, team meetings & ongoing training\n\nQualifications:\n- High school diploma (Bachelor’s in Psychology, Education, or related field a plus)\n- Reliable transportation & willingness to travel locally (if required)\n- Ability to actively engage clients during sessions, go from sitting to standing unassisted, and lift 50lbs\n- Experience in ABA therapy, childcare, education, or related field a plus!\n- Ability to pass a background check`
-    }
+      details: `Job Responsibilities:\n- Work 1:1 with children with autism using ABA strategies under supervision of a BCBA\n- Implement individualized treatment plans designed and trained by a BCBA\n- Collect & record data to track client progress\n- Communicate with families & clinical teams to ensure client success\n- Attend scheduled supervisions, team meetings & ongoing training\n\nQualifications:\n- High school diploma (Bachelor’s in Psychology, Education, or related field a plus)\n- Reliable transportation & willingness to travel locally (if required)\n- Ability to actively engage clients during sessions, go from sitting to standing unassisted, and lift 50lbs\n- Experience in ABA therapy, childcare, education, or related field a plus!\n- Ability to pass a background check`,
+    },
   ];
 
   return (
@@ -107,7 +109,7 @@ function page() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="hidden lg:flex items-center justify-end w-full lg:w-[600px] h-full "
+            className="hidden lg:flex items-center justify-center xl:justify-end w-full lg:w-[600px] h-full "
           >
             <Image src={heroImage} alt="logo" className="rounded-[20px]" />
           </motion.div>
@@ -115,16 +117,50 @@ function page() {
       </div>
 
       <div className="flex flex-col gap-6 lg:gap-8 py-[70px] lg:py-24 px-4 lg:px-28">
-        <p className={`${merriweather.variable} font-merriweather text-[36px] lg:text-[42px] text-[#312f30] font-semibold tracking-tight`}>Current Openings</p>
+        <p
+          className={`${merriweather.variable} font-merriweather text-[36px] lg:text-[42px] text-[#312f30] font-semibold tracking-tight`}
+        >
+          Current Openings
+        </p>
         <div className="flex flex-col gap-16">
-          {jobOpenings.map(job => (
+          {jobOpenings.map((job) => (
             <div key={job.id} className="flex flex-col gap-4 lg:gap-6">
-              <h1 className="font-merriweather text-[25px] lg:text-[25px] tracking-tight leading-none">{job.title}</h1>
-              <p className="text-[18px] lg:text-[20px] text-[#545454]">{job.salary}</p>
-              <p className="text-[18px] lg:text-[20px] text-[#545454]">{job.description}</p>
-              {expanded === job.id && <p className="text-[18px] lg:text-[20px] text-[#545454]">{job.details}</p>}
-              <button onClick={() => toggleExpand(job.id)} className="text-blue-500 underline text-left">{expanded === job.id ? "Read Less" : "Read More"}</button>
-              <Link href={`/${pathname.split("/")[1]}/contact`} onClick={() => handleLinkClick("/contact")}><Button>Apply</Button></Link>
+              <h1 className="font-merriweather text-[25px] lg:text-[25px] tracking-tight leading-none">
+                {job.title}
+              </h1>
+              <p className="text-[18px] lg:text-[20px] text-[#545454]">
+                {job.salary}
+              </p>
+              <p className="text-[18px] lg:text-[20px] text-[#545454]">
+                {job.description}
+              </p>
+              {expanded === job.id && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: expanded === job.id ? "auto" : 0,
+                    opacity: expanded === job.id ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
+                  <p className="text-[18px] lg:text-[20px] text-[#545454]">
+                    {job.details}
+                  </p>
+                </motion.div>
+              )}
+              <button
+                onClick={() => toggleExpand(job.id)}
+                className="text-blue-500 underline text-left"
+              >
+                {expanded === job.id ? "Read Less" : "Read More"}
+              </button>
+              <Link
+                href={`/${pathname.split("/")[1]}/contact`}
+                onClick={() => handleLinkClick("/contact")}
+              >
+                <Button>Apply</Button>
+              </Link>
             </div>
           ))}
         </div>

@@ -91,7 +91,7 @@ export default function Footer() {
               </h2>
               <ul className="text-[#5a5a5a] font-medium">
                 <li className="mb-2">
-                  <a target="_blank" href="#" className="hover:underline">
+                  <a target="_blank" href="#" className="hover:underline text-start">
                     LinkedIn
                   </a>
                 </li>
@@ -116,7 +116,7 @@ export default function Footer() {
               <h2 className="mb-2 text-[18px] font-semibold text-black">
                 Contact
               </h2>
-              <ul className="text-[#5a5a5a] font-medium">
+              <ul className="text-[#5a5a5a] font-medium ">
                 <li className="mb-2 text-[14px]">admin@sunbeamcenter.com</li>
                 <li className="text-[14px]">+1111111111</li>
               </ul>
