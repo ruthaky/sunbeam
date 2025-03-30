@@ -48,13 +48,38 @@ export default function ServicesSection() {
           >
             Our Services
           </div>
-          {/* <p className="text-[20px] tracking-tight">nnsron</p> */}
         </div>
-        <div className="w-full h-auto flex flex-col lg:flex-row overflow-x-auto scroll-container gap-4 lg:gap-10 pb-10">
-          <div className="flex flex-row  gap-4 lg-flex-row w-auto h-[280px] lg:gap-10 px-28">
+        <Carousel
+          withIndicators
+          height={280}
+          slideSize={{ base: "100%", sm: "50%", md: "33.33%" }}
+          slideGap={10}
+          loop
+          align="start"
+          className="flex justify-center w-full px-28"
+        >
+          <Carousel.Slide>
+            {" "}
             <div className="w-[400px] rounded-[25px] h-full mb-4 lg:mb-0 p-4 flex flex-col gap-2 bg-[#C3F498]  justify-center ">
               <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
-                <Link href="/services/#oneonone">
+                <Link
+                  href="/services"
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent default navigation
+                    const section = document.getElementById("oneonone");
+                    if (section) {
+                      const offset =
+                        section.getBoundingClientRect().top +
+                        window.scrollY -
+                        window.innerHeight / 2 +
+                        section.clientHeight / 2;
+                      window.scrollTo({ top: offset, behavior: "smooth" });
+
+                      // Update the URL with hash
+                      window.history.pushState(null, "", "/services/#oneonone");
+                    }
+                  }}
+                >
                   <motion.div
                     animate={
                       isHoveredgreen
@@ -62,32 +87,22 @@ export default function ServicesSection() {
                         : { opacity: 1, x: 0 }
                     }
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="absolute top-0 left-0 flex items-center justify-start cursor-pointer  gap-0 h-auto w-auto bg-[#f1f1f1a1] transition-transform  ease-in-out z-10 rounded-full"
+                    className="absolute top-0 left-0 flex items-center justify-start cursor-pointer gap-0 h-auto w-auto bg-[#f1f1f1a1] transition-transform ease-in-out z-10 rounded-full"
                     onMouseEnter={() => setIsHoveredgreen(true)}
                     onMouseLeave={() => setIsHoveredgreen(false)}
                   >
-                    {/* Rotating Chevron */}
                     <div className="h-auto w-auto rounded-full bg-white transition-transform duration-300 hover:-rotate-45 p-1">
                       <ChevronRight width={40} height={40} />
                     </div>
 
-                    {/* Read More Text (Appears on Hover) */}
                     {isHoveredgreen && (
-                      <motion.div
-                        // initial={{ opacity: 0, x: -10 }}
-                        // animate={
-                        //   isHovered
-                        //     ? { opacity: 1, x: 0 }
-                        //     : { opacity: 0, x: -10 }
-                        // }
-                        // transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="rounded-full text-black text-start px-3 py-1 transition-all ease-in-out duration-300 z-10"
-                      >
+                      <motion.div className="rounded-full text-black text-start px-3 py-1 transition-all ease-in-out duration-300 z-10">
                         Read More
                       </motion.div>
                     )}
                   </motion.div>
                 </Link>
+
                 <motion.div
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={isInView ? { scale: 1, opacity: 1 } : {}}
@@ -107,7 +122,8 @@ export default function ServicesSection() {
                 </p>
               </div>
             </div>
-
+          </Carousel.Slide>
+          <Carousel.Slide>
             <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#FF9358] justify-center">
               <div className="flex flex-row  items-end justify-end h-1/3 w-full">
                 {" "}
@@ -152,7 +168,8 @@ export default function ServicesSection() {
                 </Link>
               </div>
             </div>
-
+          </Carousel.Slide>
+          <Carousel.Slide>
             <div className="w-[400px] rounded-[25px] h-full mb-4 lg:mb-0 p-4 flex flex-col gap-2 bg-[#97EAFD] justify-center">
               <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
                 <Link href="/services/#occupational">
@@ -208,7 +225,9 @@ export default function ServicesSection() {
                 </p>
               </div>
             </div>
-
+          </Carousel.Slide>
+          <Carousel.Slide>
+            {" "}
             <div className="w-[400px] h-full mb-4 lg:mb-0 p-4 rounded-[25px] flex flex-col gap-2 bg-[#FFE24F] justify-center">
               <div className="flex flex-row items-start justify-end h-1/3 w-full">
                 {" "}
@@ -253,9 +272,10 @@ export default function ServicesSection() {
                 </Link>
               </div>
             </div>
-          </div>
-        </div>
+          </Carousel.Slide>
+        </Carousel>
       </div>
+
       <div className="py-[100px] flex flex-col gap-6 justify-center lg:hidden">
         <div className="flex flex-col gap-10 justify-start items-start py-4 px-6">
           <div
