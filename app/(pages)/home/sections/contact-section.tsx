@@ -113,9 +113,9 @@ export default function ContactSection() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/3 h-auto lg:h-full px-5 lg:px-[60px] lg:pr-28 py-10 lg:py-28 bg-[#fbf5d7] bg-opacity-30">
+      <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/3 h-auto lg:h-full px-5 justify-center items-center py-10 lg:py-28 bg-[#fbf5d7] bg-opacity-30">
         <div
-          className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px]  font-semibold leading-none `}
+          className={` ${merriweather.variable} lg:w-[700px] font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px]  font-semibold leading-none `}
         >
           More questions?
           {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
@@ -163,10 +163,10 @@ export default function ContactSection() {
               htmlFor="phonenumber"
               className="text-[18px] lg:text-[20px] block mb-2"
             >
-              Phonenumber
+              Phone Number
             </label>
             <input
-              type="text"
+              type="number"
               id="phonenumber"
               value={formData.phonenumber}
               onChange={handleInputChange}

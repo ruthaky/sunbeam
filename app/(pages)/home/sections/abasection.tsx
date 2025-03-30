@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Fredoka } from "next/font/google";
 import Bluebg from "@/public/asset/bluebg.svg";
-import star from "@/public/asset/bluestar.svg";
+import star from "@/public/asset/bluestarnew.svg";
 
 const merriweather = Fredoka({
   weight: ["300", "700"],
@@ -41,14 +41,14 @@ export default function Abasection() {
       <motion.div
         animate={{ y: [0, 20, 0] }} // Moves slightly different than the first
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -bottom-[15%] lg:-bottom-20 -left-10 w-[300px] h-[350px] z-0"
+        className="absolute -bottom-[15%] lg:-bottom-20 -left-10 w-[400px] h-[350px] z-0"
       >
         <Image
           src={star}
           alt="Gallery Image"
           width={0}
           height={0}
-          className="w-[150px] lg:w-full lg:h-full object-cover"
+          className="w-[150px] lg:w-[400px] lg:h-full object-cover"
         />
       </motion.div>
 
