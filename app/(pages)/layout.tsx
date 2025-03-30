@@ -24,21 +24,22 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/asset/sunbeamlogo.png',
+    icon: "/asset/sunbeamlogo.png",
   },
   title: "Subeam",
   description: "Sunbeam",
   openGraph: {
-    title: "Sunbeam ABA cENTER",
-    description: "Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.",
+    title: "Sunbeam ABA Center",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     url: "https://surgecrops.com",
-    siteName: "Surge",
+    siteName: "Sunbeam ABA cENTER",
     images: [
       {
-        url: '/asset/surge-thumbnail.png', // Replace this with your image name
+        url: "/asset/sunbeam-thumbnail.png", // Replace this with your image name
         width: 1200,
         height: 630,
-        alt: "Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.", // Optional alt text
+        alt: "Sunbeam - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", // Optional alt text
       },
     ],
     locale: "en_US",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: '/asset/surge-thumbnail.png', // Replace this with your image name
+        url: "/asset/sunbeam-thumbnail.png", // Replace this with your image name
         width: 1200,
         height: 630,
         alt: "Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.", // Optional alt text
@@ -66,18 +67,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta property="og:image" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
+      <meta
+        property="og:image"
+        content="https://i.postimg.cc/xjHtX95b/sunbeam-thumbnail.png"
+      />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment." />
-      <meta property="og:image:url" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
-      <meta property="og:image:secure_url" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
+      <meta
+        property="og:image:alt"
+        content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment."
+      />
+      <meta
+        property="og:image:url"
+        content="https://i.postimg.cc/xjHtX95b/sunbeam-thumbnail.png"
+      />
+      <meta
+        property="og:image:secure_url"
+        content="https://i.postimg.cc/xjHtX95b/sunbeam-thumbnail.png"
+      />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment." />
-      <meta property="og:image:url" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
+      <meta
+        property="og:image:alt"
+        content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment."
+      />
+      <meta
+        property="og:image:url"
+        content="https://i.postimg.cc/xjHtX95b/sunbeam-thumbnail.png"
+      />
       <Script id="microsoft-clarity" strategy="afterInteractive">
         {`
     (function(c,l,a,r,i,t,y){
@@ -88,15 +107,13 @@ export default function RootLayout({
   `}
       </Script>
       <Script id="google-analytics" strategy="afterInteractive">
-        {
-          `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJDYF9BQS6"></script>
+        {`<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJDYF9BQS6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ZJDYF9BQS6');
-</script> `
-        }
+</script> `}
       </Script>
 
       <body
