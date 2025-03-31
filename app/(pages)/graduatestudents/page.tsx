@@ -24,8 +24,8 @@ function page() {
   };
 
   return (
-    <div className="flex flex-col h-auto  w-full pt-[90px] lg:py-0 items-center bg-[#EFFFEA] justify-center">
-      <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full py-[100px] lg:pt-[90px] lg:py-0 px-4 lg:px-28 items-center bg-[#EFFFEA] justify-between">
+    <div className="flex flex-col h-auto  w-full  lg:py-0 items-center bg-[#EFFFEA] justify-center pt-[120px] pb-[50px] lg:pt-[90px] lg:pb-0 ">
+      <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full  items-center px-4 lg:px-28 pb-[100px] bg-[#EFFFEA] justify-between">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
