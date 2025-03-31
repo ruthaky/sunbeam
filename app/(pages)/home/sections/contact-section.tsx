@@ -114,12 +114,13 @@ export default function ContactSection() {
       </div>
 
       <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/3 h-auto lg:h-full px-5 justify-center items-center py-10 lg:py-28 bg-[#fbf5d7] bg-opacity-30">
-        <div
-          className={` ${merriweather.variable} lg:w-[700px] font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px]  font-semibold leading-none `}
-        >
-          More questions?
-          {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
-        <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
+        <div className="w-full lg:w-[700px] flex items-start  ">
+          {" "}
+          <p
+            className={` ${merriweather.variable} font-merriweather text-start text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px] lg:w-[700px] font-semibold leading-none `}
+          >
+            More questions?
+          </p>
         </div>
 
         <form
@@ -190,9 +191,7 @@ export default function ContactSection() {
             />
           </div>
           <div className="w-full flex h-auto justify-end">
-            <Button type="submit">
-              Send
-            </Button>
+            <Button type="submit">Send</Button>
           </div>
         </form>
         {status && <p className=" mt-4">{status}</p>}

@@ -80,7 +80,7 @@ export default function ContactSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[59px] font-semibold leading-none`}
           >
-            Sunbeam is here for you
+            We’re Here to Light the Way
           </motion.div>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -154,12 +154,13 @@ export default function ContactSection() {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-6 lg:gap-8 w-full lg:w-2/3 h-full px-5  py-10 lg:py-28 bg-[#efffeaa4] ">
-          <div
-            className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px] lg:w-[700px] font-semibold leading-none `}
-          >
-            More questions?
-            {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
-        <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
+          <div className="w-full lg:w-[700px] flex items-start  ">
+            {" "}
+            <p
+              className={` ${merriweather.variable} font-merriweather text-start text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px] lg:w-[700px] font-semibold leading-none `}
+            >
+              More questions?
+            </p>
           </div>
 
           <form
