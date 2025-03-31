@@ -9,7 +9,6 @@ import { Open_Sans } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import Script from "next/script";
-// import "@mantine/carousel/styles.css";
 
 const concert_one = Concert_One({
   weight: ["400", "400"],

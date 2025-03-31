@@ -235,7 +235,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <MobileVillas />
+      {/* <MobileVillas /> */}
 
       <div className="hidden w-full h-auto flex-col">
         <div className="w-full flex flex-col items-center justify-center">
