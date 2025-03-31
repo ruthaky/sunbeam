@@ -117,11 +117,11 @@ export default function ProductSection() {
               Family Caregiver/Training
             </div>
             <div className="text-[16px] lg:text-[20px] text-[#545454]">
-              We offer parent training: caregivers of
-              children receiving Applied Behavior Analysis (ABA) therapy are
-              educated on how to implement behavioral strategies at home,
-              effectively supporting their child's development by reinforcing
-              skills learned during therapy sessions
+              We offer parent training: caregivers of children receiving Applied
+              Behavior Analysis (ABA) therapy are educated on how to implement
+              behavioral strategies at home, effectively supporting their
+              child's development by reinforcing skills learned during therapy
+              sessions.
             </div>
           </div>
           <div className="h-full w-2/6 ">
@@ -209,8 +209,14 @@ export default function ProductSection() {
               Speech Therapy
             </div>
             <div className="text-[16px] lg:text-[20px] text-[#545454]">
-              Coming soon please send inquire to admin@sunbeamcenter for more
-              information on speech therapy.
+              Coming soon! Please send inquiries to{" "}
+              <a
+                href="mailto:admin@sunbeamcenter.com"
+                className="text-blue-600 hover:underline"
+              >
+                admin@sunbeamcenter.com
+              </a>{" "}
+              for more information on speech therapy.
             </div>
           </div>
         </section>
