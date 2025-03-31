@@ -56,9 +56,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className={`${merriweather.variable} font-merriweather font-semibold text-[60px] lg:text-[90px] tracking-tight leading-none text-white `}
+          className={`${merriweather.variable} font-merriweather font-semibold text-[60px] lg:text-[75px] tracking-tight leading-none text-white `}
         >
-          Holistic Therapy
+          Helping Every Child Shine Brighter
         </motion.div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -66,22 +66,14 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-[18px] lg:text-[20px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          At SunBeam ABA Therapy, we believe that every child has the potential
+          to grow, learn, and thrive. Through compassionate, individualized ABA
+          therapy, we provide the support and guidance children need to build
+          confidence, develop skills, and embrace their unique strengths.
+          Together, we light the path to a brighter future—one step, one smile,
+          and one success at a time.
         </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="hidden lg:flex text-[20px] tracking-tight text-[#FF9358]"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
-        </motion.p>
+     
         {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

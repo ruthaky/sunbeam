@@ -88,9 +88,10 @@ export default function ContactSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-[18px] lg:text-[20px] text-[#545454]"
           >
-            We are hiring- come be a part of an exciting, safe space work
-            environment. We offer supervision for RBT’s, BCABa’s in their
-            graduate program.
+            We’re here to support you every step of the way! Whether you have
+            questions about our services or want to learn how SunBeam ABA
+            Therapy can help your child, we’d love to hear from you. Reach out
+            today, and let’s start this journey together!
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

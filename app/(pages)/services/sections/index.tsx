@@ -117,7 +117,7 @@ export default function ProductSection() {
               Family Caregiver/Training
             </div>
             <div className="text-[16px] lg:text-[20px] text-[#545454]">
-              Family Caregiver/Training: We offer parent training: caregivers of
+              We offer parent training: caregivers of
               children receiving Applied Behavior Analysis (ABA) therapy are
               educated on how to implement behavioral strategies at home,
               effectively supporting their child's development by reinforcing

@@ -15,6 +15,11 @@ import { useRouter, usePathname } from "next/navigation";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import "@mantine/carousel/styles.css";
+import oneonone from "@/public/asset/oneonone.jpg";
+import speechtherapy from "@/public/asset/speechtherapy.jpg";
+import occupationaltherapy from "@/public/asset/occupationaltherapy.png";
+import familytraining from "@/public/asset/familytraining.png";
+import grouptherapy from "@/public/asset/speechtherapy.jpg";
 
 const merriweather = Fredoka({
   weight: ["400", "700"],
@@ -109,7 +114,7 @@ export default function ServicesSection() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    src={heroImage}
+                    src={oneonone}
                     alt="logo"
                     className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                   />
@@ -338,7 +343,7 @@ export default function ServicesSection() {
                     <div className="flex flex-row  items-center h-1/3 w-full">
                       {" "}
                       <p className="font-semibold text-[25px] w-[200px]">
-                        ABA one-on-one direct therapy
+                        Family Caregiver/Training
                       </p>
                     </div>
                   </div>
@@ -355,7 +360,7 @@ export default function ServicesSection() {
                     <div className="flex flex-row  items-center h-1/3 w-full">
                       {" "}
                       <p className="font-semibold text-[25px] w-[200px]">
-                        ABA one-on-one direct therapy
+                        Occupational Therapy
                       </p>
                     </div>
                   </div>
@@ -374,7 +379,7 @@ export default function ServicesSection() {
                     <div className="flex flex-row  items-center h-1/3 w-full">
                       {" "}
                       <p className="font-semibold text-[25px] w-[200px]">
-                        ABA one-on-one direct therapy
+                        Group Session
                       </p>
                     </div>
                   </div>

@@ -190,8 +190,8 @@ export default function AboutSection() {
               Vision
             </h3>
             <p className="text-[#545454] text-[16px] lg:text-[18px] text-center">
-              Our mission is to provide exceptional services that foster growth
-              and innovation for individuals and businesses alike.
+              To empower every child with autism to reach their fullest
+              potential and shine in their own unique way.
             </p>
           </div>
 
@@ -209,8 +209,8 @@ export default function AboutSection() {
               Mission
             </h3>
             <p className="text-[#545454] text-[16px] lg:text-[18px] text-center">
-              We envision a future where creativity and technology merge to
-              create impactful solutions for the world.
+              We provide compassionate, individualized ABA therapy that fosters
+              growth, confidence, and lifelong success for children with autism.
             </p>
           </div>
 
@@ -228,8 +228,8 @@ export default function AboutSection() {
             </h3>
 
             <p className="text-[#545454] text-[16px] lg:text-[18px] text-center">
-              Integrity, innovation, and excellence guide everything we do to
-              ensure meaningful and lasting contributions.
+              Compassion, individualized growth, collaboration, progress,
+              inclusivity, and excellence in care guide everything we do.
             </p>
           </div>
         </div>

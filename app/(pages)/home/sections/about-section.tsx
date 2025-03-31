@@ -33,16 +33,15 @@ export default function AboutSection() {
           About Us
         </div>
         <p className="text-[20px] tracking-tight text-[#545454]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          SunBeam ABA Therapy is dedicated to helping children with autism grow,
+          learn, and thrive through personalized ABA therapy. We tailor our
+          approach to each child’s unique strengths and challenges, working
+          closely with families and educators to create meaningful progress.
           <br />
           <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Our passionate team celebrates every milestone, providing
+          evidence-based care in a nurturing environment. We strive to empower
+          every child to feel valued, capable, and ready to shine.
         </p>
         <Link href="/about">
           <Button>Read More</Button>
