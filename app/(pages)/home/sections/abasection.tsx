@@ -34,7 +34,6 @@ export default function Abasection() {
           height={12}
           className="flex  w-[150px] lg:w-[300px] h-full object-cover"
         />
-      
       </motion.div>
 
       {/* ✅ Floating Star 2 */}
@@ -53,7 +52,9 @@ export default function Abasection() {
       </motion.div>
 
       {/* ✅ Section Content */}
-      <div  className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px] font-semibold leading-none `}>
+      <div
+        className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px] font-semibold leading-none `}
+      >
         What is ABA?
         {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
         <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
@@ -94,7 +95,7 @@ export default function Abasection() {
 
         {/* ✅ Service Request Button */}
         <div>
-          <Link href="https://wa.me/971551819398?text=Hello%20I'm%20inquiring%20about%20ABA%20services">
+          <Link href="/apply">
             <Button>ABA Service Request</Button>
           </Link>
         </div>

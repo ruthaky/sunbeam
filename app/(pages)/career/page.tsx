@@ -156,8 +156,8 @@ function page() {
                 {expanded === job.id ? "Read Less" : "Read More"}
               </button>
               <Link
-                href={`/${pathname.split("/")[1]}/contact`}
-                onClick={() => handleLinkClick("/contact")}
+                href={`/${pathname.split("/")[1]}/apply`}
+                onClick={() => handleLinkClick("/apply")}
               >
                 <Button>Apply</Button>
               </Link>

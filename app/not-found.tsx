@@ -35,18 +35,18 @@ export default function RootNotFound() {
       <motion.div
         animate={{ y: [0, -2, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-10 right-10 z-0"
+        className="absolute top-2 right-2 lg:top-10 lg:right-10 z-0"
       >
         <Image
           src={cat}
           alt="Gallery Image"
           width={150}
           height={150}
-          className="w-[150px] lg:w-[250px] h-auto object-cover"
+          className="w-[100px] lg:w-[250px] h-auto object-cover"
         />
       </motion.div>
 
-      {/* Correct Font Application */}
+    
       <h1
         style={{ fontFamily: rubikBubbles.style.fontFamily }}
         className="text-[150px] font-bold text-[#5ce1e6] mb-0 leading-none"
