@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from "@/public/asset/snm.jpg";
+import heroImage from "@/public/asset/snbmaboutus.webp";
 import { Merriweather } from "next/font/google";
 import { Fredoka } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
@@ -23,7 +23,7 @@ export default function AboutSection() {
   };
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen gap-11 w-full px-6 lg:px-28 items-center justify-center  pt-[20%] lg:py-0 pb-[15%]">
-      <div className="hidden lg:flex items-center justify-center w-1/2 h-full">
+      <div className="hidden lg:flex items-center justify-center w-1/2 h-full p-10">
         <Image src={heroImage} alt="logo" className="p-0" />
       </div>
       <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-1/2">

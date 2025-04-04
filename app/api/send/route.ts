@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import EmailTemplate from "@/components/email-template";
 import { NextResponse } from "next/server";
 
-const resend = new Resend("re_FJQQNXDC_PniodFAmR6HbCg3xuprVziPH");
+const resend = new Resend("re_4ozELY8W_DbR8Bzxf6V9rY3ZTbkJ18Tf7");
 
 export async function POST(request: Request) {
  
@@ -11,7 +11,7 @@ export async function POST(request: Request) {
  const body = await request.json();
     const data = await resend.emails.send({
       from: "Contact form <onboarding@resend.dev>", // Verified sender email
-      to: ["info@surgecrops.com"], // Replace with your receiving email
+      to: ["admin@sunbeamcenter.com"], // Replace with your receiving email
       subject: "New Contact Form Submission",
       react: EmailTemplate({
         name: body.name,

@@ -37,6 +37,7 @@ function page() {
       salary: "Minimum USD $20.00/Per Hr. Maximum USD $23.00/Per Hr.",
       description: "Gain rewarding experience with Sunbeam ABA Center...",
       details: `As a Behavior Technician at Sunbeam, you'll have the exciting role of helping children with autism learn, grow, and build communication, socialization, and self-help skills through a form of play-based therapy known as applied behavior analysis (ABA)! In this entry-level position, you'll work one-on-one with kids with autism after receiving our paid training to deliver ABA therapy.`,
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdj3C03HWsXpCRVHHwKals7N2frBCfyFFO8E4su-rB9VnfRYQ/viewform?usp=dialog",
     },
     {
       id: "bcba",
@@ -45,6 +46,7 @@ function page() {
       description:
         "Are you a passionate BCBA® looking to make a meaningful difference...",
       details: `Qualifications: \n- Current Board Certified Behavior Analyst (BCBA®) certification\n- Minimum 2 years of experience working with individuals with autism\n- Experience conducting assessments, overseeing treatment plans, and leading teams\n- Reliable transportation, valid driver's license\n- Ability to handle challenging behaviors and a full range of physical movement as required\n\nJob description:\n- Provide oversight and supervision for your team and clients\n- Mentor and support behavior technicians (BTs)\n- Write reports and conduct clinical reviews with funding sources\n- Attend monthly regional meetings for ongoing training and supervision\n- Conduct regular parent/caregiver trainings for family members\n- Ensure program directives from senior clinical team are implemented accurately and timely\n- Deliver individualized, person-centered care rooted in the principles of assent-based treatment`,
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeOrjdklsdHg9FggIxrq-B6zVKTzPFJx2fIvA6qcJEHgbBniQ/viewform?usp=dialog",
     },
     {
       id: "bcaba",
@@ -53,6 +55,7 @@ function page() {
       description:
         "If you're looking for a rewarding job working with children...",
       details: `Job Responsibilities:\n- Assist BCBAs with intakes and assessments including completing skills assessments, functional behavior assessments, behavior support plans, and treatment planning.\n- Provide training for behavior technicians upon hire and on an ongoing basis.\n- Provide direct service to clients in the program.\n- Assist with training for parents and caregivers as needed.\n- Meet with RBT staff to provide supervision at least bi-weekly with support of BCBA.\n- Ensure necessary documentation is provided in order to facilitate reimbursement through primary funding sources.\n\nQualifications:\n- BCaBA or in a master's program in behavior analysis\n- Valid CPR and First Aid Certification`,
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeZgKX5duPDeeWo_UFAMrknby5Ca5J0gda_TNbFwBIA3nj5Nw/viewform?usp=dialog",
     },
     {
       id: "rbt",
@@ -60,6 +63,7 @@ function page() {
       salary: "Minimum $22.50 an hour Maximum $25.50 an hour",
       description: "Work 1:1 with children with autism using ABA strategies...",
       details: `Job Responsibilities:\n- Work 1:1 with children with autism using ABA strategies under supervision of a BCBA\n- Implement individualized treatment plans designed and trained by a BCBA\n- Collect & record data to track client progress\n- Communicate with families & clinical teams to ensure client success\n- Attend scheduled supervisions, team meetings & ongoing training\n\nQualifications:\n- High school diploma (Bachelor’s in Psychology, Education, or related field a plus)\n- Reliable transportation & willingness to travel locally (if required)\n- Ability to actively engage clients during sessions, go from sitting to standing unassisted, and lift 50lbs\n- Experience in ABA therapy, childcare, education, or related field a plus!\n- Ability to pass a background check`,
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdQ-MCWNUlE4t8IdBHqWpiCinPTEOhHyk7lr7f8oJPMCqdNCg/viewform?usp=dialog",
     },
   ];
 
@@ -155,10 +159,7 @@ function page() {
               >
                 {expanded === job.id ? "Read Less" : "Read More"}
               </button>
-              <Link
-                href={`/${pathname.split("/")[1]}/apply`}
-                onClick={() => handleLinkClick("/apply")}
-              >
+              <Link target="_blank" href={job.link}>
                 <Button>Apply</Button>
               </Link>
             </div>

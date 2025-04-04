@@ -114,7 +114,7 @@ export default function ServicesSection() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    src={oneonone}
+                    src={heroImage}
                     alt="logo"
                     className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                   />

@@ -7,7 +7,7 @@ import familytraining from "@/public/asset/familytraining.png";
 import grouptherapy from "@/public/asset/speechtherapy.jpg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import heroImage from "@/public/asset/shapesnew.svg";
+import heroImage from "@/public/asset/shapesnew.webp";
 import { Fredoka } from "next/font/google";
 import { motion } from "framer-motion";
 import Requestsection from "../../home/sections/requestsection";
@@ -21,7 +21,7 @@ const merriweather = Fredoka({
 export default function ProductSection() {
   return (
     <div className="overflow-x-hidden">
-      <div className="relative flex flex-col lg:flex-row h-screen w-full pt-[30px] pb-[100px] lg:pt-[90px] lg:py-0 px-6 lg:px-28 items-center bg-[#EFFFEA] justify-center lg:justify-between">
+      <div className="relative flex flex-col lg:flex-row h-screen w-full pt-[30px] pb-[100px] lg:pt-[90px] lg:py-0 px-6 lg:px-28 items-center bg-white justify-center lg:justify-between">
         {/* Hero Image for Mobile */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}

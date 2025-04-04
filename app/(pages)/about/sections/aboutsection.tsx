@@ -88,7 +88,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="lg:absolute lg:bottom-[-15%] hidden lg:flex items-center px-28 justify-center w-full z-10"
+          className="lg:absolute lg:top-[45%] hidden lg:flex items-center px-28 justify-center w-full z-10"
         >
           <Image
             src={heroImage}

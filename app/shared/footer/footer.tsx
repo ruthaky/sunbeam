@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* Links Section */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 w-full md:w-auto text-center md:text-left">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 w-full md:w-auto text-center md:text-left">
             <div>
               <h2 className="mb-2 text-[18px] font-semibold text-black">
                 Links
@@ -85,13 +85,17 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div className="hidden">
               <h2 className="mb-2 text-[18px] font-semibold text-black">
                 Socials
               </h2>
               <ul className="text-[#5a5a5a] font-medium">
                 <li className="mb-2">
-                  <a target="_blank" href="#" className="hover:underline text-start">
+                  <a
+                    target="_blank"
+                    href="#"
+                    className="hover:underline text-start"
+                  >
                     LinkedIn
                   </a>
                 </li>
@@ -111,14 +115,14 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <h2 className="mb-2 text-[18px] font-semibold text-black">
                 Contact
               </h2>
               <ul className="text-[#5a5a5a] font-medium ">
                 <li className="mb-2 text-[14px]">admin@sunbeamcenter.com</li>
-                <li className="text-[14px]">+1111111111</li>
+                <li className="text-[14px]">971-254-2773</li>
               </ul>
             </div>
           </div>

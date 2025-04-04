@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from "@/public/asset/hero-kid.jpg";
+import heroImage from "@/public/asset/hero-kid 1.webp";
 import { Fredoka } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -25,7 +25,7 @@ export default function HeroSection() {
   const rotate = useTransform(scrollY, [0, 1300], [0, 360]);
   const rotate2 = useTransform(scrollY, [0, 1000], [0, 360]);
   return (
-    <div className="relative flex flex-col lg:flex-row h-screen lg:h-screen w-full lg:pt-[90px] lg:py-0 px-6 lg:px-28 items-center bg-[#FF9358] justify-center">
+    <div className="relative flex flex-col lg:flex-row h-screen lg:h-screen w-full  lg:py-0 px-6 lg:px-28 items-center bg-[#FF9358] justify-center">
       <motion.div
         style={{ rotate }}
         className="absolute -top-[50px] -right-[100px] lg:top-[-300px] lg:right-[-300px]  w-[300px] h-[300px] lg:w-[800px] lg:h-[800px] z-10"
@@ -66,14 +66,12 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-[18px] lg:text-[20px]"
         >
-          At SunBeam ABA Therapy, we believe that every child has the potential
-          to grow, learn, and thrive. Through compassionate, individualized ABA
-          therapy, we provide the support and guidance children need to build
-          confidence, develop skills, and embrace their unique strengths.
-          Together, we light the path to a brighter future—one step, one smile,
-          and one success at a time.
+          At SunBeam ABA Therapy, we help children grow, learn, and thrive with
+          compassionate, personalized care. Together, we light the path to a
+          brighter future, one step, one smile at a time.
         </motion.p>
-     
+        
+
         {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -87,13 +85,14 @@ export default function HeroSection() {
           </Link>
         </motion.div> */}
       </motion.div>
+    
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="hidden lg:flex items-end justify-end w-full lg:w-1/2 h-full z-9"
+        className="hidden lg:flex items-end justify-end w-full lg:w-1/2 h-screen z-9"
       >
-        <Image src={heroImage} alt="logo" className="" />
+        <Image src={heroImage} alt="logo" className="h-[90%] w-4/5 " />
       </motion.div>
     </div>
   );
