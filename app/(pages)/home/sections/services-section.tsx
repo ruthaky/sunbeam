@@ -8,18 +8,17 @@ import { MantineProvider } from "@mantine/core";
 import Autoplay from "embla-carousel-autoplay";
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
-import heroImage from "@/public/asset/one-on-one.jpg";
+import oneonone from "@/public/asset/one-on-one.jpg";
 import Image from "next/image";
 import { Fredoka } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import "@mantine/carousel/styles.css";
-import oneonone from "@/public/asset/oneonone.jpg";
 import speechtherapy from "@/public/asset/speechtherapy.jpg";
-import occupationaltherapy from "@/public/asset/occupationaltherapy.png";
+import occupationaltherapy from "@/public/asset/occupational therapy.jpg";
 import familytraining from "@/public/asset/familytraining.png";
-import grouptherapy from "@/public/asset/speechtherapy.jpg";
+import grouptherapy from "@/public/asset/group-therapyy.jpg";
 
 const merriweather = Fredoka({
   weight: ["400", "700"],
@@ -112,11 +111,12 @@ export default function ServicesSection() {
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={isInView ? { scale: 1, opacity: 1 } : {}}
                   transition={{ duration: 0.8, ease: "easeOut" }}
+                  classname="w-full h-full"
                 >
                   <Image
-                    src={heroImage}
+                    src={oneonone}
                     alt="logo"
-                    className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
+                    className="p-0 w-[230px] h-[170px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                   />
                 </motion.div>
               </div>
@@ -143,9 +143,9 @@ export default function ServicesSection() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    src={heroImage}
+                    src={familytraining}
                     alt="logo"
-                    className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px]"
+                    className="p-0 w-[230px] h-[170px] rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px]"
                   />
                 </motion.div>
 
@@ -217,9 +217,9 @@ export default function ServicesSection() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    src={heroImage}
+                    src={occupationaltherapy}
                     alt="logo"
-                    className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
+                    className="p-0 w-[230px] h-[170px] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                   />
                 </motion.div>
               </div>
@@ -247,9 +247,9 @@ export default function ServicesSection() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    src={heroImage}
+                    src={grouptherapy}
                     alt="logo"
-                    className="p-0 w-[230px] rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px]"
+                    className="p-0 w-[230px] h-[170px] rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px]"
                   />
                 </motion.div>
 
@@ -318,7 +318,7 @@ export default function ServicesSection() {
                   <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#C3F498]  justify-center ">
                     <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
                       <Image
-                        src={heroImage}
+                        src={oneonone}
                         alt="logo"
                         className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                       />
@@ -335,7 +335,7 @@ export default function ServicesSection() {
                   <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#FF9358]  justify-center ">
                     <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
                       <Image
-                        src={heroImage}
+                        src={familytraining}
                         alt="logo"
                         className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                       />
@@ -352,7 +352,7 @@ export default function ServicesSection() {
                   <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#97EAFD]  justify-center ">
                     <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
                       <Image
-                        src={heroImage}
+                        src={occupationaltherapy}
                         alt="logo"
                         className="p-0 w-full h-full rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[100px] rounded-br-[20px] z-0"
                       />
@@ -369,7 +369,7 @@ export default function ServicesSection() {
                   <div className="w-[400px] rounded-[25px] h-full p-4 flex flex-col gap-2 bg-[#FFE24F]  justify-center ">
                     <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
                       <Image
-                        src={heroImage} // Ensure correct reference
+                        src={grouptherapy} // Ensure correct reference
                         alt="logo"
                         width={230} // Explicit width
                         height={230} // Explicit height
