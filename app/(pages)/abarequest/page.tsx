@@ -36,7 +36,7 @@ function page() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className={`${merriweather.variable} font-merriweather text-[36px] lg:text-[60px] font-semibold leading-none `}
         >
-         ABA Service Request
+          ABA Service Request
         </motion.div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -54,8 +54,8 @@ function page() {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <Link
-            href={`/${pathname.split("/")[1]}/contact`}
-            onClick={() => handleLinkClick("/contact")}
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScNsTP3D2bhuYmfaRBGCiQLndZyiMqTibaL41EExBQJ6w0ooA/viewform?usp=dialog"
           >
             <Button>ABA Service Request</Button>
           </Link>

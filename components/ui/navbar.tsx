@@ -76,12 +76,12 @@ export const MobileNavbar = () => {
           <Link href="/contact" onClick={() => handleLinkClick("/contact")}>
             Contact
           </Link>
-          <Link
+          {/* <Link
             href="/graduatestudents"
             onClick={() => handleLinkClick("/graduatestudents")}
           >
             Graduate Students
-          </Link>
+          </Link> */}
         </Flex>
       </Collapse>
     </div>
@@ -133,9 +133,9 @@ export const Navbar = () => {
           <Link className="underline-hover" href="/abarequest">
             ABA Service Request
           </Link>
-          <Link className="underline-hover" href="/graduatestudents">
+          {/* <Link className="underline-hover" href="/graduatestudents">
             Graduate Students
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
