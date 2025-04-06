@@ -139,7 +139,7 @@ export default function ContactSection() {
                   <BsTelephone className="flex w-full h-full" />
                 </div>
 
-                <p>+971 55 181 9398</p>
+                <p>9712552773</p>
               </div>
               <div className="flex flex-row gap-4 text-[20px] items-start">
                 <IoMailOpenOutline size={35} />
