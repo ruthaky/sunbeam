@@ -35,27 +35,8 @@ export default function AboutSection() {
   return (
     <div className="overflow-x-hidden">
       <div className="relative justify-center">
-        <div className=" flex flex-col lg:flex-row h-auto lg:h-screen w-full py-[100px] px-6 lg:p-4 lg:px-28 borbder border-b-[10px] blg:order-b-[20px] border-b-orange-400  bg-[#fff] justify-center">
-          {/* <motion.div
-            style={{ rotate }}
-            className="absolute top-[-300px] right-[-300px] w-[800px] h-[800px] -z-1 shadow-[10px]"
-          >
-            <Image
-              src={heroIcon}
-              alt="Gallery Image"
-              className="w-full h-full object-cover opacity-30 "
-            />
-          </motion.div> */}
-          {/* <motion.div
-            style={{ rotate }}
-            className="absolute bottom-[-80px] left-[-100px] w-[250px] h-[250px] -z-1"
-          >
-            <Image
-              src={heroIcon2}
-              alt="Gallery Image"
-              className="w-full h-full object-cover"
-            />
-          </motion.div> */}
+        <div className=" flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[100px] pb-[50px] lg:py-[100px] px-6 lg:p-4 lg:px-28 borbder border-b-[10px] blg:order-b-[20px] border-b-orange-400  bg-[#fff] justify-center">
+          
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -79,7 +60,7 @@ export default function AboutSection() {
               <Image
                 src={heroImage}
                 alt="logo"
-                className=" w-full rounded-[20px]"
+                className=" w-full h-[200px] rounded-[20px]"
               />
             </motion.div>
           </motion.div>
@@ -182,7 +163,7 @@ export default function AboutSection() {
             <Image
               src={vision}
               alt="Gallery Image"
-              className="absolute -bottom-10 right-0 w-[150px] h-[150px] object-fit z-0"
+              className="absolute -bottom-3 lg:-bottom-10 right-0 w-[120px] lg:w-[150px] lg:h-[150px] object-fit z-0"
             />
             <h3
               className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[36px] lg:text-[42px]  text-[#619BA4] leading-none`}
@@ -200,7 +181,7 @@ export default function AboutSection() {
             <Image
               src={mission}
               alt="Gallery Image"
-              className="absolute -bottom-10 right-0 w-[150px] h-[150px] object-fit z-0"
+              className="absolute -bottom-7 lg:-bottom-10 right-0 w-[120px] lg:w-[150px] lg:h-[150px] object-fit z-0"
             />
 
             <h3
@@ -219,7 +200,7 @@ export default function AboutSection() {
             <Image
               src={values}
               alt="Gallery Image"
-              className="absolute -bottom-10 right-0 w-[150px] h-[150px] object-fit z-0"
+              className="absolute -bottom-5 lg:-bottom-10 right-0 w-[110px] lg:w-[140px] lg:h-[140px] object-fit z-0"
             />
             <h3
               className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[36px] lg:text-[42px]  text-[#729652] leading-none`}
