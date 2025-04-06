@@ -90,16 +90,16 @@ export default function ContactSection() {
               <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
                 <FiMapPin className="flex w-full h-full" />
               </div>
-              <Link href="https://maps.google.com/?q=25.272150,55.338219">
-                <p className="text-wrap lg:text-nowrap">huhihi</p>
-              </Link>
+              {/* <Link href="https://maps.google.com/?q=25.272150,55.338219"> */}
+                <p className="text-wrap lg:text-nowrap">Portland, OR</p>
+              {/* </Link> */}
             </div>
             <div className="flex flex-row gap-4 text-[20px] items-center">
               <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
                 <BsTelephone className="flex w-full h-full" />
               </div>
 
-              <p>+971 55 181 9398</p>
+              <p>9712552773</p>
             </div>
             <div className="flex flex-row gap-4 text-[20px] items-start">
               <IoMailOpenOutline size={35} />
