@@ -67,12 +67,39 @@ function page() {
     },
     {
       id: "bai",
-      title: "BAI",
-      salary: "...",
+      title: "Behavioral Assistant/Interventionist (BAI)",
+      salary: "Minimum USD $20.00/Per Hr. Maximum USD $25.00/Per Hr.",
       description:
-        "...",
-      details: `...`,
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSeZgKX5duPDeeWo_UFAMrknby5Ca5J0gda_TNbFwBIA3nj5Nw/viewform?usp=dialog",
+        "Join the compassionate team at SunBeam ABA and make a direct impact in the lives of children and adolescents with Autism Spectrum Disorder.",
+      details: `As a Behavioral Assistant/Interventionist (BAI), you’ll provide 1:1 support to clients diagnosed with Autism under the supervision of a BCBA. Your role involves implementing individualized treatment plans, supporting skill development, and promoting positive behaviors in the home, school, or clinic setting.
+    
+    Key Responsibilities:
+    - Deliver direct ABA therapy based on behavior plans
+    - Implement skill-building and behavior-reduction programs
+    - Accurately collect and record behavior data
+    - Collaborate with clinical supervisors and team members
+    - Attend regular training and supervision sessions
+    - Communicate effectively with families and caregivers
+    
+    Minimum Qualifications:
+    - High school diploma or equivalent (Associate’s or Bachelor’s preferred)
+    - Experience with autism or behavioral health
+    - Strong interpersonal and communication skills
+    - Reliable transportation and willingness to travel
+    - Ability to work independently under supervision
+    - Must pass background and clearance checks
+    
+    Preferred Qualifications:
+    - CPR/First Aid certification
+    - Bilingual is a plus
+    - Previous ABA or behavioral therapy experience
+    
+    Schedule & Benefits:
+    - Flexible full-time or part-time schedules
+    - Consistent weekly hours
+    - Ongoing training and opportunities for growth
+    - Supportive, collaborative team environment`,
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdj3C03HWsXpCRVHHwKals7N2frBCfyFFO8E4su-rB9VnfRYQ/viewform?usp=dialog",
     },
   ];
 

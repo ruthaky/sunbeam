@@ -95,7 +95,10 @@ export default function Abasection() {
 
         {/* ✅ Service Request Button */}
         <div>
-          <Link href="/apply">
+          <Link
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScNsTP3D2bhuYmfaRBGCiQLndZyiMqTibaL41EExBQJ6w0ooA/viewform?usp=dialog"
+          >
             <Button>ABA Service Request</Button>
           </Link>
         </div>
