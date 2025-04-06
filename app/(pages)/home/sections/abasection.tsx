@@ -18,7 +18,7 @@ const merriweather = Fredoka({
 export default function Abasection() {
   return (
     <div
-      className="relative w-full h-auto py-[70px] lg:pt-[150px] lg:pb-[180px] flex flex-col gap-6 lg:gap-8 px-6 lg:px-[200px] bg-[#d4feff] lg:bg-opacity-0 justify-center bg-cover"
+      className="relative w-full h-auto py-[70px] lg:pt-[150px] lg:pb-[180px] flex flex-col gap-6 lg:gap-8 px-6 lg:px-[200px] bg-[#84C6D0] lg:bg-opacity-0 justify-center bg-cover"
       style={{ backgroundImage: `url(${Bluebg.src})` }}
     >
       {/* ✅ Floating Star 1 */}
