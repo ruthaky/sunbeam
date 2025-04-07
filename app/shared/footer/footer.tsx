@@ -24,7 +24,7 @@ export default function Footer() {
         <span className="text-[12px] text-[#ffffffa7] sm:text-center">
           © 2024{" "}
           <a href="#" className="hover:underline">
-            Surge Crops Trading
+            Sunbeam ABA Therapy
           </a>
           . All Rights Reserved.
         </span>
