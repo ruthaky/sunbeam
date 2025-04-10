@@ -66,24 +66,7 @@ export default function ServicesSection() {
             {" "}
             <div className="w-[400px] rounded-[25px] h-full mb-4 lg:mb-0 p-4 flex flex-col gap-2 bg-[#C3F498]  justify-center ">
               <div className="relative flex flex-row justify-end items-start h-2/3 w-full">
-                <Link
-                  href="/services"
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevent default navigation
-                    const section = document.getElementById("oneonone");
-                    if (section) {
-                      const offset =
-                        section.getBoundingClientRect().top +
-                        window.scrollY -
-                        window.innerHeight / 2 +
-                        section.clientHeight / 2;
-                      window.scrollTo({ top: offset, behavior: "smooth" });
-
-                      // Update the URL with hash
-                      window.history.pushState(null, "", "/services/#oneonone");
-                    }
-                  }}
-                >
+                <Link href="/services/#one-on-one">
                   <motion.div
                     animate={
                       isHoveredgreen

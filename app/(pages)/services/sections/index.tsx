@@ -79,7 +79,7 @@ export default function ProductSection() {
 
       <div className="w-full h-auto p-12 px-4 lg:px-28 flex flex-col gap-10">
         <section
-          id="oneonone"
+          id="one-on-one"
           className="w-full h-[500px] flex flex-row gap-0 lg:gap-10"
         >
           <div className="h-full w-2/6 ">

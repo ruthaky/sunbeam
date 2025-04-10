@@ -54,8 +54,8 @@ export const metadata: Metadata = {
         alt: "Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.", // Optional alt text
       },
     ],
-    creator: "@surgecrops",
-    site: "surgecrops.com",
+    creator: "@sunbeam",
+    site: "sunbeamaba.org",
   },
 };
 
@@ -68,7 +68,7 @@ export default function RootLayout({
     <html lang="en">
       <meta
         property="og:image"
-        content="https://i.postimg.cc/xjHtX95b/sunbeam-thumbnail.png"
+        content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
       />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
@@ -79,11 +79,11 @@ export default function RootLayout({
       />
       <meta
         property="og:image:url"
-        content="https://i.postimg.cc/xjHtX95b/sunbeam-thumbnail.png"
+        content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
       />
       <meta
         property="og:image:secure_url"
-        content="https://i.postimg.cc/xjHtX95b/sunbeam-thumbnail.png"
+        content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
       />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
@@ -94,7 +94,7 @@ export default function RootLayout({
       />
       <meta
         property="og:image:url"
-        content="https://i.postimg.cc/xjHtX95b/sunbeam-thumbnail.png"
+        content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
       />
       <Script id="microsoft-clarity" strategy="afterInteractive">
         {`

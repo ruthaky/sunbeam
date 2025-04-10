@@ -36,7 +36,6 @@ export default function AboutSection() {
     <div className="overflow-x-hidden">
       <div className="relative justify-center">
         <div className=" flex flex-col lg:flex-row h-auto lg:h-screen w-full pt-[100px] pb-[50px] lg:py-[100px] px-6 lg:p-4 lg:px-28 borbder border-b-[10px] blg:order-b-[20px] border-b-orange-400  bg-[#fff] justify-center">
-          
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -89,11 +88,12 @@ export default function AboutSection() {
         <div className="text-[#545454]">
           <div>
             <p className="text-[18px] lg:text-[20px] tracking-tight">
-              At SunBeam ABA Therapy, our journey began with a simple yet
-              powerful belief: every child deserves the opportunity to shine. We
-              saw a need for compassionate, individualized care for children
-              with autism, and we set out to create a place where they could
-              learn, grow, and thrive.
+              At SunBeam ABA Therapy, our journey began in 2024 in the heart of
+              Portland, Oregon, with a simple yet powerful belief: every child
+              deserves the opportunity to shine. We saw a need for
+              compassionate, individualized care for children with autism, and
+              we set out to create a place where they could learn, grow, and
+              thrive.
               <br />
               <br />
               SunBeam was founded with the mission of providing high-quality
