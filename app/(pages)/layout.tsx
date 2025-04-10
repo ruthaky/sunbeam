@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sunbeam ABA Center",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support.",
     url: "https://surgecrops.com",
     siteName: "Sunbeam ABA cENTER",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "/asset/sunbeam-thumbnail.png", // Replace this with your image name
         width: 1200,
         height: 630,
-        alt: "Sunbeam - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", // Optional alt text
+        alt: "Sunbeam - Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support.", // Optional alt text
       },
     ],
     locale: "en_US",
@@ -75,7 +75,7 @@ export default function RootLayout({
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Sunbeam- Sunbeam ABA Therapy"
+        content="Sunbeam- Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support."
       />
       <meta
         property="og:image:url"
@@ -90,7 +90,7 @@ export default function RootLayout({
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Sunbeam- Sunbeam ABA Therapy"
+        content="Sunbeam- Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support."
       />
       <meta
         property="og:image:url"
