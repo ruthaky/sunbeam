@@ -33,6 +33,7 @@ export default function ProductSection() {
             src={heroImage}
             alt="logo"
             className="w-[350px] h-[600px] object-fill opacity-15"
+            priority
           />
         </motion.div>
 

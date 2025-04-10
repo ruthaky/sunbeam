@@ -92,7 +92,7 @@ export default function HeroSection() {
         transition={{ duration: 0.8 }}
         className="hidden lg:flex items-end justify-end w-full lg:w-1/2 h-screen z-9"
       >
-        <Image src={heroImage} alt="logo" className="h-[90%] w-4/5 " />
+        <Image src={heroImage} alt="logo" className="h-[90%] w-4/5 " priority />
       </motion.div>
     </div>
   );

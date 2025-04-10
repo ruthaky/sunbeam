@@ -105,7 +105,7 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
           className="hidden lg:flex items-center justify-end w-full lg:w-1/3 h-full z-10"
         >
-          <Image src={heroImage} alt="logo" className="" />
+          <Image src={heroImage} alt="logo" className="" priority />
         </motion.div>
       </div>
 

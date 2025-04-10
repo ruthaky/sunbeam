@@ -124,7 +124,12 @@ function page() {
               transition={{ duration: 0.8 }}
               className="flex lg:hidden items-center justify-end w-full lg:w-[600px] h-full "
             >
-              <Image src={heroImage} alt="logo" className="rounded-[20px]" />
+              <Image
+                src={heroImage}
+                alt="logo"
+                className="rounded-[20px]"
+                priority
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

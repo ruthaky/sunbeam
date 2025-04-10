@@ -60,6 +60,7 @@ export default function AboutSection() {
                 src={heroImage}
                 alt="logo"
                 className=" w-full h-[200px] rounded-[20px]"
+                priority
               />
             </motion.div>
           </motion.div>
@@ -74,6 +75,7 @@ export default function AboutSection() {
             src={heroImage}
             alt="logo"
             className="h-[480px] rounded-[20px]"
+            priority
           />
         </motion.div>
       </div>
