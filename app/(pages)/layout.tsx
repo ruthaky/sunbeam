@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "/asset/sunbeam-thumbnail.png", // Replace this with your image name
         width: 1200,
         height: 630,
-        alt: "Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.", // Optional alt text
+        alt: "Sunbeam- Sunbeam ABA Therapy", // Optional alt text
       },
     ],
     creator: "@sunbeam",
@@ -75,7 +75,7 @@ export default function RootLayout({
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment."
+        content="Sunbeam- Sunbeam ABA Therapy"
       />
       <meta
         property="og:image:url"
@@ -90,7 +90,7 @@ export default function RootLayout({
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment."
+        content="Sunbeam- Sunbeam ABA Therapy"
       />
       <meta
         property="og:image:url"
