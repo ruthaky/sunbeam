@@ -105,15 +105,17 @@ export default function RootLayout({
     })(window, document, "clarity", "script", "po18vi2fr8");
   `}
       </Script> */}
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR"></script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`<script async src="https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('config', 'G-ZJDYF9BQS6');
+</script> `}
+      </Script>
 
-  gtag('config', 'G-RC06JS7XMR');
-</script>
+   
 
       <body
         className={`${openSans.variable} font-openSans antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
