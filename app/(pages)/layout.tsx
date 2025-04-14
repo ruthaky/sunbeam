@@ -96,7 +96,7 @@ export default function RootLayout({
         property="og:image:url"
         content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
       />
-      <Script id="microsoft-clarity" strategy="afterInteractive">
+      {/* <Script id="microsoft-clarity" strategy="afterInteractive">
         {`
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -104,16 +104,16 @@ export default function RootLayout({
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "po18vi2fr8");
   `}
-      </Script>
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJDYF9BQS6"></script>
+      </Script> */}
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-ZJDYF9BQS6');
-</script> `}
-      </Script>
+
+  gtag('config', 'G-RC06JS7XMR');
+</script>
 
       <body
         className={`${openSans.variable} font-openSans antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
