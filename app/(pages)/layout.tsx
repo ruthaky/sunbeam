@@ -98,33 +98,22 @@ export default function RootLayout({
           property="og:image:url"
           content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
         />
-        {/* <Script id="microsoft-clarity" strategy="afterInteractive">
-        {`
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "po18vi2fr8");
-  `}
-      </Script> */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR"
-          strategy="afterInteractive"
-        />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RC06JS7XMR');
-  `}
-        </Script>
       </Head>
       <body
         className={`${openSans.variable} font-openSans antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
       >
-        {" "}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RC06JS7XMR');
+          `}
+        </Script>{" "}
         <MantineProvider>
           <div className="block lg:hidden">
             <MobileNavbar />
