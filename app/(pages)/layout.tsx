@@ -9,6 +9,7 @@ import { Open_Sans } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import Script from "next/script";
+import Head from "next/head";
 
 const concert_one = Concert_One({
   weight: ["400", "400"],
@@ -66,37 +67,38 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta
-        property="og:image"
-        content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
-      />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta
-        property="og:image:alt"
-        content="Sunbeam- Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support."
-      />
-      <meta
-        property="og:image:url"
-        content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
-      />
-      <meta
-        property="og:image:secure_url"
-        content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
-      />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta
-        property="og:image:alt"
-        content="Sunbeam- Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support."
-      />
-      <meta
-        property="og:image:url"
-        content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
-      />
-      {/* <Script id="microsoft-clarity" strategy="afterInteractive">
+      <Head>
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Sunbeam- Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support."
+        />
+        <meta
+          property="og:image:url"
+          content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Sunbeam- Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support."
+        />
+        <meta
+          property="og:image:url"
+          content="https://res.cloudinary.com/dk4gxgooc/image/upload/v1744266606/sb11_h21hmb.png"
+        />
+        {/* <Script id="microsoft-clarity" strategy="afterInteractive">
         {`
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -105,21 +107,20 @@ export default function RootLayout({
     })(window, document, "clarity", "script", "po18vi2fr8");
   `}
       </Script> */}
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR`}
-        strategy="afterInteractive"
-      >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR"
+          strategy="afterInteractive"
+        />
+
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RC06JS7XMR');
- `}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RC06JS7XMR');
+  `}
         </Script>
-      </Script>
-     
-
+      </Head>
       <body
         className={`${openSans.variable} font-openSans antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
       >
