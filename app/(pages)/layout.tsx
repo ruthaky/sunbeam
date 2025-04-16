@@ -105,25 +105,34 @@ export default function RootLayout({
     })(window, document, "clarity", "script", "po18vi2fr8");
   `}
       </Script> */}
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR`}
-        strategy="afterInteractive"
-      >
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`<script async src="https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+      <head>
+        {" "}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-RC06JS7XMR`}
+          strategy="afterInteractive"
+        >
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ZJDYF9BQS6');
-</script> `}
+ `}
+          </Script>
         </Script>
-      </Script>
+      </head>
 
       <body
         className={`${openSans.variable} font-openSans antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
       >
-        {" "}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-XX"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <MantineProvider>
           <div className="block lg:hidden">
             <MobileNavbar />
