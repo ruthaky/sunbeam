@@ -86,12 +86,16 @@ export default function ContactSection() {
           Whether it's working with rice farmers in
         </div> */}
           <div className="flex flex-col gap-6 lg:gap-8">
-            <div className="flex flex-row gap-4 text-[18px] lg:text-[20px] items-center ">
+            <div className="flex flex-row gap-4 text-[20px] items-start ">
               <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
                 <FiMapPin className="flex w-full h-full" />
               </div>
               {/* <Link href="https://maps.google.com/?q=25.272150,55.338219"> */}
-                <p className="text-wrap lg:text-nowrap">Portland, OR</p>
+
+              <p className="text-wrap lg:text-nowrap">
+                270 Warner Milne RD
+                <br></br>Suite C <br></br>Oregon City, OR 97045
+              </p>
               {/* </Link> */}
             </div>
             <div className="flex flex-row gap-4 text-[20px] items-center">

@@ -22,7 +22,7 @@ export default function Footer() {
         style={{ backgroundImage: `url(${heroImage.src})` }}
       >
         <span className="text-[12px] text-[#ffffffa7] sm:text-center">
-          © 2024{" "}
+          © 2025{" "}
           <a href="#" className="hover:underline">
             Sunbeam ABA Therapy
           </a>
