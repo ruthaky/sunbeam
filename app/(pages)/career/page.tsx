@@ -42,7 +42,7 @@ function page() {
     {
       id: "bcba",
       title: "Board Certified Behavior Analyst (FT BCBA)",
-      salary: "Minimum: USD $78,100.00/Per Yr. Maximum: USD $94,000.00/Per Yr.",
+      salary: "Minimum: USD $95,000.00/Per Yr. Maximum: USD $115,000.00/Per Yr.",
       description:
         "Are you a passionate BCBA® looking to make a meaningful difference...",
       details: `Qualifications: \n- Current Board Certified Behavior Analyst (BCBA®) certification\n- Minimum 2 years of experience working with individuals with autism\n- Experience conducting assessments, overseeing treatment plans, and leading teams\n- Reliable transportation, valid driver's license\n- Ability to handle challenging behaviors and a full range of physical movement as required\n\nJob description:\n- Provide oversight and supervision for your team and clients\n- Mentor and support behavior technicians (BTs)\n- Write reports and conduct clinical reviews with funding sources\n- Attend monthly regional meetings for ongoing training and supervision\n- Conduct regular parent/caregiver trainings for family members\n- Ensure program directives from senior clinical team are implemented accurately and timely\n- Deliver individualized, person-centered care rooted in the principles of assent-based treatment`,
@@ -51,7 +51,7 @@ function page() {
     {
       id: "bcaba",
       title: "Board Certified Assistant Behavior Analyst (BCaBA)",
-      salary: "Minimum: USD $54,000 per Yr. Maximum: USD $61,000.00 per Yr.",
+      salary: "Minimum: USD $61,000 per Yr. Maximum: USD $70,000.00 per Yr.",
       description:
         "If you're looking for a rewarding job working with children...",
       details: `Job Responsibilities:\n- Assist BCBAs with intakes and assessments including completing skills assessments, functional behavior assessments, behavior support plans, and treatment planning.\n- Provide training for behavior technicians upon hire and on an ongoing basis.\n- Provide direct service to clients in the program.\n- Assist with training for parents and caregivers as needed.\n- Meet with RBT staff to provide supervision at least bi-weekly with support of BCBA.\n- Ensure necessary documentation is provided in order to facilitate reimbursement through primary funding sources.\n\nQualifications:\n- BCaBA or in a master's program in behavior analysis\n- Valid CPR and First Aid Certification`,

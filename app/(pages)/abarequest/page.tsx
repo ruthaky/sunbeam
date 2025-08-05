@@ -44,9 +44,9 @@ function page() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-[18px] lg:text-[20px] text-[#545454]"
         >
-          We are hiring- come be a part of an exciting, safe space work
-          environment. We offer supervision for RBT’s, BCABa’s in their graduate
-          program.
+          We’re honored to support your child’s journey. Please fill out the
+          form below to request service at SunBeam ABA Center. A member of our
+          intake team will contact you within 1-2 business days.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
