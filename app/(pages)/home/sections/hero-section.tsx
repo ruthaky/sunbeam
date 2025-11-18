@@ -70,7 +70,9 @@ export default function HeroSection() {
           compassionate, personalized care. Together, we light the path to a
           brighter future, one step, one smile at a time.
         </motion.p>
-        
+        <Link href="/contact">
+          <Button>Contact Us</Button>
+        </Link>
 
         {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -92,7 +94,7 @@ export default function HeroSection() {
         transition={{ duration: 0.8 }}
         className="hidden lg:flex items-end justify-end w-full lg:w-1/2 h-screen z-9"
       >
-        <Image src={heroImage} alt="logo" className="h-[90%] w-4/5 " priority />
+        <Image src={heroImage} alt="logo" className="h-[80%] w-4/5 " priority />
       </motion.div>
     </div>
   );

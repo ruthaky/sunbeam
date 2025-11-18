@@ -61,6 +61,9 @@ export default function ProductSection() {
             From early intervention to social skills training, we provide
             personalized support tailored to each individual’s needs.
           </motion.p>
+          <Link href="/contact">
+          <Button>Contact Us</Button>
+        </Link>
         </motion.div>
 
         {/* Hero Image for Larger Screens */}
@@ -105,6 +108,9 @@ export default function ProductSection() {
               recognized for its success in supporting individuals with autism
               spectrum disorder (ASD). 
             </div>
+            <Link href="/contact">
+          <Button>Contact Us</Button>
+        </Link>
           </div>
         </section>
         <section
@@ -118,12 +124,15 @@ export default function ProductSection() {
               Family Caregiver/Training
             </div>
             <div className="text-[16px] lg:text-[20px] text-[#545454]">
-              We offer parent training: caregivers of children receiving Applied
+              We provide parent training: caregivers of children receiving Applied
               Behavior Analysis (ABA) therapy are educated on how to implement
               behavioral strategies at home, effectively supporting their
               child's development by reinforcing skills learned during therapy
               sessions.
             </div>
+            <Link href="/contact">
+          <Button>Contact Us</Button>
+        </Link>
           </div>
           <div className="h-full w-2/6 ">
             {" "}
@@ -160,6 +169,9 @@ export default function ProductSection() {
               of concern and design personalized treatment plans tailored to
               meet their unique needs and abilities.
             </div>
+            <Link href="/contact">
+          <Button>Contact Us</Button>
+        </Link>
           </div>
         </section>
         <section
@@ -170,7 +182,7 @@ export default function ProductSection() {
             <div
               className={`${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[30px] lg:text-[42px] text-[#312f30] font-semibold leading-none`}
             >
-              Group Session
+              Group Sessions
             </div>
             <div className="text-[16px] lg:text-[20px] text-[#545454]">
               We offer structured therapy sessions where multiple children
@@ -181,6 +193,9 @@ export default function ProductSection() {
               where children can work on skills like turn-taking, sharing, and
               conversation in a group environment. 
             </div>
+            <Link href="/contact">
+          <Button>Contact Us</Button>
+        </Link>
           </div>
           <div className="h-full w-2/6 ">
             {" "}

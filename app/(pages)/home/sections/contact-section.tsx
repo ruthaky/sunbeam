@@ -93,9 +93,8 @@ export default function ContactSection() {
               {/* <Link href="https://maps.google.com/?q=25.272150,55.338219"> */}
 
               <p className="text-wrap lg:text-nowrap">
-                270 Warner Milne RD
-                <br></br>Suite C <br></br>Oregon City, OR 97045
-              </p>
+                274 Warner Milne RD
+               <br></br>Suite C <br></br>Oregon City, OR 97045</p>
               {/* </Link> */}
             </div>
             <div className="flex flex-row gap-4 text-[20px] items-center">

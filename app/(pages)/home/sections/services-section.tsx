@@ -220,7 +220,7 @@ export default function ServicesSection() {
               <div className="flex flex-row items-start justify-end h-1/3 w-full">
                 {" "}
                 <p className="font-semibold text-[25px] w-auto">
-                  Group Session
+                  Group Sessions
                 </p>
               </div>
               <div className="relative flex flex-row justify-between items-end h-2/3 w-full">
@@ -362,7 +362,7 @@ export default function ServicesSection() {
                     <div className="flex flex-row  items-center h-1/3 w-full">
                       {" "}
                       <p className="font-semibold text-[25px] w-[200px]">
-                        Group Session
+                        Group Sessions
                       </p>
                     </div>
                   </div>

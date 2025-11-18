@@ -64,22 +64,26 @@ export default function AboutSection() {
               />
             </motion.div>
           </motion.div>
+          
         </div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="lg:absolute lg:top-[45%] hidden lg:flex items-center px-28 justify-center w-full z-10"
+          className="lg:absolute lg:top-[45%] hidden lg:flex flex-col  items-end gap-8 px-28 justify-center w-full z-10"
         >
           <Image
             src={heroImage}
             alt="logo"
-            className="h-[480px] rounded-[20px]"
+            className="h-[300px] rounded-[20px]"
             priority
-          />
+          /> <Link href="/contact">
+          <Button>Contact Us</Button>
+        </Link>
         </motion.div>
+       
       </div>
-      <div className="w-full h-auto lg:h-screen flex flex-col gap-6 lg:gap-8 px-5 lg:px-28 pb-10 pt-[18%] justify-center">
+      <div className="w-full h-auto lg:h-screen flex flex-col gap-6 lg:gap-8 px-5 lg:px-28 pb-10 pt-[6%] justify-center">
         <div
           className={` ${merriweather.variable} font-merriweather flex flex-col lg:gap-2 text-[36px] lg:text-[42px] text-[#312f30] font-semibold leading-none `}
         >
@@ -158,14 +162,14 @@ export default function AboutSection() {
         </div>
       </div> */}
 
-      <div className="w-full px-5 lg:px-28 py-20">
+      <div className="w-full px-5 lg:px-28 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Mission Card */}
           <div className="relative bg-[#D4F9FF] shadow-lg  h-[300px] pt-[70px] p-6 rounded-[15px]">
             <Image
               src={vision}
               alt="Gallery Image"
-              className="absolute -bottom-3 lg:-bottom-10 right-0 w-[120px] lg:w-[150px] lg:h-[150px] object-fit z-0"
+              className="absolute -bottom-3 lg:-bottom-16 right-0 w-[120px] lg:w-[150px] lg:h-[150px] object-fit z-0"
             />
             <h3
               className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[36px] lg:text-[42px]  text-[#619BA4] leading-none`}
@@ -183,7 +187,7 @@ export default function AboutSection() {
             <Image
               src={mission}
               alt="Gallery Image"
-              className="absolute -bottom-7 lg:-bottom-10 right-0 w-[120px] lg:w-[150px] lg:h-[150px] object-fit z-0"
+              className="absolute -bottom-7 lg:-bottom-16 right-0 w-[120px] lg:w-[150px] lg:h-[150px] object-fit z-0"
             />
 
             <h3
@@ -202,7 +206,7 @@ export default function AboutSection() {
             <Image
               src={values}
               alt="Gallery Image"
-              className="absolute -bottom-5 lg:-bottom-10 right-0 w-[110px] lg:w-[140px] lg:h-[140px] object-fit z-0"
+              className="absolute -bottom-5 lg:-bottom-16 right-0 w-[110px] lg:w-[140px] lg:h-[140px] object-fit z-0"
             />
             <h3
               className={`${merriweather.variable} font-merriweather font-bold text-center mb-5 text-[36px] lg:text-[42px]  text-[#729652] leading-none`}
