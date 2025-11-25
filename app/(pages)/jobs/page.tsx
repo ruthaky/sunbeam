@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroImage from "@/public/asset/team.jpg";
+import heroImage from "@/public/asset/jobshero.png";
 import zigzag from "@/public/asset/zigzag.svg";
 import Link from "next/link";
 import Image from "next/image";
@@ -188,7 +188,7 @@ function page() {
 
   return (
     <div className=" flex flex-col">
-      <div className="flex relative flex-col lg:flex-row py-[100px] h-auto lg:h-screen w-full lg:pt-[90px] lg:py-0 items-center bg-[#eafdff] justify-between">
+      <div className="flex relative flex-col lg:flex-row py-[100px] h-auto lg:h-screen w-full lg:pt-[90px] lg:py-0 items-center bg-[#FF9358] justify-between">
         <Image
           src={zigzag}
           alt="logo"
@@ -218,33 +218,52 @@ function page() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none `}
+              className={`${merriweather.variable} font-merriweather text-[35px] lg:text-[80px] font-semibold text-[#E6FFA8] leading-none `}
             >
-              Join Our Team
+              Join Us
             </motion.div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-[18px] lg:text-[20px] text-[#545454]"
+              className="text-[18px] lg:text-[25px] font-bold text-white w-[550px]"
             >
-              We are hiring- come be a part of an exciting, safe space work
-              environment. We offer supervision for RBT’s, BCABa’s in their
-              graduate program.
+              Shape Bright Futures with Us
+
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-[18px] lg:text-[20px] text-white w-[500px]"
+            >
+              Be part of a compassionate team dedicated to transforming the lives of children with autism. At Just Kids Autism Center, we believe in empowering our team members to grow professionally while making a meaningful impact in our community.
             </motion.p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="hidden lg:flex items-center justify-center xl:justify-end w-full lg:w-[600px] h-full "
-          >
-            <Image src={heroImage} alt="logo" className="rounded-[20px]" />
-          </motion.div>
+  initial={{ opacity: 0, x: 20 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  className="hidden lg:flex items-center justify-center xl:justify-end w-full lg:w-[550px] h-full"
+>
+  <motion.div
+    initial={{ rotate: 3 }}        // default slight tilt
+    whileHover={{ rotate: 0 }}       // tilt back on hover
+    transition={{ type: "spring", stiffness: 200, damping: 15 }}
+    className="inline-block shadow-md rounded-[20px]"
+  >
+    <Image
+      src={heroImage}
+      alt="logo"
+      className="rounded-[20px] border border-[10px] border-[#FFBF99]"
+    />
+  </motion.div>
+</motion.div>
+
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 lg:gap-8 py-[70px] lg:py-24 px-4 lg:px-28">
+      {/* <div className="flex flex-col gap-6 lg:gap-8 py-[70px] lg:py-24 px-4 lg:px-28">
         <p
           className={`${merriweather.variable} font-merriweather text-[36px] lg:text-[42px] text-[#312f30] font-semibold tracking-tight`}
         >
@@ -289,9 +308,9 @@ function page() {
             </div>
           ))}
         </div>
-      </div> 
+      </div>  */}
 
-      <section className="hidden py-20 bg-[#f4f7fb]">
+      <section className="py-20 bg-[#f4f7fb]">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-center text-4xl font-bold text-gray-900">
           Open Positions
@@ -338,7 +357,7 @@ function page() {
       </div>
     </section>
     <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-start relative">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-start relative flex items-center">
 
         {/* LEFT SECTION */}
         <div>
@@ -372,8 +391,8 @@ function page() {
         </div>
 
         {/* RIGHT SECTION - IMAGE BOX */}
-        <div className="relative">
-          <div className="w-full h-[450px] bg-[#f7f8fa] rounded-3xl shadow-[0px_25px_60px_rgba(0,0,0,0.06)] border border-gray-100 flex items-center justify-center">
+        <div className="relative flex items-center justify-center">
+          <div className="w-[500px] h-[400px] bg-[#f7f8fa] rounded-3xl shadow-[0px_25px_60px_rgba(0,0,0,0.06)] border border-gray-100 flex items-center justify-center">
           <Image
                 src={heroImage}
                 alt="logo"
@@ -383,7 +402,7 @@ function page() {
           </div>
 
           {/* FLOATING CARD */}
-          <div className="absolute -bottom-8 left-8 bg-white shadow-xl rounded-2xl px-5 py-4 flex items-start gap-3 border border-gray-100">
+          <div className="absolute bottom-10 -left-2 bg-white shadow-xl rounded-2xl px-3 py-3 flex items-start gap-3 border border-gray-100">
             <div className="w-10 h-10 rounded-xl bg-orange-400 flex items-center justify-center text-white">
               <HiOutlineUserGroup size={22} />
             </div>
@@ -397,7 +416,7 @@ function page() {
 
       </div>
     </section>
-    <section className="mx-auto flex w-full max-w-6xl flex-col items-center gap-14 py-16 md:flex-row md:items-stretch">
+    <section className="hidden mx-auto flex w-full max-w-6xl flex-col items-center gap-14 py-16 md:flex-row md:items-stretch">
         {/* Left: Photo card */}
         <div className="flex justify-center md:justify-center flex-1">
           <div className="relative w-[280px] sm:w-[320px] md:w-[360px] aspect-[3/4] rounded-[56px] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.08)] p-3">

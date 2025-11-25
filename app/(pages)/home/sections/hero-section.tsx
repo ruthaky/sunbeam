@@ -70,8 +70,8 @@ export default function HeroSection() {
           compassionate, personalized care. Together, we light the path to a
           brighter future, one step, one smile at a time.
         </motion.p>
-        <Link href="/contact">
-          <Button>Contact Us</Button>
+        <Link href="/schedule">
+          <Button>Schedule a visit</Button>
         </Link>
 
         {/* <motion.div

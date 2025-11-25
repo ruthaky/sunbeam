@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import logo from "@/public/asset/sunbeamlogo.png";
 import heroImage from "@/public/asset/bottom.svg";
+import Link from "next/link";
+import { SOCIAL_LINKS } from "@/lib/social-links";
 
 export default function Footer() {
   const router = useRouter();
@@ -41,7 +42,7 @@ export default function Footer() {
           </div>
 
           {/* Links Section */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 w-full md:w-auto text-center md:text-left">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 w-full md:w-auto text-center md:text-left">
             <div>
               <h2 className="mb-2 text-[18px] font-semibold text-black">
                 Links
@@ -116,7 +117,9 @@ export default function Footer() {
                 </li>
               </ul>
             </div> */}
-            <div>
+
+            <div className="flex flex-col gap-2">
+              <div>
               <h2 className="mb-2 text-[18px] font-semibold text-black">
                 Contact
               </h2>
@@ -124,6 +127,27 @@ export default function Footer() {
                 <li className="mb-2 text-[14px]">admin@sunbeamcenter.com</li>
                 <li className="text-[14px]">971-255-2773</li>
               </ul>
+              </div>
+              <div>
+              <h2 className="mb-2 text-[18px] font-semibold text-black">
+                Socials
+              </h2>
+              <div className="flex flex-wrap items-center justify-center gap-4 md:justify-start">
+                {SOCIAL_LINKS.map(({ name, href, Icon }) => (
+                  <Link
+                    key={name}
+                    href={href}
+                    aria-label={name}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-black transition hover:bg-white"
+                  >
+                    <Icon className="h-4 w-4" />
+                    <span className="sr-only">{name}</span>
+                  </Link>
+                ))}
+              </div>
+              </div>
             </div>
           </div>
         </div>

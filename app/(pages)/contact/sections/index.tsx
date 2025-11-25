@@ -13,6 +13,7 @@ import heroIcon from "@/public/asset/yellowsun.svg";
 import heroIcon2 from "@/public/asset/heroicon22.svg";
 
 import Link from "next/link";
+import { SOCIAL_LINKS } from "@/lib/social-links";
 const merriweather = Fredoka({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -131,10 +132,11 @@ export default function ContactSection() {
                   <FiMapPin className="flex w-full h-full" />
                 </div>
                 {/* <Link href="https://maps.google.com/?q=25.272150,55.338219"> */}
-                
+
                 <p className="text-wrap lg:text-nowrap">
-                274 Warner Milne RD
-               <br></br>Suite C <br></br>Oregon City, OR 97045</p>
+                  274 Warner Milne RD
+                  <br></br>Oregon City, OR 97045
+                </p>
                 {/* </Link> */}
               </div>
               <div className="flex flex-row gap-4 text-[20px] items-center">
@@ -150,6 +152,25 @@ export default function ContactSection() {
                   <p>admin@sunbeamcenter.com</p>
                   {/* <p>sales@surgecrops.com</p>
                 <p>marketing@surgecrops.com</p> */}
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <p className="text-[18px] font-semibold text-[#312f30]">
+                  Connect with us
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  {SOCIAL_LINKS.map(({ name, href, Icon }) => (
+                    <Link
+                      key={name}
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={name}
+                      className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white/70 text-black transition hover:bg-white"
+                    >
+                      <Icon className="h-5 w-5" />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
