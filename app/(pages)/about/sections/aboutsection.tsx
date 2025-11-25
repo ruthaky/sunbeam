@@ -11,8 +11,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { Fredoka } from "next/font/google";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
-import Carousel from "./carousel";
-import MobileVillas from "./carousel";
+import AboutImageCarousel from "./carousel";
 import { Button } from "@/components/ui/button";
 import heroIcon from "@/public/asset/yellowsun.svg";
 import heroIcon2 from "@/public/asset/heroicon22.svg";
@@ -46,7 +45,7 @@ export default function AboutSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className={`${merriweather.variable} flex lg:absolute lg:top-[30%] font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none text-center ]`}
+              className={`${merriweather.variable} flex lg:absolute lg:top-[20%] font-merriweather text-[35px] lg:text-[60px] font-semibold leading-none text-center ]`}
             >
               Compassionate Care, Life-Changing Growth
             </motion.div>
@@ -70,7 +69,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="lg:absolute lg:top-[45%] hidden lg:flex flex-col  items-end gap-8 px-28 justify-center w-full z-10"
+          className="lg:absolute lg:top-[35%] hidden lg:flex flex-col  items-end gap-8 px-28 justify-center w-full z-10"
         >
           <Image
             src={heroImage}
@@ -222,7 +221,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      {/* <MobileVillas /> */}
+      <AboutImageCarousel />
 
       <div className="hidden w-full h-auto flex-col">
         <div className="w-full flex flex-col items-center justify-center">

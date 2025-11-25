@@ -127,29 +127,29 @@ function page() {
 
   const clinical = [
     {
-      title: "Entry-Level Clinician",
+      title: "BCBA",
       desc: "All you need is passion for helping kids with disabilities",
-      tags: ["Entry Level", "Full Time"],
+      tags: ["On site", "Full Time"],
     },
     {
-      title: "Experienced Clinician",
+      title: "RBT/RBA",
       desc: "You have some experience and a lot of passion for helping kids with disabilities",
-      tags: ["Experienced", "Full Time"],
+      tags: ["Experienced", "Full Time", "On site"],
     },
   ];
 
-  const operational = [
-    {
-      title: "Operations Ninja",
-      desc: "You like to dot your i’s and cross your t’s",
-      tags: ["Operations", "Admin"],
-    },
-    {
-      title: "People Person",
-      desc: "You stand out, while blending in",
-      tags: ["HR", "Culture"],
-    },
-  ];
+  // const operational = [
+  //   {
+  //     title: "Operations Ninja",
+  //     desc: "You like to dot your i’s and cross your t’s",
+  //     tags: ["Operations", "Admin"],
+  //   },
+  //   {
+  //     title: "People Person",
+  //     desc: "You stand out, while blending in",
+  //     tags: ["HR", "Culture"],
+  //   },
+  // ];
 
   const Card = ({ title, desc, tags }: any) => (
     <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition relative">
@@ -337,7 +337,7 @@ function page() {
           </div>
 
           {/* Operational Column */}
-          <div>
+          {/* <div>
             <div className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
                 <HiOutlineBuildingOffice size={20} />
@@ -352,7 +352,7 @@ function page() {
                 <Card key={i} {...job} />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
