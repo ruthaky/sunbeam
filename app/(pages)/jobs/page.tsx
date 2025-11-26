@@ -1,7 +1,8 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroImage from "@/public/asset/jobshero.png";
+import heroImage from "@/public/asset/jobsimage.jpg";
+import jobImage from "@/public/asset/jobsimage2.jpg";
 import zigzag from "@/public/asset/zigzag.svg";
 import Link from "next/link";
 import Image from "next/image";
@@ -237,7 +238,7 @@ function page() {
         <Image
           src={zigzag}
           alt="logo"
-          className="absolute -bottom-[5%] w-full rounded-[20px] h-12 sm:h-16"
+          className="absolute -bottom-[5%] w-full rounded-[20px] h-12 sm:h-16 "
         />
         <div className="px-4 sm:px-6 lg:px-28 flex flex-col lg:flex-row items-center justify-between w-full gap-6 lg:gap-0">
           <motion.div
@@ -250,12 +251,12 @@ function page() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="flex lg:hidden items-center justify-center w-full lg:w-[600px] h-full"
+              className="flex lg:hidden items-center justify-center w-full lg:w-[600px] h-full pt-10"
             >
               <Image
                 src={heroImage}
                 alt="logo"
-                className="rounded-[20px] w-full max-w-md"
+                className="rounded-[20px] w-full max-w-md h-[400px] object-cover"
                 priority
               />
             </motion.div>
@@ -289,7 +290,7 @@ function page() {
   initial={{ opacity: 0, x: 20 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.8 }}
-  className="hidden lg:flex items-center justify-center xl:justify-end w-full lg:w-[550px] h-full"
+  className="hidden lg:flex items-center justify-center xl:justify-end w-full lg:w-[500px] lg:h-full"
 >
   <motion.div
     initial={{ rotate: 3 }}        // default slight tilt
@@ -300,7 +301,7 @@ function page() {
     <Image
       src={heroImage}
       alt="logo"
-      className="rounded-[20px] border border-[10px] border-[#FFBF99]"
+      className="rounded-[20px] border border-[10px] border-[#FFBF99] lg:h-[500px] object-cover"
     />
   </motion.div>
 </motion.div>
@@ -445,9 +446,9 @@ function page() {
 
         {/* RIGHT SECTION - IMAGE BOX */}
         <div className="relative flex items-center justify-center w-full lg:w-auto">
-          <div className="w-full max-w-[500px] h-[300px] sm:h-[350px] lg:h-[400px] bg-[#f7f8fa] rounded-2xl lg:rounded-3xl shadow-[0px_25px_60px_rgba(0,0,0,0.06)] border border-gray-100 flex items-center justify-center p-4">
+          <div className="w-full max-w-[500px] h-[300px] sm:h-[350px] lg:h-[500px] bg-[#f7f8fa] rounded-2xl lg:rounded-3xl shadow-[0px_25px_60px_rgba(0,0,0,0.06)] border border-gray-100 flex items-center justify-center p-4">
           <Image
-                src={heroImage}
+                src={jobImage}
                 alt="logo"
                 className="rounded-[20px] w-full h-full object-cover"
                 priority
@@ -469,7 +470,7 @@ function page() {
 
       </div>
     </section>
-    <section className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8 sm:gap-12 lg:gap-14 py-12 sm:py-16 px-4 sm:px-6 md:flex-row md:items-stretch">
+    <section className="hidden mx-auto flex w-full max-w-6xl flex-col items-center gap-8 sm:gap-12 lg:gap-14 py-12 sm:py-16 px-4 sm:px-6 md:flex-row md:items-stretch">
         {/* Left: Photo card */}
         <div className="flex justify-center md:justify-center flex-1 w-full">
           <div className="relative w-[240px] sm:w-[280px] md:w-[320px] lg:w-[360px] aspect-[3/4] rounded-[40px] sm:rounded-[48px] lg:rounded-[56px] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.08)] p-2 sm:p-3">
@@ -507,7 +508,7 @@ function page() {
           </p>
 
           {/* Testimonial card */}
-          <div className="mt-4 rounded-2xl sm:rounded-[24px] lg:rounded-[32px] bg-white shadow-[0_18px_50px_rgba(0,0,0,0.08)] px-5 py-5 sm:px-7 sm:py-6 lg:px-9 lg:py-7 max-w-xl">
+          <div className=" mt-4 rounded-2xl sm:rounded-[24px] lg:rounded-[32px] bg-white shadow-[0_18px_50px_rgba(0,0,0,0.08)] px-5 py-5 sm:px-7 sm:py-6 lg:px-9 lg:py-7 max-w-xl">
             <div className="flex gap-3 sm:gap-4">
               {/* Quote mark + vertical line */}
               <div className="flex flex-col items-center pt-1">

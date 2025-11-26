@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Compassionate ABA therapy in Portland, Oregon. SunBeam ABA Therapy empowers children with autism to learn, grow, and thrive through personalized care and family-centered support.",
     url: "https://surgecrops.com",
-    siteName: "Sunbeam ABA cENTER",
+    siteName: "Sunbeam ABA Center",
     images: [
       {
         url: "/asset/sunbeam-thumbnail.png", // Replace this with your image name
