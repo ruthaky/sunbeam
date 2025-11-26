@@ -130,7 +130,6 @@ function page() {
     {
       id: "bcba",
       title: "Board Certified Behavior Analyst (BCBA)",
-      salary: "Minimum: USD $95,000.00/Per Yr. Maximum: USD $115,000.00/Per Yr.",
       desc:
         "Are you a passionate BCBA® looking to make a meaningful difference...",
       details: `Qualifications: \n- Current Board Certified Behavior Analyst (BCBA®) certification\n- Minimum 2 years of experience working with individuals with autism\n- Experience conducting assessments, overseeing treatment plans, and leading teams\n- Reliable transportation, valid driver's license\n- Ability to handle challenging behaviors and a full range of physical movement as required\n\nJob description:\n- Provide oversight and supervision for your team and clients\n- Mentor and support behavior technicians (BTs)\n- Write reports and conduct clinical reviews with funding sources\n- Attend monthly regional meetings for ongoing training and supervision\n- Conduct regular parent/caregiver trainings for family members\n- Ensure program directives from senior clinical team are implemented accurately and timely\n- Deliver individualized, person-centered care rooted in the principles of assent-based treatment`,
@@ -140,7 +139,6 @@ function page() {
     {
       id: "rbt",
       title: "Registered Behavior Technician (RBT)",
-      salary: "Minimum $22.50 an hour Maximum $25.50 an hour",
       desc: "Work 1:1 with children with autism using ABA strategies...",
       details: `Job Responsibilities:\n- Work 1:1 with children with autism using ABA strategies under supervision of a BCBA\n- Implement individualized treatment plans designed and trained by a BCBA\n- Collect & record data to track client progress\n- Communicate with families & clinical teams to ensure client success\n- Attend scheduled supervisions, team meetings & ongoing training\n\nQualifications:\n- High school diploma (Bachelor’s in Psychology, Education, or related field a plus)\n- Reliable transportation & willingness to travel locally (if required)\n- Ability to actively engage clients during sessions, go from sitting to standing unassisted, and lift 50lbs\n- Experience in ABA therapy, childcare, education, or related field a plus!\n- Ability to pass a background check`,
       link: "https://docs.google.com/forms/d/e/1FAIpQLSdQ-MCWNUlE4t8IdBHqWpiCinPTEOhHyk7lr7f8oJPMCqdNCg/viewform?usp=dialog",
