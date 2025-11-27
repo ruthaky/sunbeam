@@ -281,7 +281,7 @@ function page() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-[16px] lg:text-[20px] text-white w-full lg:w-[500px]"
             >
-              Be part of a compassionate team dedicated to transforming the lives of children with autism. At Just Kids Autism Center, we believe in empowering our team members to grow professionally while making a meaningful impact in our community.
+              Be part of a compassionate team dedicated to transforming the lives of children with autism. At Sunbeam ABA Center, we believe in empowering our team members to grow professionally while making a meaningful impact in our community.
             </motion.p>
           </motion.div>
           <motion.div
