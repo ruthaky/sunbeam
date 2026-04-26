@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/asset/sunbeamlogo.png",
   },
-  title: "Subeam",
+  title: "Sunbeam",
   description: "Sunbeam",
   openGraph: {
     title: "Sunbeam ABA Center",

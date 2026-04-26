@@ -125,7 +125,7 @@ export default function Footer() {
               </h2>
               <ul className="text-[#5a5a5a] font-medium ">
                 <li className="mb-2 text-[14px]">admin@sunbeamcenter.com</li>
-                <li className="text-[14px]">971-255-2773</li>
+                <li className="text-[14px]">971-277-4483</li>
               </ul>
               </div>
               <div>
