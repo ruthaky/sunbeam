@@ -86,37 +86,6 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            {/* <div className="hidden">
-              <h2 className="mb-2 text-[18px] font-semibold text-black">
-                Socials
-              </h2>
-              <ul className="text-[#5a5a5a] font-medium">
-                <li className="mb-2">
-                  <a
-                    target="_blank"
-                    href="#"
-                    className="hover:underline text-start"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a target="_blank" href="#" className="hover:underline">
-                    Facebook
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a target="_blank" href="#" className="hover:underline">
-                    Instagram
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a target="_blank" href="#" className="hover:underline">
-                    Twitter
-                  </a>
-                </li>
-              </ul>
-            </div> */}
 
             <div className="flex flex-col gap-2">
               <div>
