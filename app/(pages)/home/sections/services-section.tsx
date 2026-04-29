@@ -94,7 +94,7 @@ export default function ServicesSection() {
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={isInView ? { scale: 1, opacity: 1 } : {}}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  classname="w-full h-full"
+                  className="w-full h-full"
                 >
                   <Image
                     src={oneonone}

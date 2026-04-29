@@ -10,8 +10,7 @@ body {
   background-color: #ffffff;
 }
 /* Custom scrollbar styles */
-
-For Webkit browsers (Chrome, Safari, Edge) ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 12px;
 }
 
