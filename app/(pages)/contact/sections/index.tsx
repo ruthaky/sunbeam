@@ -254,6 +254,20 @@ export default function ContactSection() {
                 required
               />
             </div>
+            <p className="text-[13px] lg:text-[14px] text-[#545454] leading-relaxed">
+              By providing a telephone number and submitting the form, you are
+              consenting to be contacted by SMS text message and agreeing to
+              our{" "}
+              <Link
+                href="/privacy-policy"
+                className="text-primary underline underline-offset-2"
+              >
+                Privacy Policy
+              </Link>
+              . Message frequency may vary. Message and data rates may apply.
+              Reply STOP to opt out of further messaging. Reply HELP for more
+              information.
+            </p>
             <div className="w-full flex h-auto justify-end">
               <Button type="submit">Send</Button>
             </div>

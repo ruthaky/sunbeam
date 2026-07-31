@@ -84,6 +84,15 @@ export default function Footer() {
                     Contact
                   </Link>
                 </li>
+                <li className="mb-2">
+                  <Link
+                    className="hover:underline"
+                    href="/privacy-policy"
+                    onClick={() => handleLinkClick("/privacy-policy")}
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
 
