@@ -27,13 +27,11 @@ export default function ContactSection() {
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState("");
+  const [isAgreed, setIsAgreed] = useState(false);
+  const [highlightDisclaimer, setHighlightDisclaimer] = useState(false);
   const router = useRouter();
   const params = useParams();
   const lang = params.lang;
-
-  // const handleChange = (event: any) => {
-  //   setFormData({ ...formData, [event.target.name]: event.target.value });
-  // };
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -43,6 +41,16 @@ export default function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!isAgreed) {
+      setStatus("Please accept the terms before submitting.");
+      setHighlightDisclaimer(true);
+      setTimeout(() => {
+        setHighlightDisclaimer(false);
+      }, 3000); // Highlights red for 3 seconds
+      return;
+    }
+
     setStatus("Submitting...");
 
     try {
@@ -52,12 +60,11 @@ export default function ContactSection() {
         body: JSON.stringify({ ...formData }),
       });
 
-      // Parse the JSON response
-
       if (response.ok) {
         const result = await response.json();
         setStatus("Form submitted successfully!");
         setFormData({ name: "", email: "", phonenumber: "", message: "" });
+        setIsAgreed(false);
         console.log("Form data:", formData, "Response:", result);
       } else {
         const error = await response.text();
@@ -80,23 +87,16 @@ export default function ContactSection() {
             className={` ${merriweather.variable} font-merriweather text-[#312f30] flex flex-col lg:gap-2 text-[36px] lg:text-[42px]  font-semibold leading-none `}
           >
             Contact Info
-            {/* <div className="h-[10px] w-[140px] mt-2 lg:hidden bg-primary" />
-        <div className="h-[10px] w-[200px] mt-2 hidden lg:block bg-primary" /> */}
           </div>
-          {/* <div className="text-[25px]  tracking-tight leading-none">
-          Whether it's working with rice farmers in
-        </div> */}
           <div className="flex flex-col gap-6 lg:gap-8">
             <div className="flex flex-row gap-4 text-[20px] items-start ">
               <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
                 <FiMapPin className="flex w-full h-full" />
               </div>
-              {/* <Link href="https://maps.google.com/?q=25.272150,55.338219"> */}
 
               <p className="text-wrap lg:text-nowrap">
                 274 Warner Milne RD
                <br></br>Oregon City, OR 97045</p>
-              {/* </Link> */}
             </div>
             <div className="flex flex-row gap-4 text-[20px] items-center">
               <div className="w-[25px] lg:w-[30px] flex items-start justify-start">
@@ -109,8 +109,6 @@ export default function ContactSection() {
               <IoMailOpenOutline size={35} />
               <div className="flex flex-col gap-2">
                 <p>admin@sunbeamcenter.com</p>
-                {/* <p>sales@surgecrops.com</p>
-                <p>marketing@surgecrops.com</p> */}
               </div>
             </div>
             <div className="flex flex-col gap-3">
@@ -213,11 +211,58 @@ export default function ContactSection() {
               required
             />
           </div>
+          <div className="flex items-start gap-3 mt-2">
+            <input
+              type="checkbox"
+              id="disclaimer-consent"
+              checked={isAgreed}
+              onChange={(e) => {
+                setIsAgreed(e.target.checked);
+                if (e.target.checked) setHighlightDisclaimer(false);
+              }}
+              className={`mt-1 h-4 w-4 rounded accent-primary transition-all duration-300 ${
+                highlightDisclaimer
+                  ? "outline outline-2 outline-red-500 border-red-500"
+                  : ""
+              }`}
+            />
+            <label
+              htmlFor="disclaimer-consent"
+              className={`text-[13px] lg:text-[14px] leading-relaxed cursor-pointer transition-colors duration-300 ${
+                highlightDisclaimer
+                  ? "text-red-500 font-medium"
+                  : "text-[#545454]"
+              }`}
+            >
+              By providing a telephone number and submitting the form, you are
+              consenting to be contacted by SMS text message and agreeing to
+              our{" "}
+              <Link
+                href="/privacy-policy"
+                className="text-primary underline underline-offset-2"
+              >
+                Privacy Policy
+              </Link>
+              . Message frequency may vary. Message and data rates may apply.
+              Reply STOP to opt out of further messaging. Reply HELP for more
+              information.
+            </label>
+          </div>
           <div className="w-full flex h-auto justify-end">
-            <Button type="submit">Send</Button>
+            <Button type="submit" disabled={!isAgreed}>
+              Send
+            </Button>
           </div>
         </form>
-        {status && <p className=" mt-4">{status}</p>}
+        {status && (
+          <p
+            className={`mt-4 ${
+              highlightDisclaimer ? "text-red-500 font-medium" : ""
+            }`}
+          >
+            {status}
+          </p>
+        )}
       </div>
     </div>
   );
